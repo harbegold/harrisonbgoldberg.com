@@ -30,12 +30,12 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "fino",
-    title: "Fino",
+    title: "Fino: Finance Daily",
     subtitle: "Gamified financial literacy for Gen Z",
     description: "Native iOS app teaching finance through daily quizzes, streaks, XP, and Fin the shark mascot. 504+ questions across 9 courses, fully translated into English, Spanish, and Hebrew.",
     longDescription: "Harbegold LLC's first consumer app, currently in production on the App Store. Freemium model with Fino Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.4 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
     tags: ["SwiftUI", "Supabase", "PostgreSQL", "StoreKit 2", "OneSignal", "WidgetKit"],
-    link: "https://getfino.app",
+    link: "https://apps.apple.com/us/app/fino-finance-daily/id6760954401",
     date: "2024 — Present",
     status: "Production · v1.4 on App Store"
   },
