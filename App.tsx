@@ -43,12 +43,25 @@ const App: React.FC = () => {
               </a>
             ))}
           </div>
-          <a
-            href={`mailto:${PERSONAL_INFO.email}`}
-            className="text-[13px] font-medium px-4 py-2 rounded-full bg-[#1d1d1f] text-white hover:bg-[#007aff] transition-colors"
-          >
-            Get in touch
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href={PERSONAL_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="w-9 h-9 flex items-center justify-center rounded-full text-[#1d1d1f]/70 hover:text-white hover:bg-[#0a66c2] transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.78-1.75-1.73s.78-1.74 1.75-1.74 1.75.78 1.75 1.74c0 .95-.78 1.73-1.75 1.73zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.78 7 2.47v6.77z" />
+              </svg>
+            </a>
+            <a
+              href={`mailto:${PERSONAL_INFO.email}`}
+              className="text-[13px] font-medium px-4 py-2 rounded-full bg-[#1d1d1f] text-white hover:bg-[#007aff] transition-colors"
+            >
+              Get in touch
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -84,6 +97,18 @@ const App: React.FC = () => {
               >
                 Get in touch
               </a>
+              <a
+                href={PERSONAL_INFO.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+                className="px-5 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:text-white transition-all flex items-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.78-1.75-1.73s.78-1.74 1.75-1.74 1.75.78 1.75 1.74c0 .95-.78 1.73-1.75 1.73zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.78 7 2.47v6.77z" />
+                </svg>
+                LinkedIn
+              </a>
             </div>
 
             <div className="flex flex-wrap items-center gap-x-10 gap-y-4 pt-6 border-t border-black/[0.06]">
@@ -97,7 +122,7 @@ const App: React.FC = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <span className="mono text-[9px] text-[#6e6e73] uppercase tracking-[0.2em]">Building</span>
-                <span className="text-sm font-medium">Harbegold LLC</span>
+                <span className="text-sm font-medium" title="Pending name change to Harbegold LLC">Fino LLC</span>
               </div>
             </div>
           </div>
