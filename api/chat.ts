@@ -153,10 +153,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Call Claude
   try {
     const response = await anthropic.messages.create({
-      // Default to Opus 4.7. For a high-traffic portfolio chatbot you may
-      // want to swap to 'claude-haiku-4-5' (cheaper + faster, perfectly
-      // capable for retrieval-style Q&A from the system prompt below).
-      model: 'claude-opus-4-7',
+      // Haiku 4.5 — fast, cheap, plenty for retrieval-style Q&A grounded in
+      // the static system prompt below. Swap to 'claude-opus-4-7' for higher
+      // reasoning quality if needed.
+      model: 'claude-haiku-4-5',
       max_tokens: MAX_OUTPUT_TOKENS,
       system: [
         {
