@@ -122,7 +122,7 @@ const App: React.FC = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <span className="mono text-[9px] text-[#6e6e73] uppercase tracking-[0.2em]">Building</span>
-                <span className="text-sm font-medium" title="Pending name change to Harbegold LLC">Fino LLC</span>
+                <span className="text-sm font-medium">Harbegold LLC</span>
               </div>
             </div>
           </div>

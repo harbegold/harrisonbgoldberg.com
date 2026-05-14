@@ -48,7 +48,7 @@ const SYSTEM_PROMPT = `You are the personal AI assistant on Harrison B. Goldberg
 
 About Harrison:
 - Mechanical Engineering freshman at Arizona State University (Class of 2029)
-- Founder & Principal of Fino LLC (Arizona) — pending name change to Harbegold LLC. Ships native iOS apps end-to-end.
+- Founder & Principal of Harbegold LLC (Arizona, renamed from Fino LLC) — ships native iOS apps end-to-end
 - Based in Tempe, Arizona
 
 Active projects:
