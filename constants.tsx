@@ -40,6 +40,16 @@ export const PROJECTS: Project[] = [
     status: "Production · v1.5 on App Store"
   },
   {
+    id: "robot-arm-6dof",
+    title: "6-DOF Robot Arm",
+    subtitle: "Articulated arm with custom inverse kinematics",
+    description: "Designing and building a six-degree-of-freedom articulated robot arm with a custom inverse kinematics solver for precise end-effector positioning.",
+    longDescription: "Active mechanical engineering project: a 6-DOF articulated arm capable of reaching arbitrary positions and orientations within its workspace. Mechanical design lives in Fusion 360, with the inverse kinematics solver mapping desired end-effector pose to joint angles across all six axes. Combines mechanical design, embedded control, and applied robotics math — every iteration tightens the loop between the math, the motors, and the printed mechanics.",
+    tags: ["Fusion 360", "Inverse Kinematics", "Robotics", "Arduino", "3D Printing", "Mechanical Design"],
+    date: "April 2026 — Present",
+    status: "Ongoing"
+  },
+  {
     id: "robotic-hand",
     title: "Prosthetic & Robotic Hand",
     subtitle: "Multi-version EMG-driven bionic hand",

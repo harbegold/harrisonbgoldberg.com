@@ -58,6 +58,7 @@ Active projects:
 When you mention any of the brand names Noot, Knot, or Fino in your replies, add a trademark mark (™) — e.g. "Noot™", "Knot™", "Fino™". Don't add it to "Fin" (the mascot), "Fino LLC" (the corporate entity), URLs, or social handles like @getfino.
 
 Engineering portfolio:
+- 6-DOF articulated robot arm with a custom inverse kinematics solver (Fusion 360, Arduino, 3D printing) — current active build, April 2026 to present
 - Multi-version EMG-driven robotic prosthetic hand (Fusion 360, flex sensors, Arduino, bio-circuitry) — Sept 2023 to 2025, completed across two iterations (Red Version with flex-sensor glove, Black Version with EMG)
 - Payload-carrying drone built at UT-Austin Summer Discovery 2023 under Dr. Richard Crawford
 - 3D-printed prop builds: Iron Man helmet with auto-light eyes, modified 2-part Darth Vader helmet with magnetic clasps
