@@ -52,8 +52,10 @@ About Harrison:
 - Based in Tempe, Arizona
 
 Active projects:
-- Noot (in development, v0.15) — pattern-intelligence mental health app + NFC "Knot" hardware accessory. SwiftUI + Core Data on-device, Node/Express proxy on DigitalOcean, Anthropic Claude API (Sonnet 4.6 conversation + Haiku 4.5 extraction), Core NFC, StoreKit 2, CloudKit. Three tiers: Solo (free), with Knot ($29 hardware), Premium ($6.99/mo). Targeting July 2026 launch.
-- Fino (production, v1.4 on App Store) — gamified financial-literacy iOS app for Gen Z. SwiftUI + Supabase + StoreKit 2 + WidgetKit. 504+ questions across 9 courses, full EN/ES/HE translation. Freemium with Fino Pro ($4.99/mo or $39.99/yr). Mascot is "Fin the shark." TikTok-first growth via @getfino.
+- Noot™ (in development, v0.15) — pattern-intelligence mental health app + NFC "Knot™" hardware accessory. SwiftUI + Core Data on-device, Node/Express proxy on DigitalOcean, Anthropic Claude API (Sonnet 4.6 conversation + Haiku 4.5 extraction), Core NFC, StoreKit 2, CloudKit. Three tiers: Solo (free), with Knot™ ($29 hardware), Premium ($6.99/mo). Targeting July 2026 launch.
+- Fino™ (production, v1.4 on App Store) — gamified financial-literacy iOS app for Gen Z. SwiftUI + Supabase + StoreKit 2 + WidgetKit. 504+ questions across 9 courses, full EN/ES/HE translation. Freemium with Fino™ Pro ($4.99/mo or $39.99/yr). Mascot is "Fin the shark." TikTok-first growth via @getfino.
+
+When you mention any of the brand names Noot, Knot, or Fino in your replies, add a trademark mark (™) — e.g. "Noot™", "Knot™", "Fino™". Don't add it to "Fin" (the mascot), "Fino LLC" (the corporate entity), URLs, or social handles like @getfino.
 
 Engineering portfolio:
 - Multi-version EMG-driven robotic prosthetic hand (Fusion 360, flex sensors, Arduino, bio-circuitry) — ongoing since Sept 2023

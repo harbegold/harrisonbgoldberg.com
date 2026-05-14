@@ -19,10 +19,10 @@ export const PERSONAL_INFO = {
 export const PROJECTS: Project[] = [
   {
     id: "noot",
-    title: "Noot",
-    subtitle: "Pattern-intelligence companion + NFC Knot",
+    title: "Noot™",
+    subtitle: "Pattern-intelligence companion + NFC Knot™",
     description: "iOS app that notices your patterns. AI listens, maps a living graph of your context, and seals commitments through a physical NFC accessory.",
-    longDescription: "Harbegold LLC's second consumer app. Local-first SwiftUI app: user data stays on device in Core Data, with an ephemeral Node/Express proxy on DigitalOcean for Claude API calls (Sonnet 4.6 for conversation, Haiku 4.5 for everything else). Per-conversation cost target ~$0.012. The Knot is a 3D-printed PLA+ accessory with embedded NTAG215 NFC — tap to start a context-tagged conversation, tap again to seal a commitment. Three tiers: Solo (free), with Knot ($29 hardware), and Premium ($6.99/mo). TestFlight-ready as of v0.13; targeting July 2026 launch.",
+    longDescription: "Harbegold LLC's second consumer app. Local-first SwiftUI app: user data stays on device in Core Data, with an ephemeral Node/Express proxy on DigitalOcean for Claude API calls (Sonnet 4.6 for conversation, Haiku 4.5 for everything else). Per-conversation cost target ~$0.012. The Knot™ is a 3D-printed PLA+ accessory with embedded NTAG215 NFC — tap to start a context-tagged conversation, tap again to seal a commitment. Three tiers: Solo (free), with Knot™ ($29 hardware), and Premium ($6.99/mo). TestFlight-ready as of v0.13; targeting July 2026 launch.",
     tags: ["SwiftUI", "Core Data", "Anthropic API", "Core NFC", "StoreKit 2", "Node/Express", "Supabase", "CloudKit"],
     link: "https://getnoot.ai",
     date: "2026 — Present",
@@ -30,10 +30,10 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "fino",
-    title: "Fino: Finance Daily",
+    title: "Fino™: Finance Daily",
     subtitle: "Gamified financial literacy for Gen Z",
     description: "Native iOS app teaching finance through daily quizzes, streaks, XP, and Fin the shark mascot. 504+ questions across 9 courses, fully translated into English, Spanish, and Hebrew.",
-    longDescription: "Harbegold LLC's flagship consumer app, currently in production on the App Store. Freemium model with Fino Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.4 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
+    longDescription: "Harbegold LLC's flagship consumer app, currently in production on the App Store. Freemium model with Fino™ Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.4 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
     tags: ["SwiftUI", "Supabase", "PostgreSQL", "StoreKit 2", "OneSignal", "WidgetKit"],
     link: "https://apps.apple.com/us/app/fino-finance-daily/id6760954401",
     date: "2024 — Present",
@@ -108,7 +108,7 @@ export const EXPERIENCES: Experience[] = [
     period: "2024 — Present",
     location: "Arizona",
     description: [
-      "Founded and operate the Arizona-registered LLC behind Fino and Noot (renamed from Fino LLC).",
+      "Founded and operate the Arizona-registered LLC behind Fino™ and Noot™ (renamed from Fino LLC).",
       "Ship native iOS apps end-to-end: design, engineering, infrastructure, brand, and launch.",
       "Manage Apple Developer account, App Store releases, and all consumer-facing properties."
     ]
