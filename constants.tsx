@@ -33,11 +33,11 @@ export const PROJECTS: Project[] = [
     title: "Fino™: Finance Daily",
     subtitle: "Gamified financial literacy for Gen Z",
     description: "Native iOS app teaching finance through daily quizzes, streaks, XP, and Fin the shark mascot. 504+ questions across 9 courses, fully translated into English, Spanish, and Hebrew.",
-    longDescription: "Harbegold LLC's flagship consumer app, currently in production on the App Store. Freemium model with Fino™ Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.4 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
+    longDescription: "Harbegold LLC's flagship consumer app, currently in production on the App Store. Freemium model with Fino™ Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.5 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
     tags: ["SwiftUI", "Supabase", "PostgreSQL", "StoreKit 2", "OneSignal", "WidgetKit"],
     link: "https://apps.apple.com/us/app/fino-finance-daily/id6760954401",
     date: "2024 — Present",
-    status: "Production · v1.4 on App Store"
+    status: "Production · v1.5 on App Store"
   },
   {
     id: "robotic-hand",
@@ -46,8 +46,8 @@ export const PROJECTS: Project[] = [
     description: "Robotic hand iterated across two versions, controlled by a flex-sensor glove and EMG biomedical electrodes for intuitive muscle-driven actuation.",
     longDescription: "Started in September 2023 in Fusion 360. Two primary iterations: a Red Version using a custom flex-sensor glove for high-accuracy finger tracking, and a Black Version exploring button control and EMG integration. Expanded into bio-circuitry using surface electrodes to read muscle activity, enabling intuitive hand closure. Embodies the Design–Build–Improve loop end to end.",
     tags: ["Fusion 360", "EMG / Bio-Circuitry", "Flex Sensors", "Arduino", "Prototyping"],
-    date: "2023 — Present",
-    status: "Ongoing"
+    date: "2023 — 2025",
+    status: "Completed"
   },
   {
     id: "ut-austin-drone",

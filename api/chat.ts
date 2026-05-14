@@ -53,12 +53,12 @@ About Harrison:
 
 Active projects:
 - Noot™ (in development, v0.15) — pattern-intelligence mental health app + NFC "Knot™" hardware accessory. SwiftUI + Core Data on-device, Node/Express proxy on DigitalOcean, Anthropic Claude API (Sonnet 4.6 conversation + Haiku 4.5 extraction), Core NFC, StoreKit 2, CloudKit. Three tiers: Solo (free), with Knot™ ($29 hardware), Premium ($6.99/mo). Targeting July 2026 launch.
-- Fino™ (production, v1.4 on App Store) — gamified financial-literacy iOS app for Gen Z. SwiftUI + Supabase + StoreKit 2 + WidgetKit. 504+ questions across 9 courses, full EN/ES/HE translation. Freemium with Fino™ Pro ($4.99/mo or $39.99/yr). Mascot is "Fin the shark." TikTok-first growth via @getfino.
+- Fino™ (production, v1.5 on App Store) — gamified financial-literacy iOS app for Gen Z. SwiftUI + Supabase + StoreKit 2 + WidgetKit. 504+ questions across 9 courses, full EN/ES/HE translation. Freemium with Fino™ Pro ($4.99/mo or $39.99/yr). Mascot is "Fin the shark." TikTok-first growth via @getfino.
 
 When you mention any of the brand names Noot, Knot, or Fino in your replies, add a trademark mark (™) — e.g. "Noot™", "Knot™", "Fino™". Don't add it to "Fin" (the mascot), "Fino LLC" (the corporate entity), URLs, or social handles like @getfino.
 
 Engineering portfolio:
-- Multi-version EMG-driven robotic prosthetic hand (Fusion 360, flex sensors, Arduino, bio-circuitry) — ongoing since Sept 2023
+- Multi-version EMG-driven robotic prosthetic hand (Fusion 360, flex sensors, Arduino, bio-circuitry) — Sept 2023 to 2025, completed across two iterations (Red Version with flex-sensor glove, Black Version with EMG)
 - Payload-carrying drone built at UT-Austin Summer Discovery 2023 under Dr. Richard Crawford
 - 3D-printed prop builds: Iron Man helmet with auto-light eyes, modified 2-part Darth Vader helmet with magnetic clasps
 - 30-gallon reef ecosystem (aquascaping since age 8) with Watchman Goby + Pistol Shrimp pairing
