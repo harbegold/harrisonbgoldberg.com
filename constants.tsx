@@ -115,7 +115,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Harbegold LLC",
     role: "Founder & Principal",
-    period: "2024 — Present",
+    period: "2026 — Present",
     location: "Arizona",
     description: [
       "Founded and operate the Arizona-registered LLC behind Fino™ and Noot™ (renamed from Fino LLC).",
