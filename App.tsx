@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { PERSONAL_INFO, PROJECTS, SKILLS } from './constants';
 import ProjectCard from './components/ProjectCard';
 import ExperienceTimeline from './components/ExperienceTimeline';
@@ -296,6 +297,7 @@ const App: React.FC = () => {
       </footer>
 
       <AIChat />
+      <Analytics />
     </div>
   );
 };
