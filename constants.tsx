@@ -2,9 +2,9 @@ import { Project, Experience, SkillCategory } from './types';
 
 export const PERSONAL_INFO = {
   name: "Harrison B. Goldberg",
-  title: "Mechanical Engineering Student & Founder",
-  subtitle: "Arizona State University · Class of 2029",
-  bio: "Mechanical Engineering freshman at ASU and founder of Harbegold LLC. I design, build, and ship — from robotic prosthetics and aerospace prototypes to native iOS apps used in production. Driven by curiosity, iteration, and shipping real things.",
+  title: "Mechanical Engineering · Robotics · Product Design",
+  subtitle: "Arizona State University · Expected May 2029",
+  bio: "Mechanical Engineering student building robotic systems and production-ready products through CAD, embedded controls, simulation, and additive manufacturing.",
   email: "Harry@harbegold.com",
   linkedin: "https://linkedin.com/in/harrisonbgoldberg",
   location: "Tempe, Arizona",
@@ -12,101 +12,60 @@ export const PERSONAL_INFO = {
   education: {
     school: "Arizona State University",
     degree: "B.S. in Mechanical Engineering",
-    year: "Class of 2029"
+    year: "Expected May 2029"
   }
 };
 
 export const PROJECTS: Project[] = [
   {
-    id: "noot",
-    title: "Noot™",
-    subtitle: "Pattern-intelligence companion + NFC Knot™",
-    description: "iOS app that notices your patterns. AI listens, maps a living graph of your context, and seals commitments through a physical NFC accessory.",
-    longDescription: "Harbegold LLC's second consumer app. Local-first SwiftUI app: user data stays on device in Core Data, with an ephemeral Node/Express proxy on DigitalOcean for Claude API calls (Sonnet 4.6 for conversation, Haiku 4.5 for everything else). Per-conversation cost target ~$0.012. The Knot™ is a 3D-printed PLA+ accessory with embedded NTAG215 NFC — tap to start a context-tagged conversation, tap again to seal a commitment. Three tiers: Solo (free), with Knot™ ($29 hardware), and Premium ($6.99/mo). TestFlight-ready as of v0.13; targeting July 2026 launch.",
-    tags: ["SwiftUI", "Core Data", "Anthropic API", "Core NFC", "StoreKit 2", "Node/Express", "Supabase", "CloudKit"],
-    link: "https://getnoot.ai",
-    date: "2026 — Present",
-    status: "In development · v0.15"
-  },
-  {
     id: "fino",
-    title: "Fino™: Finance Daily",
-    subtitle: "Gamified financial literacy for Gen Z",
-    description: "Native iOS app teaching finance through daily quizzes, streaks, XP, and Fin the shark mascot. 504+ questions across 9 courses, fully translated into English, Spanish, and Hebrew.",
-    longDescription: "Harbegold LLC's flagship consumer app, currently in production on the App Store. Freemium model with Fino™ Pro subscription ($4.99/mo or $39.99/yr). Built in SwiftUI with @Observable, Supabase + PostgreSQL backend, StoreKit 2 subscriptions, OneSignal push, and a WidgetKit home-screen widget. Ocean-themed UI with jellyfish/pearl/coral progression nodes. v1.5 shipped a full curriculum translation (504 questions × 3 languages), admin dashboard on DigitalOcean, leaderboards, daily lesson limits, and the ocean redesign. TikTok-first growth strategy under @getfino.",
-    tags: ["SwiftUI", "Supabase", "PostgreSQL", "StoreKit 2", "OneSignal", "WidgetKit"],
+    title: "Fino™",
+    subtitle: "Financial-learning iOS application",
+    description: "Launched a financial-learning iOS application through Harbegold LLC.",
+    longDescription: "Fino™ is a financial-learning iOS application launched through Harbegold LLC, a product-development company spanning consumer software and hardware.",
+    tags: ["Product Development", "iOS", "Consumer Software"],
     link: "https://apps.apple.com/us/app/fino-finance-daily/id6760954401",
-    date: "2024 — Present",
-    status: "Production · v1.5 on App Store"
+    date: "Present",
+    status: "Launched"
   },
   {
-    id: "robot-arm-6dof",
-    title: "6-DOF Robot Arm",
-    subtitle: "Articulated arm with custom inverse kinematics",
-    description: "Designing and building a six-degree-of-freedom articulated robot arm with a custom inverse kinematics solver for precise end-effector positioning.",
-    longDescription: "Active mechanical engineering project: a 6-DOF articulated arm capable of reaching arbitrary positions and orientations within its workspace. Mechanical design lives in Fusion 360, with the inverse kinematics solver mapping desired end-effector pose to joint angles across all six axes. Combines mechanical design, embedded control, and applied robotics math — every iteration tightens the loop between the math, the motors, and the printed mechanics.",
-    tags: ["Fusion 360", "Inverse Kinematics", "Robotics", "Arduino", "3D Printing", "Mechanical Design"],
-    date: "April 2026 — Present",
+    id: "kinearm",
+    title: "KineArm — 6-DOF Robotic Arm",
+    subtitle: "Mechanical, firmware & simulation",
+    description: "A six-degree-of-freedom manipulator with a spherical wrist, 500 g payload target, 305 mm radial workspace, and closed-form forward and inverse kinematics.",
+    longDescription: "Designed a 6-DOF manipulator with 200 mm upper-arm and forearm links; derived and hand-validated closed-form forward and inverse kinematics. Built MATLAB and Python simulations for real-time FK/IK, Cartesian end-effector targeting, quintic trajectory planning, torque analysis, workspace visualization, and tool-path export. Specified an ESP32, PCA9685 PWM controller, and six servo actuators from calculated static and dynamic per-joint torque requirements.",
+    tags: ["Fusion 360", "MATLAB", "Python", "ESP32", "PCA9685", "Servo Control"],
+    date: "2026 — Present",
+    status: "Ongoing"
+  },
+  {
+    id: "autonomous-quadruped",
+    title: "Autonomous Quadruped Robot",
+    subtitle: "Mechanical & firmware",
+    description: "An eight-servo quadruped designed for stable standing, repeatable gait behavior, and wireless teleoperation.",
+    longDescription: "Designed and built an eight-servo quadruped using an ESP32-S3 and PCA9685 controller, with two actuated degrees of freedom per leg. Calibrated hip and knee motion for stable standing and repeatable gait behavior, then implemented wireless Xbox-controller teleoperation with Bluepad32 and an OLED status display on the shared I²C bus.",
+    tags: ["ESP32-S3", "PCA9685", "Bluepad32", "I²C", "Servo Control", "Robotics"],
+    date: "2026 — Present",
     status: "Ongoing"
   },
   {
     id: "robotic-hand",
-    title: "Prosthetic & Robotic Hand",
-    subtitle: "Multi-version EMG-driven bionic hand",
-    description: "Robotic hand iterated across two versions, controlled by a flex-sensor glove and EMG biomedical electrodes for intuitive muscle-driven actuation.",
-    longDescription: "Started in September 2023 in Fusion 360. Two primary iterations: a Red Version using a custom flex-sensor glove for high-accuracy finger tracking, and a Black Version exploring button control and EMG integration. Expanded into bio-circuitry using surface electrodes to read muscle activity, enabling intuitive hand closure. Embodies the Design–Build–Improve loop end to end.",
-    tags: ["Fusion 360", "EMG / Bio-Circuitry", "Flex Sensors", "Arduino", "Prototyping"],
-    date: "2023 — 2025",
+    title: "EMG-Actuated Prosthetic Hand",
+    subtitle: "Mechanical & embedded design",
+    description: "A functional prosthetic hand that mirrors glove motion with Arduino control, flex sensors, and servos, later iterated for EMG actuation.",
+    longDescription: "Built a functional prosthetic hand that mirrored glove motion using an Arduino, flex sensors, and servo motors. Iterated on an EMG-controlled version that used muscle-signal input for actuation.",
+    tags: ["Arduino", "Flex Sensors", "Servo Control", "EMG", "Embedded Design"],
+    date: "2024",
     status: "Completed"
   },
   {
     id: "ut-austin-drone",
-    title: "UT-Austin Payload Drone",
-    subtitle: "Engineering Design Program build",
-    description: "Designed and built a payload-carrying drone at UT-Austin Summer Discovery under Dr. Richard Crawford.",
-    longDescription: "Six-week intensive at UT-Austin's Texas Inventionworks makerspace. Designed a drone capable of lifting a water-bottle-sized payload, gained mastery of Fusion 360 for aerospace applications, and led collaborative project management. Received a Certificate of Completion for successful design execution.",
-    tags: ["Aerospace", "Fusion 360", "Leadership", "Rapid Prototyping"],
+    title: "UT Austin Drone Components",
+    subtitle: "Summer Discovery · Engineering design",
+    description: "Modeled and fabricated custom drone components while studying manufacturing processes, engineering design, and FPV drone assembly.",
+    longDescription: "At UT Austin Inventionworks, modeled custom drone components in Fusion 360 and fabricated parts with laser cutting and 3D printing while studying manufacturing processes, engineering design, and FPV drone assembly.",
+    tags: ["Fusion 360", "Laser Cutting", "3D Printing", "FPV Drones", "Manufacturing"],
     date: "Summer 2023",
-    status: "Completed"
-  },
-  {
-    id: "advanced-3d-printing",
-    title: "3D-Printed Prop Engineering",
-    subtitle: "Iron Man & Darth Vader builds",
-    description: "Complex multi-part prop builds with electronic integration, magnetic clasps, and full post-processing.",
-    longDescription: "Advanced fabrication involving sanding, priming, and electronic integration. Built an Iron Man helmet with magnetic attachments and automatic eye illumination. Modified a 2-part Darth Vader helmet design by adding custom magnetic clasps to ensure full dome attachment.",
-    tags: ["3D Printing", "Electronics", "Post-Processing", "Magnetic Design"],
-    date: "2022 — 2023",
-    status: "Completed"
-  },
-  {
-    id: "reef-aquascaping",
-    title: "30-Gallon Reef Ecosystem",
-    subtitle: "Long-term biological systems engineering",
-    description: "Ongoing biological and chemical management of a complex reef aquarium with symbiotic species pairings.",
-    longDescription: "Designing aquascapes since age 8. Currently managing a 30-gallon reef tank featuring a diverse clean-up crew, several coral species, and symbiotic pairings (Watchman Goby and Pistol Shrimp). A continuous education in biology, chemistry, and trial-and-error systems engineering.",
-    tags: ["Systems Management", "Biology", "Sustainability", "Aquascaping"],
-    date: "2023 — Present",
-    status: "Ongoing"
-  },
-  {
-    id: "rocketry-launches",
-    title: "Model Rocketry Builds",
-    subtitle: "Single & triple-stage 3D-printed rockets",
-    description: "Successful launches of 3D-printed model rockets with focus on aerodynamic stability and parachute recovery.",
-    longDescription: "Designed and 3D-printed several rocket stages. Conducted successful test launches, including a triple-stage rendition. Focused on aerodynamic stability, staging timing, and parachute deployment systems.",
-    tags: ["3D Printing", "Rocketry", "Physics", "Iterative Design"],
-    date: "2023",
-    status: "Completed"
-  },
-  {
-    id: "early-entrepreneurship",
-    title: "Fidget Spinner Business",
-    subtitle: "5th-grade 3D-printing micro-business",
-    description: "Founded a 3D-printing micro-business in 5th grade — funded a personal makerspace and donated the rest to charity.",
-    longDescription: "Launched during the fidget spinner trend. Designed custom bearing caps with initials and logos. Profits were split between upgrading my personal makerspace and donating to charity by 7th grade. First taste of running a real business — the through-line to Harbegold LLC.",
-    tags: ["Entrepreneurship", "CAD", "Manufacturing", "Community"],
-    date: "2018 — 2021",
     status: "Completed"
   }
 ];
@@ -114,69 +73,66 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     company: "Harbegold LLC",
-    role: "Founder & Principal",
-    period: "2026 — Present",
+    role: "Founder",
+    period: "Present",
     location: "Arizona",
     description: [
-      "Founded and operate the Arizona-registered LLC behind Fino™ and Noot™ (renamed from Fino LLC).",
-      "Ship native iOS apps end-to-end: design, engineering, infrastructure, brand, and launch.",
-      "Manage Apple Developer account, App Store releases, and all consumer-facing properties."
+      "Founded a product-development LLC spanning consumer software and hardware.",
+      "Launched the Fino™ financial-learning iOS application."
     ]
   },
   {
-    company: "Arizona State University",
-    role: "Mechanical Engineering Undergraduate",
-    period: "Aug 2025 — Present",
-    location: "Tempe, AZ",
+    company: "TinkerTank",
+    role: "Founder & Product Designer",
+    period: "2025 — Present",
+    location: "Etsy shop",
     description: [
-      "Pursuing a B.S. in Mechanical Engineering, Class of 2029.",
-      "Coursework focused on engineering design, solid mechanics, and core math/physics fundamentals.",
-      "Active in the campus engineering community."
+      "Design, prototype, manufacture, test, and sell functional PETG aquarium components for production-ready FDM printing.",
+      "Create parametric CAD designs for plant supports, feeding rings, propagation holders, and coral frag mounts.",
+      "Adapt dimensions to customer requirements and iterate prototypes before production."
     ]
   },
   {
-    company: "The Heschel School",
-    role: "Engineering Design Club Leader",
-    period: "2023 — 2024",
+    company: "Engineering Design Club · The Heschel School",
+    role: "Founder & Co-Lead",
+    period: "2022 — 2024",
     location: "New York, NY",
     description: [
-      "Led demonstrations at the High School Open House, showcasing laser-cut and 3D-printed projects.",
-      "Pushed for and gained student access to high-end laser cutting equipment.",
-      "Evolved the 3D Printing Club into the Engineering Design Club, fostering a build-first culture."
+      "Founded and led the club, teaching Tinkercad, Fusion 360, 3D printing, and additive-manufacturing workflows.",
+      "Directed a member challenge to redesign a prosthetic hand."
     ]
   },
   {
-    company: "UT-Austin Summer Discovery",
-    role: "Engineering Design Participant",
-    period: "Jun 2023 — Jul 2023",
+    company: "UT Austin Inventionworks",
+    role: "Student, Summer Discovery",
+    period: "Summer 2023",
     location: "Austin, TX",
     description: [
-      "Designed and built a payload-capable drone under Professor Richard Crawford.",
-      "Gained mastery in Fusion 360 and used the Texas Inventionworks makerspace.",
-      "Developed leadership skills through collaborative project management."
+      "Modeled custom drone components in Fusion 360 and fabricated parts with laser cutting and 3D printing.",
+      "Studied manufacturing processes, engineering design, and FPV drone assembly."
     ]
   }
 ];
 
 export const SKILLS: SkillCategory[] = [
   {
-    name: "Engineering & CAD",
-    skills: ["Fusion 360", "Technical Design", "Iterative Prototyping", "Mechanical Systems"]
+    name: "CAD & Design",
+    skills: ["Fusion 360", "SolidWorks", "Tinkercad"]
   },
   {
-    name: "Digital Fabrication",
-    skills: ["3D Printing (PLA / TPU)", "Laser Cutting", "Raster Engraving", "Sanding & Priming"]
+    name: "Robotics & Embedded",
+    skills: ["ESP32 / ESP32-S3", "Arduino", "I²C", "PWM", "PCA9685", "Servo Control"]
   },
   {
-    name: "iOS & Software",
-    skills: ["SwiftUI", "Core Data", "StoreKit 2", "Core NFC", "Supabase", "Node / Express"]
+    name: "Analysis & Programming",
+    skills: ["MATLAB", "Python", "NumPy", "Matplotlib", "C/C++"]
   },
   {
-    name: "AI & Electronics",
-    skills: ["Anthropic API", "Arduino", "EMG / Bio-Circuitry", "Flex Sensors"]
+    name: "Fabrication",
+    skills: ["FDM Additive Manufacturing", "Laser Cutting", "Soldering", "Electromechanical Prototyping"]
   },
   {
-    name: "Media",
-    skills: ["Adobe Premiere Pro", "Final Cut Pro"]
+    name: "Other",
+    skills: ["Product Development", "English (Native)", "Hebrew (Conversational)"]
   }
 ];

@@ -73,7 +73,7 @@ const App: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#007aff]/10 border border-[#007aff]/20">
               <div className="w-1.5 h-1.5 bg-[#007aff] rounded-full animate-pulse" />
               <span className="mono text-[#007aff] text-[10px] font-semibold tracking-widest uppercase">
-                Available for Summer 2026
+                Mechanical Engineering · Robotics · Product Design
               </span>
             </div>
 
@@ -138,7 +138,7 @@ const App: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
                 <span className="mono text-[10px] text-white/70 uppercase tracking-widest">
-                  ASU · Class of 2029
+                  ASU · Expected May 2029
                 </span>
                 <div className="w-2 h-2 bg-[#34c759] rounded-full" />
               </div>
@@ -158,7 +158,7 @@ const App: React.FC = () => {
               What I work with
             </h2>
             <p className="text-[#6e6e73] max-w-2xl mx-auto">
-              A blend of mechanical engineering fundamentals, digital fabrication, and full-stack iOS — chosen for the projects I'm shipping right now.
+              A hands-on toolkit for mechanical design, embedded robotics, simulation, and production-ready prototyping.
             </p>
           </div>
 
@@ -198,7 +198,7 @@ const App: React.FC = () => {
               Projects
             </h2>
             <p className="text-[#6e6e73] max-w-2xl mx-auto">
-              From production iOS apps to robotic prosthetics and aerospace prototypes — what I've designed, built, and improved.
+              Robotics, embedded systems, and production-ready products — designed, built, and iterated hands-on.
             </p>
           </div>
 
@@ -237,7 +237,7 @@ const App: React.FC = () => {
                 Let's build something.
               </h2>
               <p className="text-[#6e6e73] leading-relaxed">
-                Whether you need an intern for Summer 2026, a CAD / prototyping collaborator, or an iOS engineer who's actually shipped — let's talk.
+                For engineering opportunities, CAD and prototyping collaborations, or product-design work, let’s talk.
               </p>
             </div>
 
