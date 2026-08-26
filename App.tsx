@@ -198,6 +198,18 @@ const App: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            <div className="pt-6 border-t border-black/[0.06] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <div>
+                <h4 className="text-sm font-semibold tracking-tight">{EDUCATION_DETAILS.visitingCoursework.school}</h4>
+                <p className="text-sm text-[#6e6e73] mt-1">
+                  {EDUCATION_DETAILS.visitingCoursework.program} · {EDUCATION_DETAILS.visitingCoursework.location}
+                </p>
+              </div>
+              <p className="mono text-xs text-[#6e6e73] uppercase tracking-widest">
+                {EDUCATION_DETAILS.visitingCoursework.period}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -213,7 +225,7 @@ const App: React.FC = () => {
               What I work with
             </h2>
             <p className="text-[#6e6e73] max-w-2xl mx-auto">
-              A hands-on toolkit for mechanical design, embedded robotics, simulation, and production-ready prototyping.
+              Tools and workflows documented in my engineering résumé.
             </p>
           </div>
 
