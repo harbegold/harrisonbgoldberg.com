@@ -27,7 +27,7 @@ UPSTASH_REDIS_REST_TOKEN=...
 
 ### Anthropic (required for chat)
 
-Create a key at [console.anthropic.com](https://console.anthropic.com/settings/keys). The chat function uses `claude-opus-4-7` by default — to switch to the cheaper `claude-haiku-4-5` (more than enough for retrieval-style portfolio Q&A), edit the `model` string in [`api/chat.ts`](./api/chat.ts).
+Create a key at [console.anthropic.com](https://console.anthropic.com/settings/keys). The chat function uses `claude-haiku-4-5` for concise, résumé-grounded portfolio Q&A; update the `model` string in [`api/chat.ts`](./api/chat.ts) only if a different trade-off is intended.
 
 ### Upstash Redis (required for rate limiting in production)
 

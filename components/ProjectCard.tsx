@@ -63,7 +63,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {showModal && (
         <div className="fixed inset-0 z-[80] flex items-center justify-center p-4 sm:p-6">
           <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setShowModal(false)} />
-          <div className="relative bg-white w-full max-w-2xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col shadow-2xl border border-black/[0.08]">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby={`project-${project.id}-title`}
+            className="relative bg-white w-full max-w-2xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col shadow-2xl border border-black/[0.08]"
+          >
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-5 right-5 z-20 w-9 h-9 rounded-full bg-black/5 flex items-center justify-center text-[#1d1d1f] hover:bg-black/10 transition-colors"
@@ -79,7 +84,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <span className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73]">
                   {project.date}
                 </span>
-                <h2 className="text-4xl font-semibold tracking-tight text-[#1d1d1f]">
+                <h2 id={`project-${project.id}-title`} className="text-4xl font-semibold tracking-tight text-[#1d1d1f]">
                   {project.title}
                 </h2>
                 <p className="text-lg text-[#6e6e73]">{project.subtitle}</p>

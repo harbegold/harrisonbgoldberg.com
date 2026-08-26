@@ -49,7 +49,7 @@ const AIChat: React.FC = () => {
     const result = await sendChat(userMsg, history);
     setIsLoading(false);
 
-    if (result.ok) {
+    if (result.ok === true) {
       setMessages(prev => [...prev, { role: 'ai', content: result.reply }]);
       setRateLimited(null);
       return;
@@ -142,6 +142,7 @@ const AIChat: React.FC = () => {
             <div className="relative">
               <input
                 type="text"
+                aria-label="Message"
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 placeholder={isRateLimited ? 'Chat limit reached — try later' : 'Ask about my work…'}

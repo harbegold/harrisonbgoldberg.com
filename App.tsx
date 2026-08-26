@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import { PERSONAL_INFO, PROJECTS, SKILLS } from './constants';
+import { EDUCATION_DETAILS, PERSONAL_INFO, PROJECTS, SKILLS } from './constants';
 import ProjectCard from './components/ProjectCard';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import AIChat from './components/AIChat';
@@ -8,6 +8,7 @@ import ContactForm from './components/ContactForm';
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
+  { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
@@ -141,6 +142,60 @@ const App: React.FC = () => {
                   ASU · Expected May 2029
                 </span>
                 <div className="w-2 h-2 bg-[#34c759] rounded-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="py-24 px-6 bg-[#f5f5f7]/60 border-y border-black/[0.06]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14 space-y-3">
+            <span className="mono text-[#007aff] text-xs font-semibold uppercase tracking-[0.3em]">
+              Education
+            </span>
+            <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight apple-gradient">
+              Mechanical engineering at ASU
+            </h2>
+          </div>
+
+          <div className="bg-white border border-black/[0.06] rounded-2xl p-7 sm:p-9 space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div>
+                <h3 className="text-2xl font-semibold tracking-tight">{PERSONAL_INFO.education.school}</h3>
+                <p className="text-[#6e6e73] mt-1">{PERSONAL_INFO.education.degree}</p>
+              </div>
+              <div className="sm:text-right">
+                <p className="mono text-xs text-[#007aff] uppercase tracking-widest">{PERSONAL_INFO.education.year}</p>
+                <p className="text-sm text-[#6e6e73] mt-1">GPA: {EDUCATION_DETAILS.gpa}</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <h4 className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73] border-b border-black/[0.08] pb-2">
+                  Relevant coursework
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {EDUCATION_DETAILS.relevantCoursework.map(course => (
+                    <span key={course} className="text-sm text-[#1d1d1f] bg-[#f5f5f7] px-3 py-1.5 rounded-lg border border-black/[0.04]">
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="space-y-3">
+                <h4 className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73] border-b border-black/[0.08] pb-2">
+                  In progress · Fall 2026
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {EDUCATION_DETAILS.currentCoursework.map(course => (
+                    <span key={course} className="text-sm text-[#1d1d1f] bg-[#f5f5f7] px-3 py-1.5 rounded-lg border border-black/[0.04]">
+                      {course}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

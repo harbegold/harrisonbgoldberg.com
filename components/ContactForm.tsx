@@ -78,8 +78,9 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit} className="bg-white border border-black/[0.08] p-8 sm:p-10 rounded-3xl space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="space-y-2">
-          <label className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Full Name</label>
+          <label htmlFor="contact-name" className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Full Name</label>
           <input
+            id="contact-name"
             required
             type="text"
             name="name"
@@ -90,8 +91,9 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className="space-y-2">
-          <label className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Email Address</label>
+          <label htmlFor="contact-email" className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Email Address</label>
           <input
+            id="contact-email"
             required
             type="email"
             name="email"
@@ -104,8 +106,9 @@ const ContactForm: React.FC = () => {
       </div>
 
       <div className="space-y-2">
-        <label className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Inquiry Type</label>
+        <label htmlFor="contact-inquiry-type" className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Inquiry Type</label>
         <select
+          id="contact-inquiry-type"
           name="type"
           value={formData.type}
           onChange={handleChange}
@@ -114,14 +117,15 @@ const ContactForm: React.FC = () => {
           <option value="internship">Internship Opportunity</option>
           <option value="contract">Engineering Contract</option>
           <option value="cad">CAD / Prototyping Project</option>
-          <option value="ios">iOS / App Collaboration</option>
+          <option value="product">Product / Software Collaboration</option>
           <option value="other">General Inquiry</option>
         </select>
       </div>
 
       <div className="space-y-2">
-        <label className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Message</label>
+        <label htmlFor="contact-message" className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Message</label>
         <textarea
+          id="contact-message"
           required
           name="message"
           value={formData.message}

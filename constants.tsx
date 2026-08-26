@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   title: "Mechanical Engineering · Robotics · Product Design",
   subtitle: "Arizona State University · Expected May 2029",
   bio: "Mechanical Engineering student building robotic systems and production-ready products through CAD, embedded controls, simulation, and additive manufacturing.",
-  email: "Harry@harbegold.com",
+  email: "harry@harbegold.com",
   linkedin: "https://linkedin.com/in/harrisonbgoldberg",
   location: "Tempe, Arizona",
   cover: "/harrison-cover.png",
@@ -14,6 +14,25 @@ export const PERSONAL_INFO = {
     degree: "B.S. in Mechanical Engineering",
     year: "Expected May 2029"
   }
+};
+
+export const EDUCATION_DETAILS = {
+  gpa: "3.37 / 4.00",
+  relevantCoursework: [
+    "Introduction to Programming in MATLAB",
+    "Introduction to Engineering",
+    "Calculus I–II",
+    "Linear Algebra",
+    "University Physics I: Mechanics"
+  ],
+  currentCoursework: [
+    "Mechanics of Particles & Rigid Bodies I",
+    "Computer-Aided Engineering I",
+    "Calculus for Engineers III",
+    "Modern Differential Equations",
+    "University Physics II: Electricity & Magnetism",
+    "University Physics Lab II"
+  ]
 };
 
 export const PROJECTS: Project[] = [
@@ -25,7 +44,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Fino™ is a financial-learning iOS application launched through Harbegold LLC, a product-development company spanning consumer software and hardware.",
     tags: ["Product Development", "iOS", "Consumer Software"],
     link: "https://apps.apple.com/us/app/fino-finance-daily/id6760954401",
-    date: "Present",
+    date: "2026 — Present",
     status: "Launched"
   },
   {
@@ -43,7 +62,7 @@ export const PROJECTS: Project[] = [
     title: "Autonomous Quadruped Robot",
     subtitle: "Mechanical & firmware",
     description: "An eight-servo quadruped designed for stable standing, repeatable gait behavior, and wireless teleoperation.",
-    longDescription: "Designed and built an eight-servo quadruped using an ESP32-S3 and PCA9685 controller, with two actuated degrees of freedom per leg. Calibrated hip and knee motion for stable standing and repeatable gait behavior, then implemented wireless Xbox-controller teleoperation with Bluepad32 and an OLED status display on the shared I²C bus.",
+    longDescription: "Designed and built an eight-servo quadruped using an ESP32-S3 and PCA9685 controller, with two actuated degrees of freedom per leg. Calibrated hip and knee motion for stable standing and repeatable gait behavior, then implemented wireless Xbox-controller teleoperation with Bluepad32 and an OLED status display on the shared I²C bus. Mapped servo channels across all four legs and calibrated per-leg hip and knee angles to support repeatable standing and locomotion.",
     tags: ["ESP32-S3", "PCA9685", "Bluepad32", "I²C", "Servo Control", "Robotics"],
     date: "2026 — Present",
     status: "Ongoing"
@@ -51,11 +70,11 @@ export const PROJECTS: Project[] = [
   {
     id: "robotic-hand",
     title: "EMG-Actuated Prosthetic Hand",
-    subtitle: "Mechanical & embedded design",
+    subtitle: "Mechanical & embedded build",
     description: "A functional prosthetic hand that mirrors glove motion with Arduino control, flex sensors, and servos, later iterated for EMG actuation.",
-    longDescription: "Built a functional prosthetic hand that mirrored glove motion using an Arduino, flex sensors, and servo motors. Iterated on an EMG-controlled version that used muscle-signal input for actuation.",
+    longDescription: "Built a functional prosthetic hand that mirrored glove motion using an Arduino, flex sensors, and servo motors. Iterated on an EMG-controlled version that used muscle-signal input for actuation. Integrated a mechanical hand assembly, sensor inputs, microcontroller control, and servo actuation to translate human-motion signals into hand movement.",
     tags: ["Arduino", "Flex Sensors", "Servo Control", "EMG", "Embedded Design"],
-    date: "2024",
+    date: "2023 — 2024",
     status: "Completed"
   },
   {
@@ -63,7 +82,7 @@ export const PROJECTS: Project[] = [
     title: "UT Austin Drone Components",
     subtitle: "Summer Discovery · Engineering design",
     description: "Modeled and fabricated custom drone components while studying manufacturing processes, engineering design, and FPV drone assembly.",
-    longDescription: "At UT Austin Inventionworks, modeled custom drone components in Fusion 360 and fabricated parts with laser cutting and 3D printing while studying manufacturing processes, engineering design, and FPV drone assembly.",
+    longDescription: "At UT Austin Inventionworks, modeled custom drone components in Fusion 360 and fabricated parts with laser cutting and 3D printing. Completed coursework in manufacturing processes, engineering design, additive manufacturing, laser cutting, and FPV drone electronic and physical assembly.",
     tags: ["Fusion 360", "Laser Cutting", "3D Printing", "FPV Drones", "Manufacturing"],
     date: "Summer 2023",
     status: "Completed"
@@ -74,11 +93,11 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Harbegold LLC",
     role: "Founder",
-    period: "Present",
-    location: "Arizona",
+    period: "2026 — Present",
+    location: "Product development",
     description: [
       "Founded a product-development LLC spanning consumer software and hardware.",
-      "Launched the Fino™ financial-learning iOS application."
+      "Launched the Fino™ financial-learning iOS application on the App Store."
     ]
   },
   {
@@ -89,7 +108,8 @@ export const EXPERIENCES: Experience[] = [
     description: [
       "Design, prototype, manufacture, test, and sell functional PETG aquarium components for production-ready FDM printing.",
       "Create parametric CAD designs for plant supports, feeding rings, propagation holders, and coral frag mounts.",
-      "Adapt dimensions to customer requirements and iterate prototypes before production."
+      "Adapt dimensions to customer requirements and iterate prototypes before production.",
+      "Manage the product lifecycle from material selection through fabrication, testing, e-commerce fulfillment, and customer support."
     ]
   },
   {
@@ -99,7 +119,7 @@ export const EXPERIENCES: Experience[] = [
     location: "New York, NY",
     description: [
       "Founded and led the club, teaching Tinkercad, Fusion 360, 3D printing, and additive-manufacturing workflows.",
-      "Directed a member challenge to redesign a prosthetic hand."
+      "Directed a member design challenge to redesign and improve a prosthetic hand, turning interest in assistive technology into a hands-on team build."
     ]
   },
   {
@@ -109,7 +129,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Austin, TX",
     description: [
       "Modeled custom drone components in Fusion 360 and fabricated parts with laser cutting and 3D printing.",
-      "Studied manufacturing processes, engineering design, and FPV drone assembly."
+      "Completed coursework in manufacturing processes, engineering design, additive manufacturing, laser cutting, and FPV drone electronic and physical assembly."
     ]
   }
 ];
@@ -121,18 +141,22 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "Robotics & Embedded",
-    skills: ["ESP32 / ESP32-S3", "Arduino", "I²C", "PWM", "PCA9685", "Servo Control"]
+    skills: ["ESP32 / ESP32-S3", "Arduino", "I²C", "Servo Control"]
   },
   {
     name: "Analysis & Programming",
-    skills: ["MATLAB", "Python", "NumPy", "Matplotlib", "C/C++"]
+    skills: ["MATLAB", "Python", "Kinematics Simulation"]
   },
   {
     name: "Fabrication",
     skills: ["FDM Additive Manufacturing", "Laser Cutting", "Soldering", "Electromechanical Prototyping"]
   },
   {
-    name: "Other",
-    skills: ["Product Development", "English (Native)", "Hebrew (Conversational)"]
+    name: "AI-Assisted Workflows",
+    skills: ["Claude Code", "ChatGPT Codex"]
+  },
+  {
+    name: "Languages",
+    skills: ["English (Native)", "Hebrew (Conversational)"]
   }
 ];
