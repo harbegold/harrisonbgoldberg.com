@@ -145,7 +145,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "Analysis & Programming",
-    skills: ["MATLAB", "Python", "Kinematics Simulation"]
+    skills: ["MATLAB", "Python"]
   },
   {
     name: "Fabrication",
