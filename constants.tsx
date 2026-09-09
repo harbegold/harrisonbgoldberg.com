@@ -136,9 +136,9 @@ export const PROJECTS: Project[] = [
   {
     id: "robotic-hand",
     title: "EMG-Actuated Prosthetic Hand",
-    subtitle: "Mechanical & embedded build",
-    description: "A functional prosthetic hand that mirrors glove motion with Arduino control, flex sensors, and servos, later iterated for EMG actuation.",
-    longDescription: "Built a functional prosthetic hand that mirrored glove motion using an Arduino, flex sensors, and servos. Iterated on an EMG-controlled version using muscle-signal input for actuation.",
+    subtitle: "Adapted model · fabrication & controls",
+    description: "Modified and 3D-printed another designer’s hand model, then iterated on the build with Arduino, flex-sensor glove control, and EMG actuation.",
+    longDescription: "Started from another designer’s existing hand model, which I modified and 3D-printed. My work focused on adapting the model, fabrication, assembly, and subsequent iterations, including Arduino control with flex sensors and servos to mirror glove motion, followed by an EMG-controlled version. The original mechanical model was not designed by me from scratch.",
     tags: ["Arduino", "Flex Sensors", "Servo Control", "EMG"],
     date: "2023 — 2024",
     status: "Completed"
