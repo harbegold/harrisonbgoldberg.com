@@ -58,9 +58,9 @@ export const PROJECTS: Project[] = [
     title: "Bitzy / KineArm",
     subtitle: "A modular robot, from CAD to working hardware",
     description: "A built five-axis robotic arm with interchangeable tools, custom ESP32 control, inverse kinematics, and teach-and-replay motion. Now refining repeatability and developing new tool modules.",
-    longDescription: "KineArm began as a six-axis manipulator study with closed-form forward and inverse kinematics in MATLAB and Python. It evolved into Bitzy: a five-axis, 3D-printed modular arm with custom electronics and a browser-based controller. The project spans parametric Fusion 360 design, fabrication, servo calibration, Cartesian control, and recorded motion sequences. The footage below shows the physical prototype; the earlier CAD animation and sketches document the design's evolution.",
+    longDescription: "KineArm began in June 2026 as a six-axis manipulator study with closed-form forward and inverse kinematics in MATLAB and Python. It evolved into Bitzy: a five-axis, 3D-printed modular arm with custom electronics and a browser-based controller. The project spans parametric Fusion 360 design, fabrication, servo calibration, Cartesian control, and recorded motion sequences. The footage below shows the physical prototype; the earlier CAD animation and sketches document the design's evolution.",
     tags: ["Fusion 360", "3D Printing", "ESP32", "Python", "MATLAB", "Inverse Kinematics"],
-    date: "2026 — Present",
+    date: "June 2026 — Present",
     status: "Prototype built",
     cover: { src: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 assembled robotic arm on the workbench" },
     update: {
