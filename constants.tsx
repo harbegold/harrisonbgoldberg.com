@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
     id: "kinearm",
     title: "Bitzy / KineArm",
     subtitle: "A modular robot, from CAD to working hardware",
-    description: "A built five-axis robotic arm with interchangeable tools, custom ESP32 control, inverse kinematics, and teach-and-replay motion. Now refining repeatability and developing new tool modules.",
+    description: "A built five-axis robotic arm with two interchangeable toolheads—a gripper and screwdriver—custom ESP32 control, inverse kinematics, and teach-and-replay motion. Now refining repeatability and qualifying the modular tooling.",
     longDescription: "KineArm began in June 2026 as a six-axis manipulator study with closed-form forward and inverse kinematics in MATLAB and Python. It evolved into Bitzy: a five-axis, 3D-printed modular arm with custom electronics and a browser-based controller. The project spans parametric Fusion 360 design, fabrication, servo calibration, Cartesian control, and recorded motion sequences. The footage below shows the physical prototype; the earlier CAD animation and sketches document the design's evolution.",
     tags: ["Fusion 360", "3D Printing", "ESP32", "Python", "MATLAB", "Inverse Kinematics"],
     date: "June 2026 — Present",
@@ -65,11 +65,11 @@ export const PROJECTS: Project[] = [
     cover: { src: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 assembled robotic arm on the workbench" },
     update: {
       date: "September 9, 2026",
-      summary: "The arm is built and moving. Current work focuses on smoother recorded motion, more reliable control, and interchangeable gripper and screwdriver tools.",
+      summary: "The arm is built and moving. Current work focuses on smoother recorded motion, more reliable control, and testing the two completed modular toolheads: a gripper and screwdriver.",
       milestones: [
         "Teach/replay supports named presets, automatic travel planning, smooth joint interpolation, and entry from the current commanded pose. Replay now follows the main movement-speed control.",
         "A measured shoulder backstop informed an updated joint guard. Intermittent servo/serial behavior, full self-collision checking, and measured positioning accuracy still need validation.",
-        "Gripper Rev B and screwdriver R2 have completed parametric CAD and print packages. The screwdriver has 136 parameters and 67 components; digital geometry and slicing checks are complete, with physical tool testing still ahead."
+        "Two interchangeable toolheads have been made around the shared mechanical interface: the gripper and screwdriver. Gripper Rev B and screwdriver R2 also have completed parametric CAD and print packages. The screwdriver has 136 parameters and 67 components; digital geometry and slicing checks are complete, with physical tool testing still ahead."
       ],
       next: "Measure repeatability, validate tool fits and loads on the bench, and qualify reliable motion before progressing to an automatic tool-changing dock and vision-guided tasks."
     },
@@ -82,6 +82,26 @@ export const PROJECTS: Project[] = [
       { type: "image", src: "/media/kinearm/early-side-elevation.svg", alt: "Early KineArm side-elevation engineering sketch with joint axes and link dimensions", caption: "Early geometry study · dimensioned zero-pose side elevation. The 729 mm reference belongs to the earlier design." },
       { type: "image", src: "/media/kinearm/early-wrist-detail.svg", alt: "Early KineArm spherical-wrist engineering sketch", caption: "Early six-axis wrist study · joint-axis relationships and wrist geometry, preserved as design history." }
     ]
+  },
+  {
+    id: "aurex-h20",
+    title: "AUREX H20 — Robotic Hand",
+    subtitle: "Human-inspired mechanics · fully specified CAD assembly",
+    description: "A completed parametric CAD assembly for a human-inspired tendon-driven hand: 20 revolute axes, modular rigid links, removable pads, and serviceable covers. Fully specified at the mechanical CAD stage; fabrication is still ahead.",
+    longDescription: "Designed a human-inspired robotic hand around 20 revolute axes, with four axes per digit, rigid links, removable dorsal shields, replaceable TPU grip pads, and tendon-entry architecture. The AUREX H20 mechanical assembly is complete in parametric Fusion 360 CAD, with 91 user parameters, 68 components, joint limits, and print-oriented parts. This is a separate project from the earlier glove-controlled and EMG hand. Physical fabrication, actuation, and performance testing have not yet been completed.",
+    tags: ["Fusion 360", "Tendon Mechanisms", "Parametric CAD", "3D Printing", "Mechatronics"],
+    date: "September 2026 — Present",
+    status: "CAD complete",
+    update: {
+      date: "September 9, 2026",
+      summary: "The human-inspired mechanical hand assembly is completed and specified in CAD. The next stage is translating that design into a working physical mechanism.",
+      milestones: [
+        "Defined 20 revolute axes, modular finger geometry, joint limits, removable covers, grip pads, and tendon-entry channels in a 68-component parametric assembly.",
+        "Completed sketch-constraint, representative-pose, and print-mesh checks. The package includes native CAD, STEP, print-oriented meshes, dimensions, and parameter documentation.",
+        "Tendon routing and preload, sensing, actuation, and physical validation remain open. A separate lower-cost hobby-servo revision is in development; it does not change the completed H20 CAD baseline."
+      ],
+      next: "Fabricate a calibration coupon and one finger, establish the tendon transmission, and test friction, backlash, sensing, and actuation before building the complete hand."
+    }
   },
   {
     id: "brain-phantom-inserter",
