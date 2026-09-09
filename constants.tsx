@@ -55,13 +55,53 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "kinearm",
-    title: "KineArm — 6-DOF Robotic Arm",
-    subtitle: "Mechanical, firmware & simulation",
-    description: "A six-degree-of-freedom manipulator with a spherical wrist, 500 g payload target, 305 mm radial workspace, and closed-form forward and inverse kinematics.",
-    longDescription: "Designed a 6-DOF manipulator with 200 mm upper-arm and forearm links; derived and hand-validated closed-form forward and inverse kinematics. Developed MATLAB and Python kinematics simulations for real-time FK/IK, Cartesian targeting, quintic trajectory planning, torque analysis, workspace visualization, and tool-path export. Specified an ESP32, PCA9685 PWM controller, and six servo actuators from calculated static and dynamic per-joint torque requirements.",
-    tags: ["Fusion 360", "MATLAB", "Python", "ESP32", "PCA9685", "Servo Control"],
+    title: "Bitzy / KineArm",
+    subtitle: "A modular robot, from CAD to working hardware",
+    description: "A built five-axis robotic arm with interchangeable tools, custom ESP32 control, inverse kinematics, and teach-and-replay motion. Now refining repeatability and developing new tool modules.",
+    longDescription: "KineArm began as a six-axis manipulator study with closed-form forward and inverse kinematics in MATLAB and Python. It evolved into Bitzy: a five-axis, 3D-printed modular arm with custom electronics and a browser-based controller. The project spans parametric Fusion 360 design, fabrication, servo calibration, Cartesian control, and recorded motion sequences. The footage below shows the physical prototype; the earlier CAD animation and sketches document the design's evolution.",
+    tags: ["Fusion 360", "3D Printing", "ESP32", "Python", "MATLAB", "Inverse Kinematics"],
     date: "2026 — Present",
-    status: "Ongoing"
+    status: "Prototype built",
+    cover: { src: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 assembled robotic arm on the workbench" },
+    update: {
+      date: "September 9, 2026",
+      summary: "The arm is built and moving. Current work focuses on smoother recorded motion, more reliable control, and interchangeable gripper and screwdriver tools.",
+      milestones: [
+        "Teach/replay supports named presets, automatic travel planning, smooth joint interpolation, and entry from the current commanded pose. Replay now follows the main movement-speed control.",
+        "A measured shoulder backstop informed an updated joint guard. Intermittent servo/serial behavior, full self-collision checking, and measured positioning accuracy still need validation.",
+        "Gripper Rev B and screwdriver R2 have completed parametric CAD and print packages. The screwdriver has 136 parameters and 67 components; digital geometry and slicing checks are complete, with physical tool testing still ahead."
+      ],
+      next: "Measure repeatability, validate tool fits and loads on the bench, and qualify reliable motion before progressing to an automatic tool-changing dock and vision-guided tasks."
+    },
+    media: [
+      { type: "video", src: "/media/kinearm/bitzy-demo.mp4", poster: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 physical prototype demo", caption: "Physical prototype · September 2026. Modular assembly and coordinated movement; assembly footage includes sped-up segments. Silent video." },
+      { type: "image", src: "/media/kinearm/screwdriver-r2.jpg", alt: "Fusion CAD view of the enclosed Bitzy screwdriver R2 module", caption: "Screwdriver R2 · actual Fusion CAD. Enclosed N20-driven tool with guided axial compliance; physical qualification pending." },
+      { type: "image", src: "/media/kinearm/screwdriver-mechanism.jpg", alt: "Internal gears and spindle of the Bitzy screwdriver module", caption: "Inside the screwdriver · actual CAD mechanism, showing the gear reduction and spindle assembly." },
+      { type: "image", src: "/media/kinearm/gripper-mechanism.jpg", alt: "Bitzy gripper Rev B CAD with exposed racks, gears, and parallel jaws", caption: "Gripper Rev B · actual Fusion CAD with the enclosure hidden to show the parallel-jaw mechanism." },
+      { type: "video", src: "/media/kinearm/early-cad-animation.mp4", poster: "/media/kinearm/early-cad-poster.jpg", alt: "Historical KineArm CAD assembly animation", caption: "Earlier six-axis design study · silent CAD animation. On-screen dimensions and part counts describe this historical revision, not the current prototype." },
+      { type: "image", src: "/media/kinearm/early-side-elevation.svg", alt: "Early KineArm side-elevation engineering sketch with joint axes and link dimensions", caption: "Early geometry study · dimensioned zero-pose side elevation. The 729 mm reference belongs to the earlier design." },
+      { type: "image", src: "/media/kinearm/early-wrist-detail.svg", alt: "Early KineArm spherical-wrist engineering sketch", caption: "Early six-axis wrist study · joint-axis relationships and wrist geometry, preserved as design history." }
+    ]
+  },
+  {
+    id: "brain-phantom-inserter",
+    title: "Brain-Phantom Insertion Robot",
+    subtitle: "Camera-guided targeting & precision mechatronics",
+    description: "Developing a benchtop robot for controlled probe insertion into a synthetic brain phantom, with camera-guided targeting and a removable tool cartridge. Currently rebuilding the design around a lower-cost motion platform.",
+    longDescription: "An independent engineering demonstrator exploring XYZ positioning, camera-to-tool calibration, controlled insertion, and repeatable cartridge pickup on a hydrogel brain phantom. The design combines a motion stage, a seated probe cartridge, a latch, two cameras, and a dock. This is a synthetic-phantom project at the CAD and engineering-validation stage; insertion accuracy and physical performance have not yet been measured.",
+    tags: ["Fusion 360", "Parametric CAD", "Mechatronics", "Computer Vision", "Motion Control"],
+    date: "September 2026 — Present",
+    status: "CAD in progress",
+    update: {
+      date: "September 9, 2026",
+      summary: "The initial detailed CAD build reached 383 native components. That version is preserved while a new design is being developed as close to a $400 parts budget as feasible.",
+      milestones: [
+        "V1 established a detailed parametric assembly and component-level geometry checks; its full assembly analysis and manufacturing release were not completed.",
+        "V2 adopts a Genmitsu 3018-PRO motion platform, two USB cameras, a 26 mm-high phantom, and a dock that moves with the Y table. Custom cartridge and mounting geometry are being authored in native Fusion features.",
+        "The complete delivered-cost BOM, power-off Z retention, full motion/interference checks, and structural analysis are still in progress. The $400 figure is a design goal, not a verified build cost."
+      ],
+      next: "Complete and validate the revised CAD and BOM, then build and calibrate the hardware and measure targeting, insertion, and cartridge repeatability on the synthetic phantom."
+    }
   },
   {
     id: "autonomous-quadruped",

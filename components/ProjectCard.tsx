@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Project } from '../types';
 
 interface ProjectCardProps {
@@ -8,12 +8,25 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [showModal, setShowModal] = useState(false);
 
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    if (!showModal) return;
+    dialogRef.current?.showModal();
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [showModal]);
+
   return (
     <>
       <button
         onClick={() => setShowModal(true)}
         className="feature-card group text-left bg-white border border-black/[0.08] rounded-2xl p-8 flex flex-col h-full hover:border-black/20 transition-all"
       >
+        {project.cover && (
+          <img src={project.cover.src} alt={project.cover.alt} loading="lazy" width={720} height={1280}
+            className="w-full h-56 object-cover object-[center_36%] rounded-xl mb-6 bg-[#f5f5f7]" />
+        )}
         <div className="flex items-start justify-between mb-6">
           <span className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73]">
             {project.date}
@@ -61,13 +74,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 z-[80] flex items-center justify-center p-4 sm:p-6">
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setShowModal(false)} />
-          <div
-            role="dialog"
+          <dialog
+            ref={dialogRef}
+            onCancel={() => setShowModal(false)}
+            onClick={event => { if (event.target === event.currentTarget) setShowModal(false); }}
             aria-modal="true"
             aria-labelledby={`project-${project.id}-title`}
-            className="relative bg-white w-full max-w-2xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col shadow-2xl border border-black/[0.08]"
+            className="fixed m-auto bg-white w-[calc(100%-2rem)] max-w-4xl max-h-[90vh] rounded-3xl p-0 overflow-hidden flex flex-col shadow-2xl border border-black/[0.08] backdrop:bg-black/40 backdrop:backdrop-blur-sm"
           >
             <button
               onClick={() => setShowModal(false)}
@@ -79,12 +92,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </svg>
             </button>
 
-            <div className="flex-1 overflow-y-auto p-10 sm:p-14 space-y-8">
+            <div className="flex-1 overflow-y-auto p-6 pt-16 sm:p-14 space-y-8">
               <div className="space-y-3">
                 <span className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73]">
                   {project.date}
                 </span>
-                <h2 id={`project-${project.id}-title`} className="text-4xl font-semibold tracking-tight text-[#1d1d1f]">
+                <h2 id={`project-${project.id}-title`} className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#1d1d1f]">
                   {project.title}
                 </h2>
                 <p className="text-lg text-[#6e6e73]">{project.subtitle}</p>
@@ -98,6 +111,44 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                   {project.longDescription}
                 </p>
               </div>
+
+              {project.update && (
+                <section className="rounded-2xl bg-[#f5f5f7] p-5 sm:p-7 space-y-4" aria-label="Latest project update">
+                  <h3 className="mono text-xs uppercase tracking-wider text-[#007aff]">Latest update · {project.update.date}</h3>
+                  <p className="text-lg font-medium text-[#1d1d1f]">{project.update.summary}</p>
+                  <ul className="list-disc pl-5 space-y-3 text-sm leading-relaxed text-[#1d1d1f]/80">
+                    {project.update.milestones.map(milestone => <li key={milestone}>{milestone}</li>)}
+                  </ul>
+                  <p className="text-sm leading-relaxed text-[#1d1d1f]/80"><strong>Next:</strong> {project.update.next}</p>
+                </section>
+              )}
+
+              {project.media && (
+                <section aria-label="Project gallery" className="space-y-6">
+                  <h3 className="text-2xl font-semibold tracking-tight">From the workbench</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {project.media.map((media, index) => (
+                      <figure key={media.src} className={media.type === 'video' || index > 4 ? 'sm:col-span-2' : ''}>
+                        <div className="rounded-xl overflow-hidden border border-black/[0.08] bg-[#f5f5f7]">
+                          {media.type === 'video' ? (
+                            <video controls muted playsInline preload="none" poster={media.poster} aria-label={media.alt}
+                              className="w-full max-h-[65vh] bg-[#16191d]">
+                              <source src={media.src} type="video/mp4" />
+                              Your browser cannot play this video. <a href={media.src}>Download the silent video</a>.
+                            </video>
+                          ) : (
+                            <a href={media.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full-size image: ${media.alt}`}>
+                              <img src={media.src} alt={media.alt} loading="lazy" decoding="async"
+                                className="w-full max-h-[65vh] object-contain" />
+                            </a>
+                          )}
+                        </div>
+                        <figcaption className="text-xs leading-relaxed text-[#6e6e73] mt-3">{media.caption}</figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                </section>
+              )}
 
               <div className="space-y-3">
                 <h4 className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73] border-b border-black/[0.08] pb-2">
@@ -129,8 +180,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 </a>
               )}
             </div>
-          </div>
-        </div>
+          </dialog>
       )}
     </>
   );

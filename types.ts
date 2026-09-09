@@ -8,6 +8,9 @@ export interface Project {
   link?: string;
   date: string;
   status?: string;
+  cover?: { src: string; alt: string };
+  update?: { date: string; summary: string; milestones: string[]; next: string };
+  media?: { type: 'image' | 'video'; src: string; poster?: string; alt: string; caption: string }[];
 }
 
 export interface Experience {
