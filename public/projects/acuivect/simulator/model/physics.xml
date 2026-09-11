@@ -1,0 +1,36 @@
+<mujoco model="Acuivect reduced axis dynamics">
+  <compiler angle="radian" />
+
+  <option integrator="implicitfast" />
+
+  <default>
+    <joint damping="12" frictionloss="0.5" />
+    <geom contype="0" conaffinity="0" />
+  </default>
+
+  <worldbody>
+    <body name="X">
+      <inertial pos="0 0 0" mass="2.0214989636267844" diaginertia="0.01 0.01 0.01" />
+      <joint name="x" pos="0 0 0" axis="1 0 0" type="slide" range="-0.125 0.125" />
+      <body name="Z">
+        <inertial pos="0 0 0" mass="0.40655644557798665" diaginertia="0.001 0.001 0.001" />
+        <joint name="z" pos="0 0 0" axis="0 0 -1" type="slide" range="0 0.045" />
+        <body name="latch">
+          <inertial pos="0 0 0" mass="0.003" diaginertia="2e-06 2e-06 2e-06" />
+          <joint name="latch" pos="0 0 0" axis="0 0 -1" range="0 1.0471975511965976" damping="0.002" frictionloss="0" />
+        </body>
+      </body>
+    </body>
+    <body name="Y">
+      <inertial pos="0 0 0" mass="2.582154067309296" diaginertia="0.01 0.01 0.01" />
+      <joint name="y" pos="0 0 0" axis="0 1 0" type="slide" range="-0.07 0.07" />
+    </body>
+  </worldbody>
+
+  <actuator>
+    <general name="drive_x" joint="x" forcerange="-30 30" biastype="affine" gainprm="18000" biasprm="0 -18000 -180" />
+    <general name="drive_y" joint="y" forcerange="-30 30" biastype="affine" gainprm="18000" biasprm="0 -18000 -180" />
+    <general name="drive_z" joint="z" forcerange="-30 30" biastype="affine" gainprm="18000" biasprm="0 -18000 -150" />
+    <general name="drive_latch" joint="latch" forcerange="-0.02 0.02" biastype="affine" gainprm="0.08" biasprm="0 -0.08 -0.002" />
+  </actuator>
+</mujoco>

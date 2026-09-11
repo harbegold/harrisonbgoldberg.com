@@ -1,8 +1,8 @@
 {
   "project": "Acuivect",
-  "edition": "Public portfolio 2026-09-10",
-  "generated": "2026-09-10T16:46:34.275147-07:00",
-  "scope": "Selected documentation and web presentation only. No editable design or manufacturing assets.",
+  "edition": "Portfolio and interactive virtual lab 2026-09-10",
+  "generated": "2026-09-11T02:33:21.683Z",
+  "scope": "Selected documents and explicitly authorized interactive display meshes. Editable Fusion, manufacturing sources and private logs excluded.",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,6 +18,21 @@
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3233,
+      "sha256": "eb656167f0d5d275eb0f97acd3a6360fb0dd226dc7c9f19a93767bb78cad3fed"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 1628,
+      "sha256": "57bf37da7366f7d5561e3eb31886b8f20ca827a237257efa0d665cb64debde01"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 806,
+      "sha256": "a0a4c6a7a313a351b60c48f314525616b1541927af9fc7b991010d2e6fb96deb"
     },
     {
       "path": "analysis/Acuivect-Head-Structural-Review.pdf",
@@ -96,8 +111,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 10089,
-      "sha256": "e169621c83d6203e00252746d529287f7e1d9a52e0dd15b875d8148daaf4cfb0"
+      "bytes": 11455,
+      "sha256": "52bdf17e05aa088f4417f9f8f3edf4890ab9df1cbc97248def64faf1d0369e6f"
     },
     {
       "path": "media/acuivect-assembly.png",
@@ -165,19 +180,119 @@
       "sha256": "e1145531a97abd7e551e1db413a02b9bc352bcf7731595a832c5c3d8431da42b"
     },
     {
-      "path": "README.md",
-      "bytes": 3233,
-      "sha256": "eb656167f0d5d275eb0f97acd3a6360fb0dd226dc7c9f19a93767bb78cad3fed"
+      "path": "simulator/THIRD-PARTY-NOTICES.txt",
+      "bytes": 14337,
+      "sha256": "4e4b0557950251d427bb8c972e1bb2d1afcaf2a8245158530a5890a006f3d3f4"
     },
     {
-      "path": "RIGHTS.html",
-      "bytes": 1458,
-      "sha256": "23bc3daef39316f8e5c9eece4daf00752588f10cd1284370286e10b9bb3505b8"
+      "path": "simulator/assets/controller.worker-CcDb81j9.js",
+      "bytes": 119798,
+      "sha256": "c29e484043ca525911afd3f6121eec99f23d133128fd4d37778560ca38dffd88"
     },
     {
-      "path": "RIGHTS.md",
-      "bytes": 636,
-      "sha256": "0c8e088689d2fc6c9bb940d96e01c87614139cce46614de8043d84bdfb06d32a"
+      "path": "simulator/assets/index-B_6-yeNZ.css",
+      "bytes": 12670,
+      "sha256": "2f1b313645e734877d17b1cc67bb575cc3825d809361564afbeea3421fade5d8"
+    },
+    {
+      "path": "simulator/assets/index-C85E2IVp.js",
+      "bytes": 651134,
+      "sha256": "be6f840ac83523e339c0c2522e883f633fd4e332a70eff3718be0c9efcba1c42"
+    },
+    {
+      "path": "simulator/assets/mujoco-D9UjOFNX.wasm",
+      "bytes": 10175239,
+      "sha256": "41dce8820addd75f9d4f6cbb11ff136ecdbaaa29541db4c323ce2d9e4c8a7661"
+    },
+    {
+      "path": "simulator/index.html",
+      "bytes": 9690,
+      "sha256": "858d46378d486e8781cf6e7ee6c88076bd56de443f9530c0ce7e6a76e50184a2"
+    },
+    {
+      "path": "simulator/model/assembly.json",
+      "bytes": 944094,
+      "sha256": "e32a985ab6e833158b3285698420b98b66ec3b1677332265d33f9ca3e56f86ed"
+    },
+    {
+      "path": "simulator/model/geometry-0-ab82a8bc0401.gzpart",
+      "bytes": 8388608,
+      "sha256": "ab82a8bc040145251fc964655b1c44645d3146bd1280be03f80cb864bc93b9e8"
+    },
+    {
+      "path": "simulator/model/geometry-1-910d3efb4df9.gzpart",
+      "bytes": 8388608,
+      "sha256": "910d3efb4df98901632676eb680f3912c866554aa140bf125982792d9bb8f6bf"
+    },
+    {
+      "path": "simulator/model/geometry-10-9dff660dd3f7.gzpart",
+      "bytes": 8388608,
+      "sha256": "9dff660dd3f7c12218ae8ee0f3e61b3aa3857c08f23873183f75d60d8c6edab3"
+    },
+    {
+      "path": "simulator/model/geometry-11-0ec1dd882140.gzpart",
+      "bytes": 3997273,
+      "sha256": "0ec1dd882140674701741cd5e7808f2d7c0d23db580388455340c5956d0e0d7c"
+    },
+    {
+      "path": "simulator/model/geometry-2-264b3131ec78.gzpart",
+      "bytes": 8388608,
+      "sha256": "264b3131ec78b78f64d8517f988414486eeeeccd13ac613557b8ce7875ce1e50"
+    },
+    {
+      "path": "simulator/model/geometry-3-2abd7c19c1de.gzpart",
+      "bytes": 8388608,
+      "sha256": "2abd7c19c1de3b5dbc3957de81867e6f29119ff189b251859a31b6078f4f0c13"
+    },
+    {
+      "path": "simulator/model/geometry-4-ebc1fd511c82.gzpart",
+      "bytes": 8388608,
+      "sha256": "ebc1fd511c82093dda901512430eb8e34b090be34189512cb66c2f2b38c09a44"
+    },
+    {
+      "path": "simulator/model/geometry-5-b2becf4c1e0b.gzpart",
+      "bytes": 8388608,
+      "sha256": "b2becf4c1e0b3fb52914d32b2135e2b040fbf90caf3fbff6ac2fac7d4b3365a1"
+    },
+    {
+      "path": "simulator/model/geometry-6-6b9714a91594.gzpart",
+      "bytes": 8388608,
+      "sha256": "6b9714a91594b1314941045359bc5a53626401b473954dd3c8b3b66e602ba5ef"
+    },
+    {
+      "path": "simulator/model/geometry-7-7ee02533aea2.gzpart",
+      "bytes": 8388608,
+      "sha256": "7ee02533aea2dc8ea8e9792417cd78c540e75e8e96b28fe9e55cf09d4a0b6b44"
+    },
+    {
+      "path": "simulator/model/geometry-8-264f548574d9.gzpart",
+      "bytes": 8388608,
+      "sha256": "264f548574d94e742034fac3ee7583f4bad775ce24dba675b7bab2a5aa3cefc7"
+    },
+    {
+      "path": "simulator/model/geometry-9-624b902d2d66.gzpart",
+      "bytes": 8388608,
+      "sha256": "624b902d2d66b67e9d9bdfbc12a8c7689f3a9467c9b4419dab9d6ec0e742f35a"
+    },
+    {
+      "path": "simulator/model/phantom-surface.gzdata",
+      "bytes": 2042837,
+      "sha256": "97863e1d350128ccbc37b9f03b2b3b322a96560b3f40153700bd1455a6d582ed"
+    },
+    {
+      "path": "simulator/model/physics-basis.json",
+      "bytes": 1711,
+      "sha256": "32205e0380788bf937e7f11c0d3821ddce34982d59b66625c1009976a1f0f248"
+    },
+    {
+      "path": "simulator/model/physics.xml",
+      "bytes": 1677,
+      "sha256": "c6e36691921ccb448a1994c4484776abfc47df32ca76a287985eb7990d12b317"
+    },
+    {
+      "path": "website/INTEGRATION.md",
+      "bytes": 2817,
+      "sha256": "6de40f65ab8f78372b5dd83bc8a2f47db8899024a672733ab8d6b593ef9c70bc"
     },
     {
       "path": "website/acuivect.ts",
@@ -188,11 +303,6 @@
       "path": "website/chat-summary.md",
       "bytes": 1188,
       "sha256": "4e33fa868efd6882269e425c72b24b66ca4117119d4561255c3fcf0929f03155"
-    },
-    {
-      "path": "website/INTEGRATION.md",
-      "bytes": 2817,
-      "sha256": "6de40f65ab8f78372b5dd83bc8a2f47db8899024a672733ab8d6b593ef9c70bc"
     },
     {
       "path": "website/project-entry.json",

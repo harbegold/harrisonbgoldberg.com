@@ -4,7 +4,7 @@ export const ACUIVECT_PROJECT = {
   "id": "brain-phantom-inserter",
   "title": "Acuivect",
   "subtitle": "Precision Insertion Demonstrator",
-  "description": "Completed digital design for a benchtop synthetic-phantom insertion demonstrator. Physical construction is deferred due to budget.",
+  "description": "Completed digital design and an interactive 723-part virtual lab for a benchtop synthetic-phantom insertion demonstrator. Physical construction is deferred due to budget.",
   "longDescription": "Acuivect integrates a commercial XYZ platform with a custom removable probe cartridge, latch, dock, camera supports and electronics packaging. The native assembly contains 723 occurrences and 21,616 editable parameters. Digital geometry, sampled motion/contact, cartridge transfer and a head reference study are complete. Physical targeting, accuracy, repeatability and stability have not been measured. The documented parts estimate is $489.10 before tax and shipping. AI-assisted workflows supported the creation of this project.",
   "tags": [
     "Fusion 360",
@@ -21,11 +21,11 @@ export const ACUIVECT_PROJECT = {
   },
   "update": {
     "date": "September 10, 2026",
-    "summary": "Digital design complete; physical build deferred due to budget.",
+    "summary": "Interactive virtual lab live; digital design complete and physical build deferred due to budget.",
     "milestones": [
       "Native V2 assembly: 723 occurrences, 395 unique definitions and 21,616 editable parameters.",
       "30 sampled critical motion/contact poses, cartridge transfer and a representative parameter edit/restore passed recorded digital checks.",
-      "Assembly drawings and a head structural reference are available as public review copies; editable design sources remain private."
+      "A fully controllable browser simulator, assembly drawings and a head structural reference are public; editable Fusion sources remain private."
     ],
     "next": "When the budget is available, acquire and measure parts, assemble and commission the hardware, then measure targeting, insertion and cartridge repeatability on the synthetic phantom."
   },
