@@ -1,6 +1,7 @@
 import { Project, Experience, SkillCategory } from './types';
 import { ACUIVECT_PROJECT } from './data/acuivect';
 import { BITZY_V1_PROJECT } from './data/bitzy-v1';
+import { FORMIVECT_PROJECT } from './data/formivect';
 
 export const PERSONAL_INFO = {
   name: "Harrison B. Goldberg",
@@ -44,6 +45,7 @@ export const EDUCATION_DETAILS = {
 };
 
 export const PROJECTS: Project[] = [
+  FORMIVECT_PROJECT,
   {
     id: "fino",
     title: "Fino",

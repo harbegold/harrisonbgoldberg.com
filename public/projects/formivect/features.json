@@ -1,0 +1,1001 @@
+{
+  "name": "Formivect",
+  "version": "0.2.0",
+  "reviewed": "2026-09-10",
+  "current": [
+    {
+      "id": "C01",
+      "group": "Native CAD",
+      "title": "Fusion add-in and native execution",
+      "detail": "A local add-in executes short native Fusion API jobs through custom events on the application thread. Fusion can remain in the background.",
+      "limit": "Fusion must remain open; one host serializes CAD work. This is not an independent headless CAD engine.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C02",
+      "group": "Native CAD",
+      "title": "CLI and MCP tools",
+      "detail": "A command-line interface and standard MCP connection expose 17 tools with typed arguments and asynchronous job results.",
+      "limit": "A queued or running job is not a completed change.",
+      "status": "Current preview",
+      "source": "fusion_bridge/interface.py; fusion_bridge/mcp.py"
+    },
+    {
+      "id": "C03",
+      "group": "Native CAD",
+      "title": "Explicit document binding",
+      "detail": "List open documents, create a new unsaved design and bind one project to one open document. Closed targets fail explicitly.",
+      "limit": "Bindings and document handles reset with the add-in session; they are not durable revision IDs.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C04",
+      "group": "Native CAD",
+      "title": "Geometry and parameter inspection",
+      "detail": "Read component/body counts, timeline count, user parameter names/expressions/units, body volumes and bounding dimensions.",
+      "limit": "Inspection describes the CAD model, not physical measurements.",
+      "status": "Current preview",
+      "source": "fusion_bridge/native.py"
+    },
+    {
+      "id": "C05",
+      "group": "Native CAD",
+      "title": "Unit-aware parameter changes",
+      "detail": "Change an existing user parameter with a Fusion expression after checking the expression against its unit.",
+      "limit": "Dedicated constraint editing, hole-pattern and broader feature tools are not included.",
+      "status": "Current preview",
+      "source": "fusion_bridge/native.py"
+    },
+    {
+      "id": "C06",
+      "group": "Native CAD",
+      "title": "Box and cylinder creation",
+      "detail": "Create a named component containing a sketched and extruded box or cylinder using millimeter dimensions.",
+      "limit": "Basic primitives are a limited typed modeling surface, not full CAD coverage.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C07",
+      "group": "Native CAD",
+      "title": "Native and exchange exports",
+      "detail": "Export F3D, STEP or STL to unique output locations; existing exports are preserved.",
+      "limit": "F3D retains Fusion-native continuity. Exchange geometry does not promise native feature-history recovery.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C08",
+      "group": "Native CAD",
+      "title": "Real viewport images",
+      "detail": "Capture a 1280 x 960 PNG from the bound project, restore the prior camera/document and return the image through MCP.",
+      "limit": "Images support visual review; exact dimensions and hidden geometry require structured checks.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C09",
+      "group": "Native CAD",
+      "title": "Advanced Python and text commands",
+      "detail": "Opt-in access can invoke additional exposed Fusion APIs through trusted Python or native commands. Used for a recorded 12-component modeling workflow.",
+      "limit": "Full access is unsandboxed and can reach other documents/files; it does not create missing Fusion APIs.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C10",
+      "group": "Workspace and control",
+      "title": "Native workspace and onboarding",
+      "detail": "A dark native HTML palette provides a project sidebar, Studio, Activity, Usage and Access views, plus a four-step first-use tutorial.",
+      "limit": "",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C11",
+      "group": "Workspace and control",
+      "title": "Project and build histories",
+      "detail": "Local SQLite conversation records separate projects and builds, retain visible replies and allow history export.",
+      "limit": "Build labels are conversation partitions; they are not CAD branches or a versioned geometry graph.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C12",
+      "group": "Workspace and control",
+      "title": "Steering inbox and progress",
+      "detail": "Send requests, questions and updates to a project/build inbox; connected agents can read new messages and post visible outcomes.",
+      "limit": "Inbox delivery requires polling. Linking a task is not automatic desktop chat dispatch.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C13",
+      "group": "Workspace and control",
+      "title": "Fair project scheduling",
+      "detail": "Independent project queues interleave fairly. Agents can plan concurrently while native CAD jobs run one at a time.",
+      "limit": "This is not parallel native editing or a multi-agent coordinator.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C14",
+      "group": "Workspace and control",
+      "title": "Interactive-command guard and restoration",
+      "detail": "Jobs wait while a native interactive command is active; targeted work restores the previously active document when possible.",
+      "limit": "Background operation is supported for short jobs; it does not promise an entirely invisible application.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C15",
+      "group": "Workspace and control",
+      "title": "Pause, resume, stop and cancel",
+      "detail": "Project/global controls hold queues, resume scheduling or cancel queued work; individual queued jobs can also be cancelled.",
+      "limit": "A running native operation finishes normally. Stop is not undo; Resume does not relaunch an agent.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C16",
+      "group": "Workspace and control",
+      "title": "Job outcomes and duplicate protection",
+      "detail": "Activity records expose queue/running/success/failure states. Request IDs suppress duplicate submissions within the add-in session.",
+      "limit": "Queued jobs expire after 120 seconds, including while paused. Failed mutations may leave partial changes; crash recovery is not established.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C17",
+      "group": "Agents and models",
+      "title": "Per-project model and effort selection",
+      "detail": "Save a provider, exact model and supported reasoning effort independently for each project. A running job keeps its original selection.",
+      "limit": "Changing a preference affects the next run; existing linked tasks retain their own settings.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C18",
+      "group": "Agents and models",
+      "title": "Live Codex model discovery",
+      "detail": "Refresh the installed client catalog and available reasoning efforts; Windows catalog reads and native selection were verified.",
+      "limit": "Catalog presence does not guarantee account entitlement or capacity for every model.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C19",
+      "group": "Agents and models",
+      "title": "User-started agent runs",
+      "detail": "Start a new bounded CLI run from the palette with a saved model and recent build context. Windows Codex inspection, images and replies were verified.",
+      "limit": "Runs use provider allowances. Three-, five- and fifteen-minute limits bound time, not money; runs are not restart-resumable.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C20",
+      "group": "Agents and models",
+      "title": "Run controls and visible records",
+      "detail": "Retain model/effort, run state, visible replies, session reference and provider-reported usage. Pause/Stop ends managed inference at the next control check.",
+      "limit": "Up to 20 recent build messages seed a new run. Completion means the provider finished, not that engineering acceptance passed.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C21",
+      "group": "Agents and models",
+      "title": "Managed project targeting",
+      "detail": "Managed MCP is pinned to its project, hides document creation/binding/global controls and rejects cross-project job lookup or cancellation.",
+      "limit": "These interface limits do not sandbox full Fusion scripting.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C22",
+      "group": "Agents and models",
+      "title": "External task linking",
+      "detail": "Discover local Codex task records or save manual Claude references and copy project connection instructions.",
+      "limit": "Existing tasks start or continue in their own client. A Claude Desktop URL does not expose Claude Code usage logs.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C23",
+      "group": "Agents and models",
+      "title": "Claude connection and run adapters",
+      "detail": "MCP registration paths cover Claude Desktop and Claude Code. The managed Claude Code launcher accepts an exact model ID.",
+      "limit": "Claude Code was absent on the validation host; live Claude inference remains unverified.",
+      "status": "Implemented / unverified",
+      "source": "docs/MODEL-SELECTION.md"
+    },
+    {
+      "id": "C24",
+      "group": "Agents and models",
+      "title": "Local model experiment",
+      "detail": "A bounded text/tool loop can use an already-running local OpenAI-compatible model server with an exact model ID.",
+      "limit": "No weights are included or downloaded; no real local model was tested, and viewport images are not supplied to this adapter.",
+      "status": "Experimental",
+      "source": "fusion_bridge/local_agent.py"
+    },
+    {
+      "id": "C25",
+      "group": "Access, data and delivery",
+      "title": "Granular operation permissions",
+      "detail": "Inspect/model/export permissions are configurable; advanced access is off by default. Queued work rechecks permission at execution.",
+      "limit": "Revocation was verified; unrestricted scripting still carries the host user privileges.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C26",
+      "group": "Access, data and delivery",
+      "title": "Local storage and connection controls",
+      "detail": "Settings, histories, optional traces and exports stay in local stores. MCP uses stdio; authenticated HTTP binds to loopback and rejects browser origins.",
+      "limit": "Chosen provider runs receive their prompts, recent context and requested tool results under provider settings.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C27",
+      "group": "Access, data and delivery",
+      "title": "Usage visibility",
+      "detail": "Show available Codex account windows and retained linked Codex/Claude Code session tokens for today and lifetime; missing values remain unknown.",
+      "limit": "Account limits are shared. Session totals are not exact incremental Formivect billing, billed credits or a token-to-plan-percentage conversion.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C28",
+      "group": "Access, data and delivery",
+      "title": "Opt-in learning records",
+      "detail": "Record local operation episodes only when enabled; review them as accepted/rejected with provenance and evidence.",
+      "limit": "Recording is off by default and does not update model weights.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C29",
+      "group": "Access, data and delivery",
+      "title": "Reviewed dataset export",
+      "detail": "Export eligible rights-approved human/licensed/local examples as train/validation JSONL and a manifest, split by entire projects.",
+      "limit": "Closed-provider/unknown traces and mixed-provider projects are excluded. This is early corpus preparation, not complete data governance.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C30",
+      "group": "Access, data and delivery",
+      "title": "Portable personal preview",
+      "detail": "Windows/Mac installer files, backup of an existing add-in, provider registration choices and preserved local history support personal testing.",
+      "limit": "Windows installation/native use are verified; Mac native use and full Fusion restart are not. The unsigned application package remains privately distributed.",
+      "status": "Current preview",
+      "source": "README.md"
+    },
+    {
+      "id": "C31",
+      "group": "Access, data and delivery",
+      "title": "Free preview interface",
+      "detail": "The personal preview has no Formivect account, payment screen or Python package dependencies.",
+      "limit": "Fusion, Python and chosen provider access remain prerequisites. No public commercial price or unrestricted software license is announced.",
+      "status": "Current preview",
+      "source": "README.md"
+    }
+  ],
+  "potential": [
+    {
+      "id": "P01",
+      "group": "Engineering workspace",
+      "title": "Standalone engineering application",
+      "detail": "Own workspace, native project representation, feature/assembly behavior, execution runtime and deployed model route for supported workflows.",
+      "limit": "Demonstrate useful work without launching Fusion or relying on an external AI service.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P02",
+      "group": "Engineering workspace",
+      "title": "Shared manual and agent editing",
+      "detail": "Use the same commands for direct manipulation and conversational edits, preserving editable history and design intent.",
+      "limit": "Show a second human edit can rebuild correctly after agent work.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P03",
+      "group": "Engineering workspace",
+      "title": "Selection, drawing, image and voice context",
+      "detail": "Attach requests to actual faces/features and coordinate frames; accept drawings, annotated images or voice context alongside exact references.",
+      "limit": "Resolve selection and units explicitly; do not infer hidden dimensions as known facts.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P04",
+      "group": "Engineering workspace",
+      "title": "Engineering conversation and teaching",
+      "detail": "Explain concepts, critique designs, explore mechanism alternatives and ask for consequential missing inputs while independent work can continue.",
+      "limit": "Evaluate useful clarification and checked explanations on representative tasks.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P05",
+      "group": "Engineering workspace",
+      "title": "Unified workspace views",
+      "detail": "Switch among 3D, assembly/feature trees, parameters, drawings, analysis, manufacturing, BOM, requirements and history without losing task context.",
+      "limit": "Build actual two-way connections to a versioned project model.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P06",
+      "group": "Engineering workspace",
+      "title": "Requirements and acceptance contracts",
+      "detail": "Track user requirements, assumptions, units, tolerances, materials, interfaces, objectives, priorities and acceptance evidence.",
+      "limit": "Keep supplied, measured, supplier, calculated and estimated values distinguishable.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P07",
+      "group": "Engineering workspace",
+      "title": "Project branches and alternatives",
+      "detail": "Compare revisions and alternative designs on mass, cost, constraints and manufacturing assumptions; merge reviewable change sets.",
+      "limit": "Implement revision guards and conflict handling, not just named chat histories.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P08",
+      "group": "CAD and engineering engines",
+      "title": "Editable parametric features",
+      "detail": "Add sketch dimensions/constraints, extrude/revolve/loft, holes, patterns, fillets and dependency-aware feature regeneration.",
+      "limit": "Prove rebuild and editability on unseen in-scope designs.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P09",
+      "group": "CAD and engineering engines",
+      "title": "Assembly relationships and motion",
+      "detail": "Represent parts/configurations/transforms/joints and assess degrees of freedom, interference and clearance across declared motion.",
+      "limit": "Validate assembly constraints and sampled motion; model checks do not establish real friction.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P10",
+      "group": "CAD and engineering engines",
+      "title": "Stable geometry references",
+      "detail": "Use feature-origin identity, semantic roles and geometric matching to preserve references through topology changes.",
+      "limit": "Fail visibly when remapping is ambiguous; identifiers alone do not solve topology.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P11",
+      "group": "CAD and engineering engines",
+      "title": "Native geometry and constraints",
+      "detail": "Operate a precise boundary-representation kernel and constraint solvers with derived display meshes.",
+      "limit": "Kernel licensing/development, feature behavior and persistence require separate validation.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P12",
+      "group": "CAD and engineering engines",
+      "title": "Import, exchange and repair",
+      "detail": "Report imported units, hierarchy, metadata, repairs and missing history; support geometry exchange and explicitly inferred feature recovery.",
+      "limit": "Quantify translation losses. Proprietary translators and native formats remain feasibility work.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P13",
+      "group": "CAD and engineering engines",
+      "title": "Mesh, scan and reconstruction workflows",
+      "detail": "Allow mesh/scan data and image-based design interpretation alongside exact CAD, with visible precision and editability differences.",
+      "limit": "Treat reconstructed hidden geometry and unknown scale as inference, not measured truth.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P14",
+      "group": "CAD and engineering engines",
+      "title": "Engineering drawings and BOMs",
+      "detail": "Generate revision-linked views, dimensions, datums, tolerances, notes, quantities and configurations with source-dated purchased-part data.",
+      "limit": "Validate drawings/BOM completeness and their input revision.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P15",
+      "group": "CAD and engineering engines",
+      "title": "Analytical and numerical simulation",
+      "detail": "Connect equations, meshing and solver workers for supported structural/FEA, thermal, fluid/CFD or other declared analysis classes.",
+      "limit": "Each class needs validated loads, restraints, material models, convergence checks and benchmarks; coverage is not selected.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P16",
+      "group": "CAD and engineering engines",
+      "title": "Manufacturing and CAM preparation",
+      "detail": "Plan stock, tools/holders, fixtures, setups, operation sequences and postprocessed toolpaths; check process-specific limits and tool reach.",
+      "limit": "Qualify each process/machine route separately. Toolpath generation does not authorize machine execution.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P17",
+      "group": "CAD and engineering engines",
+      "title": "Evidence-linked verification",
+      "detail": "Connect requirements to data/unit checks, CAD integrity, assembly checks, analytical/numerical results, manufacturing review and physical tests.",
+      "limit": "Show methods, scope and limitations instead of one generic confidence score.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P18",
+      "group": "CAD and engineering engines",
+      "title": "Change impact and stale-result detection",
+      "detail": "Trace which edits invalidate downstream drawings, analyses, BOM entries, purchased interfaces and toolpaths.",
+      "limit": "Recompute affected evidence or demonstrate that it is unaffected.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P19",
+      "group": "CAD and engineering engines",
+      "title": "Physical test feedback",
+      "detail": "Attach procedures, instruments, calibration and measured results to the as-built configuration; compare actual outcomes with predictions.",
+      "limit": "Digital model success remains separate from physical qualification.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P20",
+      "group": "CAD and engineering engines",
+      "title": "Reusable engineering libraries",
+      "detail": "Store approved components, interfaces, material references and organizational practices with source/revision metadata.",
+      "limit": "Reusing a part does not automatically reuse the validity of an old load case.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P21",
+      "group": "Agents and operations",
+      "title": "Persistent task execution",
+      "detail": "Checkpoint the action-observation loop with explicit task states, artifact references, bounded retries and task budgets.",
+      "limit": "Recover from process restart and disconnected UI without blind mutation replay.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P22",
+      "group": "Agents and operations",
+      "title": "Independent background workers",
+      "detail": "Separate the UI from CAD, solver, rendering and inference workers so a viewer can disconnect while an authorized host keeps running.",
+      "limit": "A sleeping local host cannot compute; remote continuation needs an actual authorized worker.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P23",
+      "group": "Agents and operations",
+      "title": "Coordinated multi-agent work",
+      "detail": "Assign scoped design, analysis, manufacturing and documentation roles; serialize dependent writes and branch independent alternatives.",
+      "limit": "Multiple agents are not automatically independent verification or unlimited parallel CAD.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P24",
+      "group": "Agents and operations",
+      "title": "Revision guards and operation receipts",
+      "detail": "Check target identity, units, permissions, preconditions and expected revision outside the model; persist mutation outcomes.",
+      "limit": "Reconcile uncertain external changes after failures before retrying.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P25",
+      "group": "Agents and operations",
+      "title": "Recovery, undo and manual takeover",
+      "detail": "Preserve partial progress, diagnose failures, separate cancel from undo and hand the editing lease back to the user.",
+      "limit": "Demonstrate recovery with interruption, stale-target and user-edit tests.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P26",
+      "group": "Agents and operations",
+      "title": "Local, hybrid and hosted deployment",
+      "detail": "Offer consistent project/tool contracts across local-only, remote-assisted and organization-hosted configurations.",
+      "limit": "All selected models/workers must be available in local-only mode; no deployment mode is shipped independently yet.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P27",
+      "group": "Agents and operations",
+      "title": "Resource and task budgets",
+      "detail": "Measure tokens, solver time, CPU/GPU time and storage where available, with task/day budgets, priorities and concurrency controls.",
+      "limit": "Validate end-to-end resource use; a timer or token total alone is not a money cap.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P28",
+      "group": "Agents and operations",
+      "title": "Production delivery and support",
+      "detail": "Provide tested cross-platform installers/updates, migrations, backups, authentication, telemetry, rollback and incident/support procedures.",
+      "limit": "Public licensing, support commitments, final branding and commercial pricing remain undecided.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P29",
+      "group": "Engineering AI and learning",
+      "title": "Independent local or hosted inference",
+      "detail": "Deploy a suitably licensed model on an owned inference route with replaceable provider adapters.",
+      "limit": "Benchmark candidate quality, latency, memory and total cost per accepted task.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P30",
+      "group": "Engineering AI and learning",
+      "title": "Multimodal engineering model",
+      "detail": "Interpret language, diagrams and rendered geometry, query exact project facts, select typed operations and repair tool failures.",
+      "limit": "No proprietary engineering model has been trained; model size and architecture are not selected.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P31",
+      "group": "Engineering AI and learning",
+      "title": "Geometry-aware model representations",
+      "detail": "Explore encoders for feature graphs/geometric descriptors and hierarchical retrieval over large assemblies.",
+      "limit": "Show measured value over simpler structured tools and retrieval.",
+      "status": "Long-term option",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P32",
+      "group": "Engineering AI and learning",
+      "title": "Revision-matched visual grounding",
+      "detail": "Combine reproducible perspectives/sections/exploded views/analysis overlays with entity ID maps and exact geometric queries.",
+      "limit": "Tie every image and measurement to the same revision.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P33",
+      "group": "Engineering AI and learning",
+      "title": "Project memory and reference retrieval",
+      "detail": "Keep exact project state, conversation context, cited reference documents and learned weights distinct; retrieve relevant objects and sources.",
+      "limit": "Respect project access and flag stale documents or supplier information.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P34",
+      "group": "Engineering AI and learning",
+      "title": "Permissioned trajectory datasets",
+      "detail": "Curate expert, consenting-user, licensed and generated tasks with starting state, actions, failures, corrections and checked outcomes.",
+      "limit": "Require source rights, evidence, deduplication and project/family-separated evaluation data.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P35",
+      "group": "Engineering AI and learning",
+      "title": "Evaluated model specialization",
+      "detail": "Compare supervised or parameter-efficient adaptation, broader fine-tuning, preferences and constraint-aware reward learning where appropriate.",
+      "limit": "Training rewards must reflect valid geometry and satisfied constraints; promotion depends on unseen-task results.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P36",
+      "group": "Engineering AI and learning",
+      "title": "Versioned model releases",
+      "detail": "Maintain candidate checkpoints, evaluation reports, gradual deployment, regression monitoring and rollback.",
+      "limit": "Updating project memory is not immediate retraining of general model skill.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P37",
+      "group": "Engineering AI and learning",
+      "title": "Specialized model roles",
+      "detail": "Optionally route planning, perception and repair through a family of models while presenting one engineering assistant.",
+      "limit": "Use extra specialization only if evaluation justifies its complexity.",
+      "status": "Long-term option",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P38",
+      "group": "Engineering AI and learning",
+      "title": "Foundation model from scratch",
+      "detail": "Consider original large-scale model training as a later research direction.",
+      "limit": "Requires sufficient data, compute, capital and demonstrated benefit; not required for the first independent release.",
+      "status": "Long-term option",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P39",
+      "group": "Governance and evaluation",
+      "title": "Organization data controls",
+      "detail": "Add explicit training consent, project exclusions, contributor rights, export/deletion controls, secret filtering and private component libraries.",
+      "limit": "Access to a design is not permission to train; complete governance is not supplied by the current exporter.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P40",
+      "group": "Governance and evaluation",
+      "title": "Enforced action and data boundaries",
+      "detail": "Apply project read/write, export, code, remote upload, compute, purchasing and hardware permissions in software, with protected credentials.",
+      "limit": "Imported instructions cannot grant permissions; unrestricted code requires an actual containment strategy.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P41",
+      "group": "Governance and evaluation",
+      "title": "Independent held-out benchmarks",
+      "detail": "Test requirements, geometry, editability, clarification, recovery, wrong-target changes, latency, usage and reviewer correction time on unseen design families.",
+      "limit": "Evaluator-controlled inputs/oracles must remain outside the agent workspace; no final held-out suite exists yet.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P42",
+      "group": "Governance and evaluation",
+      "title": "Real-user workflow validation",
+      "detail": "Measure useful repeated outcomes against a complete manual baseline, including setup, corrections and review.",
+      "limit": "A mounting-plate change order is a candidate benchmark, not a selected market or validated customer result.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    },
+    {
+      "id": "P43",
+      "group": "Governance and evaluation",
+      "title": "Progressively broader supported scope",
+      "detail": "Expand assemblies, drawing systems, simulation, manufacturing processes and large-model performance only with new evidence.",
+      "limit": "The long-term breadth associated with mature CAD suites is an ambition, not current parity or a delivery promise.",
+      "status": "Proposed",
+      "source": "docs/ENGINEERING-PLATFORM-DEFINITION-2026-09-10.md"
+    }
+  ],
+  "requirements": [
+    [
+      "R01",
+      "Direct Fusion integration",
+      "Current",
+      "C01, C09"
+    ],
+    [
+      "R02",
+      "CLI and MCP",
+      "Current",
+      "C02, C16"
+    ],
+    [
+      "R03",
+      "Existing AI plan",
+      "Current",
+      "C19, C27, C31"
+    ],
+    [
+      "R04",
+      "Windows and Mac",
+      "Partial: Windows verified",
+      "C30, P28"
+    ],
+    [
+      "R05",
+      "Multiple projects",
+      "Current",
+      "C03, C11, C13"
+    ],
+    [
+      "R06",
+      "Multiple agents",
+      "Partial: serialized native jobs",
+      "C13, C21, P23"
+    ],
+    [
+      "R07",
+      "Background operation",
+      "Current host; durable target proposed",
+      "C01, C14, P21, P22"
+    ],
+    [
+      "R08",
+      "Visual project access",
+      "Current capture; richer target proposed",
+      "C08, P32"
+    ],
+    [
+      "R09",
+      "Polished UI",
+      "Current palette; standalone target proposed",
+      "C10, P05"
+    ],
+    [
+      "R10",
+      "Pause / stop / resume",
+      "Current boundaries; recovery proposed",
+      "C15, P25"
+    ],
+    [
+      "R11",
+      "First-use tutorial",
+      "Current",
+      "C10"
+    ],
+    [
+      "R12",
+      "Communication",
+      "Current polling inbox",
+      "C12"
+    ],
+    [
+      "R13",
+      "History per build",
+      "Current chat; revision graph proposed",
+      "C11, P07, P18"
+    ],
+    [
+      "R14",
+      "Provider choice",
+      "Codex verified; others unverified",
+      "C17-C24, P29"
+    ],
+    [
+      "R15",
+      "Usage dashboard",
+      "Current with known data gaps",
+      "C27, P27"
+    ],
+    [
+      "R16",
+      "Toggleable access",
+      "Current",
+      "C25, C26, P40"
+    ],
+    [
+      "R17",
+      "Existing task links",
+      "Current references; no auto-dispatch",
+      "C22"
+    ],
+    [
+      "R18",
+      "Free personal preview",
+      "Current private test release",
+      "C31"
+    ],
+    [
+      "R19",
+      "Sharing or sale",
+      "Personal package; commercial decisions open",
+      "C30, P28"
+    ],
+    [
+      "R20",
+      "Distinctive name",
+      "Formivect remains a working name",
+      "P28"
+    ],
+    [
+      "R21",
+      "Learning from work",
+      "Current trace/export foundation",
+      "C28, C29, P34-P36, P39"
+    ],
+    [
+      "R22",
+      "Own engineering model",
+      "Experimental local adapter; proposed model",
+      "C24, P29-P38"
+    ],
+    [
+      "R23",
+      "Full engineering environment",
+      "Proposed",
+      "P01, P08-P20"
+    ],
+    [
+      "R24",
+      "Distinctive project features",
+      "Proposed",
+      "P06, P07, P17-P20, P25"
+    ]
+  ],
+  "tools": [
+    [
+      "fusion_documents",
+      "List open documents and bindings"
+    ],
+    [
+      "fusion_new_document",
+      "Create a new unsaved design"
+    ],
+    [
+      "fusion_bind_project",
+      "Bind one document to a project"
+    ],
+    [
+      "fusion_inspect",
+      "Read structure, parameters and geometry"
+    ],
+    [
+      "fusion_set_parameter",
+      "Change an existing unit-bearing parameter"
+    ],
+    [
+      "fusion_box",
+      "Create a rectangular extrusion"
+    ],
+    [
+      "fusion_cylinder",
+      "Create a circular extrusion"
+    ],
+    [
+      "fusion_view",
+      "Capture the actual project viewport"
+    ],
+    [
+      "fusion_export",
+      "Write unique F3D / STEP / STL exports"
+    ],
+    [
+      "fusion_python",
+      "Run opt-in trusted Fusion Python"
+    ],
+    [
+      "fusion_text_command",
+      "Run opt-in native text commands"
+    ],
+    [
+      "fusion_status",
+      "Read bridge status"
+    ],
+    [
+      "fusion_job",
+      "Read asynchronous job state / result"
+    ],
+    [
+      "fusion_cancel",
+      "Cancel queued work"
+    ],
+    [
+      "fusion_control",
+      "Pause / resume / stop a project"
+    ],
+    [
+      "fusion_messages",
+      "Read the project/build inbox"
+    ],
+    [
+      "fusion_message",
+      "Post a visible update or result"
+    ]
+  ],
+  "evidence": [
+    [
+      "Windows preview",
+      "0.2.0 installed; source identity and fresh MCP handshake checked",
+      "Windows / September 10, 2026"
+    ],
+    [
+      "Automated checks",
+      "37 checks passed; Python compilation and JavaScript syntax passed",
+      "Recorded source test run, Python 3.14"
+    ],
+    [
+      "Native acceptance",
+      "11 extended checks plus two-design smoke and background/interactive tests",
+      "Fusion 2704.1.53"
+    ],
+    [
+      "Exact basic geometry",
+      "20 x 30 x 10 mm box: 6,000 mm3; radius 5 x 15 mm cylinder: 1,178.097 mm3",
+      "Native model measurements"
+    ],
+    [
+      "Artifacts",
+      "Actual viewport PNGs and F3D/STEP/STL outputs; eight test artifacts retained privately",
+      "Image/file identity checked"
+    ],
+    [
+      "Managed Codex runs",
+      "GPT-6-Astra/low and native-picker GPT-5.6-Luna/low inspected the box; the latter captured a view and replied",
+      "Recorded real CLI inference; not every model"
+    ],
+    [
+      "Completed modeling workflow",
+      "12 solid components, 36 features and 36 sketches; native export/reopen and 12 STL exports followed by downstream QA",
+      "One scoped workflow using advanced Python; no broad parity claim"
+    ],
+    [
+      "Not yet verified",
+      "Mac native use, full Fusion restart/crash recovery, actual Claude/local inference and broad specialized CAD/CAM/simulation tools",
+      "Open scope; no specialized trained model"
+    ]
+  ],
+  "roadmap": [
+    [
+      "1",
+      "Choose a useful workflow",
+      "Confirm a representative recurring task and expert-reviewable acceptance contract. The mounting-plate change order remains a candidate."
+    ],
+    [
+      "2",
+      "Freeze independent evaluation",
+      "Hold out design families; define evaluator-owned geometry and editability oracles, errors and a full manual baseline."
+    ],
+    [
+      "3",
+      "Make tools and recovery reliable",
+      "Build typed feature/constraint operations, stable targets, revision guards, checkpoints and interruption recovery."
+    ],
+    [
+      "4",
+      "Establish model and data baselines",
+      "Compare licensed candidates; curate permissioned, executed trajectories with checked labels and provenance."
+    ],
+    [
+      "5",
+      "Evaluate specialization",
+      "Train versioned candidates and compare unseen-task success, correction time, latency and resource cost; retain rollback."
+    ],
+    [
+      "6",
+      "Validate independent operation",
+      "Integrate native engines, manual editing, persistent execution and owned inference into reviewed real-user workflows."
+    ],
+    [
+      "7",
+      "Expand supported engineering",
+      "Add analyses, manufacturing, drawings and broader CAD with separate benchmarks, platform tests and production support."
+    ]
+  ],
+  "documents": [
+    {
+      "title": "Portfolio",
+      "path": "documents/Formivect-Portfolio.pdf",
+      "pages": 4,
+      "preview": "portfolio",
+      "description": "Project story, working preview, platform vision and next stage"
+    },
+    {
+      "title": "Current capabilities",
+      "path": "documents/Formivect-Current-Capabilities.pdf",
+      "pages": 5,
+      "preview": "current-capabilities",
+      "description": "Every documented preview feature, status and practical boundary"
+    },
+    {
+      "title": "Platform vision",
+      "path": "documents/Formivect-Platform-Vision.pdf",
+      "pages": 6,
+      "preview": "platform-vision",
+      "description": "All documented potential features across the independent platform"
+    },
+    {
+      "title": "Validation and roadmap",
+      "path": "analysis/Formivect-Validation-and-Roadmap.pdf",
+      "pages": 3,
+      "preview": "validation-roadmap",
+      "description": "Recorded Windows evidence, remaining tests and development gates"
+    }
+  ],
+  "ai_disclosure": "AI-assisted workflows supported the creation of this project."
+}

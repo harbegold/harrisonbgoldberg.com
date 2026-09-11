@@ -1,0 +1,282 @@
+{
+  "project": "Formivect",
+  "edition": "Public portfolio 2026-09-10",
+  "scope": "Selected public documentation only; current preview and potential features labeled separately.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 21,
+      "sha256": "a04c1ecee5f831666e805f64d7ab9b1f22cbb8550d7ca83bdad379e5f9a7439c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 39,
+      "sha256": "d6439973d8a506f44142877efa1b34b8f7d904803a04bf61a03ab338883a8e2c"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "analysis/Formivect-Validation-and-Roadmap.pdf",
+      "bytes": 142976,
+      "sha256": "183af8a1348b3c657f16b67f30583d25b3c1b43b5c9db78fe01dbfb3e9ccd242"
+    },
+    {
+      "path": "assets/features.js",
+      "bytes": 766,
+      "sha256": "2a6638801030c01516c321b779918b87dfcbec4f97bcf95eec4125356939974c"
+    },
+    {
+      "path": "assets/formivect.css",
+      "bytes": 1705,
+      "sha256": "c2e7f5c592d8578e752974c8cb8ddd538a372372c020233ba414616cfded144f"
+    },
+    {
+      "path": "assets/portfolio.css",
+      "bytes": 7828,
+      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+    },
+    {
+      "path": "documents/case-study.html",
+      "bytes": 3515,
+      "sha256": "6c51677bd33fa951e685ee11f65c063cc6eb3f7e4aa7d8ad43d3718ce20abe02"
+    },
+    {
+      "path": "documents/case-study.md",
+      "bytes": 2335,
+      "sha256": "17d7a65de54a5f5615122666dc8bdb661d41af10a54c4fb81017f2dcf2605720"
+    },
+    {
+      "path": "documents/document-register.html",
+      "bytes": 2995,
+      "sha256": "2bc423281414804add4569274d52e8b7644bc33ee3f7a86975967632ae1f9074"
+    },
+    {
+      "path": "documents/document-register.md",
+      "bytes": 1631,
+      "sha256": "a8c7426b52cfda2bc126ca900467cd30c99ba93f1c63824301a95787b03d96a0"
+    },
+    {
+      "path": "documents/features.html",
+      "bytes": 35248,
+      "sha256": "cbf92a95a5aaf18f39b35d9b914bf961dbaf5d2f03ee3180a70cc2dc8222a3ab"
+    },
+    {
+      "path": "documents/features.md",
+      "bytes": 24621,
+      "sha256": "fb7275fddefd0ede690730355165be63451bfcf8ff3f1f9538354e07bb7a772b"
+    },
+    {
+      "path": "documents/Formivect-Current-Capabilities.pdf",
+      "bytes": 13335,
+      "sha256": "0e5043931701f1c3badf9c5f7ef0266133dd4b741e7afc9b924e62c9504757bb"
+    },
+    {
+      "path": "documents/Formivect-Platform-Vision.pdf",
+      "bytes": 16662,
+      "sha256": "a4d65c845a940f772af39b5fa57637c8b34a97ed0e62ad71be26fe97806b8705"
+    },
+    {
+      "path": "documents/Formivect-Portfolio.pdf",
+      "bytes": 85457,
+      "sha256": "8e35170e7bdcce0cba12c103122f7d85ce3c30911ad9adc615ee24977e939d18"
+    },
+    {
+      "path": "documents/release.html",
+      "bytes": 2345,
+      "sha256": "aaf3fb405ef03bcb95bd8883491eace18f773a7bb57a1ed4e48f5ad8b2239138"
+    },
+    {
+      "path": "documents/release.md",
+      "bytes": 1273,
+      "sha256": "1ee19434fdea8b469a5dd4ed9d74b4ad0cf76775f4ed497cca589b39566d26f1"
+    },
+    {
+      "path": "documents/requirements.html",
+      "bytes": 4164,
+      "sha256": "d3333d4d08b447e6fb3bcfc9acdd969a1d368be2d73c08df3c6be694f4c0c2a6"
+    },
+    {
+      "path": "documents/requirements.md",
+      "bytes": 2112,
+      "sha256": "fb4c6c6644d73723e044b2c0e30a05ef4c3d9ce60f71fdd150fbd06df47b66f7"
+    },
+    {
+      "path": "documents/validation.html",
+      "bytes": 4675,
+      "sha256": "c611c0ddeff561d29571ea3a40d98b3aa65dbfe73d9d374f0e6ab68127f71683"
+    },
+    {
+      "path": "documents/validation.md",
+      "bytes": 2964,
+      "sha256": "f127f3179ee6ea3a5eb553cea185b15b7eaafbfa7a46004e019c7c233e3035e1"
+    },
+    {
+      "path": "features.json",
+      "bytes": 42167,
+      "sha256": "066bcafeb2e228ce801eec0c17cb64636f38c1dbd92524dc8494caf61af34cf0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 13138,
+      "sha256": "5ac190d8bb7d62099ee71dcc2a4008c1f932eae33d064d8aab7bb2e23ae4272a"
+    },
+    {
+      "path": "media/current-architecture.svg",
+      "bytes": 1933,
+      "sha256": "b303f4dee5bfbe6d40c4aed5bef1745e5e3e4dcd60f15176623340ee1bd8b271"
+    },
+    {
+      "path": "media/current-capabilities-1.png",
+      "bytes": 179069,
+      "sha256": "6deceaeff4e7040588f23960626232aee9ba60ee3e3e37b63e592b1a68da38fe"
+    },
+    {
+      "path": "media/current-capabilities-2.png",
+      "bytes": 160468,
+      "sha256": "9b5b9820266f4ee040c60467830d57d1d58f9979450b21b7fb3398a95b6eb562"
+    },
+    {
+      "path": "media/current-capabilities-3.png",
+      "bytes": 175867,
+      "sha256": "e129252b44be39c064f298b702e35d3570a702ca14b7e68286e0f4e3c16e04f6"
+    },
+    {
+      "path": "media/current-capabilities-4.png",
+      "bytes": 172882,
+      "sha256": "14911c1ddbb1f4e66cf94b936b08ce737ce7901fe0151cc0099080b9c9bd2665"
+    },
+    {
+      "path": "media/current-capabilities-5.png",
+      "bytes": 179371,
+      "sha256": "997befce8abe8e4de2aa15359cd20921249893bb22663e05871fe0986373055a"
+    },
+    {
+      "path": "media/interface-preview.png",
+      "bytes": 60288,
+      "sha256": "8c2dcbe612feb2c8ac28941db90b8edc30770eec1a975bf2b0e29294b38596a8"
+    },
+    {
+      "path": "media/native-agent-completed.jpg",
+      "bytes": 108083,
+      "sha256": "3689da17e45a29b9e2b3e1a323b89c17fe9f34095b37f6cfc75b555269fdd4ce"
+    },
+    {
+      "path": "media/platform-vision-1.png",
+      "bytes": 205376,
+      "sha256": "2ef428638c327807108e513a01673274df5f6974956f7cbd1905f85a2a1557ca"
+    },
+    {
+      "path": "media/platform-vision-2.png",
+      "bytes": 188892,
+      "sha256": "f71a8e064cf2959cf6f5904fc0a94b67343b76337498f237966053179561f9dd"
+    },
+    {
+      "path": "media/platform-vision-3.png",
+      "bytes": 180721,
+      "sha256": "b7695a7a3609f3c1bb3555f4cd082157def94799bf029ec017433ab065a43bcd"
+    },
+    {
+      "path": "media/platform-vision-4.png",
+      "bytes": 182228,
+      "sha256": "c3bd45af957c3d6c101e2b2c565c01d326b3eaffcdb2020fc261fb1f58c10273"
+    },
+    {
+      "path": "media/platform-vision-5.png",
+      "bytes": 182781,
+      "sha256": "eea0e54535564dba8c8cc579ebbf0149ec048161d480fe1b0aaac4d3f92d3b67"
+    },
+    {
+      "path": "media/platform-vision-6.png",
+      "bytes": 189918,
+      "sha256": "d8529e1c0c2751ccb3320b2511b86b114af267a701be187ad96b6eeff76fa9f7"
+    },
+    {
+      "path": "media/platform-vision.svg",
+      "bytes": 1961,
+      "sha256": "88fbedb27f3c9be1f514d1b7000db8fad6d6bb024ffd5edb78a58ff3c0db2019"
+    },
+    {
+      "path": "media/portfolio-1.png",
+      "bytes": 159923,
+      "sha256": "18a76510c38ad58d7e2b79a7c1df3c20fb5d0d6d4bf9ee021129dfbe6a782c8d"
+    },
+    {
+      "path": "media/portfolio-2.png",
+      "bytes": 120888,
+      "sha256": "b877185f6cbb66bf0aff8a0b57eeb5a402ebe6106cc47dc5d1f8c870e3837592"
+    },
+    {
+      "path": "media/portfolio-3.png",
+      "bytes": 129396,
+      "sha256": "17e68becfc1cde8c3e2c211740594aef6482b3182ba66ca75926b19e81abb8bc"
+    },
+    {
+      "path": "media/portfolio-4.png",
+      "bytes": 151088,
+      "sha256": "f1b6550adb51c347c8fdc93cd5c888979f22c9f337a465e26af37ecdf9460074"
+    },
+    {
+      "path": "media/proof-box.png",
+      "bytes": 98864,
+      "sha256": "ddc67be0472fefff9b3d271308aeb2394737d4956504dfa641a26326debeff50"
+    },
+    {
+      "path": "media/validation-roadmap-1.png",
+      "bytes": 135271,
+      "sha256": "c202dc6039201cd02faa965736b1f92f7a0596bd74145831269f7433f9150bf7"
+    },
+    {
+      "path": "media/validation-roadmap-2.png",
+      "bytes": 242192,
+      "sha256": "3396ef57c462300cf427adb06802dfc546fae55395b757b390f680e0dc0192d1"
+    },
+    {
+      "path": "media/validation-roadmap-3.png",
+      "bytes": 160870,
+      "sha256": "b05a11ab474fa12e49bcac02f962e86c0e39c0ebe21dff6d03f0a34fa457fb5b"
+    },
+    {
+      "path": "portfolio.json",
+      "bytes": 1376,
+      "sha256": "c2bc0bcdb01168fe26eec382501057b3d804fd691e8dcc74941b88a18d778764"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1787,
+      "sha256": "3aaa92b8629f4db60aedd5e7d3dd3274d3c79dc041f4e6373f9a8b5818a4feaf"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 1462,
+      "sha256": "902b84b743b3406d8eab065a25298dd90f5ee7b59f33ee2e32c70e20d096dd7f"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 445,
+      "sha256": "18cd1782d643ff183b76c9c7a29de76c65154ba519c769ba5b0bb1bf8048822b"
+    },
+    {
+      "path": "website/chat-summary.md",
+      "bytes": 3701,
+      "sha256": "71ad0566a20b2408fe5085e27d644577789010829be554d1a49cfcef634dae8b"
+    },
+    {
+      "path": "website/formivect.ts",
+      "bytes": 3637,
+      "sha256": "0fbdffaacb8fe7008099019eb10d16ea6fb1d5fda2f28b84e26c8d07264acd11"
+    },
+    {
+      "path": "website/INTEGRATION.md",
+      "bytes": 1339,
+      "sha256": "cc1c5a86b263003f62f1c2c08027ad110b40744f2928cc3ded8b38b358f95dbf"
+    },
+    {
+      "path": "website/project-entry.json",
+      "bytes": 3543,
+      "sha256": "e7b7d2512b8015980d2b05920de371e71ecd2be4f2fa9668ce0fdb29364aa6f2"
+    }
+  ]
+}

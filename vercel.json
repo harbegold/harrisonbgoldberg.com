@@ -5,12 +5,14 @@
   "framework": "vite",
   "redirects": [
     { "source": "/projects/acuivect", "destination": "/projects/acuivect/", "permanent": true },
-    { "source": "/projects/bitzy-v1", "destination": "/projects/bitzy-v1/", "permanent": true }
+    { "source": "/projects/bitzy-v1", "destination": "/projects/bitzy-v1/", "permanent": true },
+    { "source": "/projects/formivect", "destination": "/projects/formivect/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/projects/acuivect/", "destination": "/projects/acuivect/index.html" },
     { "source": "/projects/bitzy-v1/", "destination": "/projects/bitzy-v1/index.html" },
-    { "source": "/((?!api/|projects/acuivect/|projects/bitzy-v1/).*)", "destination": "/index.html" }
+    { "source": "/projects/formivect/", "destination": "/projects/formivect/index.html" },
+    { "source": "/((?!api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/).*)", "destination": "/index.html" }
   ],
   "functions": {
     "api/chat.ts": {

@@ -1,0 +1,39 @@
+{
+  "name": "Formivect",
+  "status": "Personal preview 0.2.0 verified on Windows; independent platform proposed",
+  "url": "https://www.harrisonbgoldberg.com/projects/formivect/",
+  "documents": [
+    {
+      "title": "Portfolio",
+      "path": "documents/Formivect-Portfolio.pdf",
+      "pages": 4,
+      "preview": "portfolio",
+      "description": "Project story, working preview, platform vision and next stage"
+    },
+    {
+      "title": "Current capabilities",
+      "path": "documents/Formivect-Current-Capabilities.pdf",
+      "pages": 5,
+      "preview": "current-capabilities",
+      "description": "Every documented preview feature, status and practical boundary"
+    },
+    {
+      "title": "Platform vision",
+      "path": "documents/Formivect-Platform-Vision.pdf",
+      "pages": 6,
+      "preview": "platform-vision",
+      "description": "All documented potential features across the independent platform"
+    },
+    {
+      "title": "Validation and roadmap",
+      "path": "analysis/Formivect-Validation-and-Roadmap.pdf",
+      "pages": 3,
+      "preview": "validation-roadmap",
+      "description": "Recorded Windows evidence, remaining tests and development gates"
+    }
+  ],
+  "current_feature_count": 31,
+  "potential_feature_count": 43,
+  "original_requirements": 24,
+  "ai_disclosure": "AI-assisted workflows supported the creation of this project."
+}
