@@ -3,9 +3,9 @@
   "title": "Formivect",
   "subtitle": "Engineering AI Workspace",
   "description": "A working Fusion add-in connecting AI to native CAD, project histories, viewport images and model-selected agent runs. Developing toward an independent engineering platform.",
-  "longDescription": "Formivect is a local engineering-software preview with 17 MCP tools, explicit document binding, fair native job queues, model and reasoning-effort selection, build histories, permissions, real viewport images and reviewed local data export. Windows 0.2.0 native execution and actual Codex runs are verified. Claude/local adapters remain unverified or experimental. The longer-term vision is a standalone CAD, analysis and manufacturing workspace with editable project state, durable agents, revision-linked evidence and an owned engineering model. Those platform and model capabilities remain proposed. AI-assisted workflows supported the creation of this project.",
+  "longDescription": "Formivect is a local engineering-software preview with 17 MCP tools, explicit document binding, fair native job queues, model and reasoning-effort selection, build histories, permissions, real viewport images and reviewed local data export. Windows 0.2.0 native execution and actual Codex runs are verified. Claude/local adapters remain unverified or experimental. The longer-term vision is a standalone CAD, analysis and manufacturing workspace with editable project state, durable agents, revision-linked evidence and an owned engineering model. Those platform and model capabilities remain proposed. AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.",
   "tags": [
-    "Python",
+    "Python (AI-assisted workflows only)",
     "Autodesk Fusion API",
     "MCP",
     "AI Agents",

@@ -1,6 +1,6 @@
 {
   "project": "Bitzy V1",
-  "edition": "Public portfolio 2026-09-10",
+  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11",
   "generated": "2026-09-10T18:20:09.080231-07:00",
   "scope": "Selected documentation and web presentation only. No editable engineering, manufacturing or control assets.",
   "files": [
@@ -51,13 +51,13 @@
     },
     {
       "path": "documents/case-study.html",
-      "bytes": 3903,
-      "sha256": "f9a1466373b828c85317c995c1f902f4c6dbdc78126242b32f6cc98029e6e170"
+      "bytes": 4001,
+      "sha256": "bddcb7e7573b062ba2858e50cfbc362d56560c3cb1b8ee3eeb3acabe42f6076f"
     },
     {
       "path": "documents/case-study.md",
-      "bytes": 3227,
-      "sha256": "89c11ba41052e442fe6e5e77ddb14abe27baf1e4ee2882ee226631e1f4fa43fb"
+      "bytes": 3325,
+      "sha256": "303ce24552baae1592b033eaf0c13f84b94684e09eb452f317f0d99e554d68f5"
     },
     {
       "path": "documents/document-register.html",
@@ -101,8 +101,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 11539,
-      "sha256": "cc9f20c29210728ec02fbb1f6ee861485745ace8ecb3fbb21eda58d7a955ebca"
+      "bytes": 11735,
+      "sha256": "0a96930e2c4290d90274e078b64060b9a28ff96b1e0e9ab09d8ba45efd487129"
     },
     {
       "path": "media/assembly-review-1.png",
@@ -226,8 +226,8 @@
     },
     {
       "path": "portfolio.json",
-      "bytes": 6041,
-      "sha256": "c09e351d029bec571dd72d7479294834b97e11361a956fe23f166a34445a2e9c"
+      "bytes": 6139,
+      "sha256": "0af229b0d99af38e0f5b8bee46d345ba4117c35a6bec6daeaaccce41f4c852aa"
     },
     {
       "path": "README.md",
@@ -246,13 +246,13 @@
     },
     {
       "path": "website/bitzy-v1.ts",
-      "bytes": 4012,
-      "sha256": "4b19f71a4c901066fdb45479246fd2b3938452bf0b9a0d6b413198fa76c51e8a"
+      "bytes": 4139,
+      "sha256": "e50ff87525a7680e06051addbce82a98529b07631cba03bb50d867998a4f3ca6"
     },
     {
       "path": "website/chat-summary.md",
-      "bytes": 1936,
-      "sha256": "858cca97b1354de22be5c2ed5fea97470973790be92f6b197313076aed7b8ee2"
+      "bytes": 2034,
+      "sha256": "3f5bfd01ac8ef8c9ba66af1492afdeb51dda0a4ff1cb3bc91eacedf7b13fee54"
     },
     {
       "path": "website/INTEGRATION.md",
@@ -261,8 +261,8 @@
     },
     {
       "path": "website/project-entry.json",
-      "bytes": 3919,
-      "sha256": "d5ee17ca9f299ba629910d42b682baa1f798d9f4076479c69ffe798c2cf5d99b"
+      "bytes": 4046,
+      "sha256": "67bae2e8d81fa42d0bc57757d0d82ab7932c662595e764180833a46b6b5e8b02"
     }
   ]
 }

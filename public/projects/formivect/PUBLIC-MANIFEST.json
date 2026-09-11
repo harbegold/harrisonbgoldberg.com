@@ -1,6 +1,6 @@
 {
   "project": "Formivect",
-  "edition": "Public portfolio 2026-09-10",
+  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11",
   "scope": "Selected public documentation only; current preview and potential features labeled separately.",
   "files": [
     {
@@ -40,13 +40,13 @@
     },
     {
       "path": "documents/case-study.html",
-      "bytes": 3515,
-      "sha256": "6c51677bd33fa951e685ee11f65c063cc6eb3f7e4aa7d8ad43d3718ce20abe02"
+      "bytes": 3711,
+      "sha256": "0bf0d8af79a36ecb087e24490acafa0f522dc82567b7e55603b39dbca62e6642"
     },
     {
       "path": "documents/case-study.md",
-      "bytes": 2335,
-      "sha256": "17d7a65de54a5f5615122666dc8bdb661d41af10a54c4fb81017f2dcf2605720"
+      "bytes": 2433,
+      "sha256": "7ac847c9f8e6aa220e6852e478f780c5597d168af1d5c7fe7f10c52058aae7c7"
     },
     {
       "path": "documents/document-register.html",
@@ -120,8 +120,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 13138,
-      "sha256": "5ac190d8bb7d62099ee71dcc2a4008c1f932eae33d064d8aab7bb2e23ae4272a"
+      "bytes": 13334,
+      "sha256": "7c89e910bfd258e25b227c6a7a520cd966b294249653696694015cb4bfe6fbc4"
     },
     {
       "path": "media/current-architecture.svg",
@@ -240,8 +240,8 @@
     },
     {
       "path": "portfolio.json",
-      "bytes": 1376,
-      "sha256": "c2bc0bcdb01168fe26eec382501057b3d804fd691e8dcc74941b88a18d778764"
+      "bytes": 1474,
+      "sha256": "c4dbbf2a5e0c69b6700d7b497654ab143ff5b02a98ab4b82aafaa890b0ec5ca5"
     },
     {
       "path": "README.md",
@@ -260,13 +260,13 @@
     },
     {
       "path": "website/chat-summary.md",
-      "bytes": 3701,
-      "sha256": "71ad0566a20b2408fe5085e27d644577789010829be554d1a49cfcef634dae8b"
+      "bytes": 3799,
+      "sha256": "bf67a8eb88f49c4b09900450fabd287d9a639a40215f3846b6eaca13c588b40c"
     },
     {
       "path": "website/formivect.ts",
-      "bytes": 3637,
-      "sha256": "0fbdffaacb8fe7008099019eb10d16ea6fb1d5fda2f28b84e26c8d07264acd11"
+      "bytes": 3764,
+      "sha256": "87ed78ac8ebd3906d3191e8d92b6878cd2dd375e4412c785600b8e44f3c7978d"
     },
     {
       "path": "website/INTEGRATION.md",
@@ -275,8 +275,8 @@
     },
     {
       "path": "website/project-entry.json",
-      "bytes": 3543,
-      "sha256": "e7b7d2512b8015980d2b05920de371e71ecd2be4f2fa9668ce0fdb29364aa6f2"
+      "bytes": 3670,
+      "sha256": "0a88e22be324249fccc3bd2bfe0bcb9e465b95cefab6388d769d175ce8f10864"
     }
   ]
 }

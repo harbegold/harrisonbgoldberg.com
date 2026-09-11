@@ -5,12 +5,12 @@ export const BITZY_V1_PROJECT = {
   "title": "Bitzy V1",
   "subtitle": "Modular Robotic Arm",
   "description": "A built five-axis robotic arm with interchangeable gripper and screwdriver tooling, custom ESP32 control, inverse kinematics and editable teach-and-replay motion.",
-  "longDescription": "Bitzy V1 is the physical robot developed under KineArm, begun in June 2026. It combines printed mechanics, six arm servos across five axes, a shared star/four-screw tool interface, and browser/Python/ESP32 control. The physical prototype is built and moving. Gripper Rev B and screwdriver R2 have completed parametric CAD and print packages; the latest tooling still needs physical fit, load and performance qualification. Measured positioning accuracy, repeatability and a reconciled total build cost are not established. AI-assisted workflows supported the creation of this project.",
+  "longDescription": "Bitzy V1 is the physical robot developed under KineArm, begun in June 2026. It combines printed mechanics, six arm servos across five axes, a shared star/four-screw tool interface, and browser/Python/ESP32 control. The physical prototype is built and moving. Gripper Rev B and screwdriver R2 have completed parametric CAD and print packages; the latest tooling still needs physical fit, load and performance qualification. Measured positioning accuracy, repeatability and a reconciled total build cost are not established. AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.",
   "tags": [
     "Fusion 360",
     "3D Printing",
     "ESP32",
-    "Python",
+    "Python (AI-assisted workflows only)",
     "MATLAB",
     "Inverse Kinematics"
   ],

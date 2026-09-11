@@ -1,5 +1,11 @@
 # Portfolio Change Log
 
+## 2026-09-11 · mac · codex · main · Python attribution
+- Clarified Python skill/tag labels as “Python (AI-assisted workflows only)” in constants and project adapters, including published adapter copies. Added explicit entirely-AI-assisted Python disclosure to Bitzy/Formivect descriptions, pages and summaries; chat must qualify every personal Python skill/contribution claim.
+- Reason: Harry confirms Python is known/used through AI-assisted workflows only. This supersedes bare Python proficiency labels; factual API/runtime/test references remain technical descriptions.
+- Audited public PDF text: résumé already puts Python/C++ solely under AI-Assisted Workflows; other PDF occurrences describe software stacks/tests/APIs, not personal proficiency. PDFs unchanged. Updated affected public manifests; frozen Shared releases not modified.
+- Validation: production build, TypeScript, source-label/JSON/manifest checks and live verification. No new dependencies.
+
 ## 2026-09-11 · mac · codex · main · Formivect résumé follow-up
 - File: public/resume.pdf replaced after Harry requested Formivect instead of the quadruped résumé entry. The first upload in 267d02f succeeded before this follow-up.
 - New entry describes a working Fusion add-in with 17 MCP tools and AI-assisted development directed through requirements, workflow decisions, native-output/test review and iteration. No programming proficiency, trained model or standalone-platform claim was added. Other résumé content and site copy are unchanged.

@@ -8,7 +8,7 @@
   "stage": "prototype-built",
   "physicalBuild": "built",
   "status": "Built prototype; control refinement and physical qualification ongoing.",
-  "aiDisclosure": "AI-assisted workflows supported the creation of this project.",
+  "aiDisclosure": "AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.",
   "summary": "A built five-axis modular robot with custom embedded control, inverse kinematics, editable teach/replay and interchangeable tooling.",
   "budget": {
     "currency": "USD",

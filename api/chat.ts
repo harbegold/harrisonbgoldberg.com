@@ -89,7 +89,7 @@ Experience:
 Skills:
 - CAD & design: Fusion 360, SolidWorks, Tinkercad
 - Robotics & embedded: ESP32/ESP32-S3, Arduino, I²C, servo control
-- Analysis & programming: MATLAB and Python
+- Analysis & programming: MATLAB; Python (AI-assisted workflows only). Harrison works with Python entirely through Claude Code and Codex, not independent Python programming proficiency. Whenever mentioning his Python skills or Python contributions, explicitly include this qualification. Technical descriptions of Python APIs or software requirements are not personal proficiency claims.
 - Fabrication: FDM additive manufacturing, laser cutting, soldering
 - AI-assisted workflows: Claude Code and ChatGPT Codex
 - Languages: English (native), Hebrew (conversational)

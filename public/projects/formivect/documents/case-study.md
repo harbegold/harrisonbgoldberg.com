@@ -26,4 +26,4 @@ The intended final product owns the engineering workspace, exact project/revisio
 
 Choose a useful recurring workflow and freeze an independently evaluated contract. Build missing typed operations and recovery, establish model baselines, curate permissioned data and evaluate specialization before expanding supported engineering breadth. A mounting-plate change order is a candidate; it is not a selected market or shipped standalone workflow.
 
-AI-assisted workflows supported the creation of this project.
+AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.

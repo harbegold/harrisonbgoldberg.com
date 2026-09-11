@@ -10,4 +10,4 @@ All potential features are proposed or long-term options: standalone editable pa
 
 Public page: https://www.harrisonbgoldberg.com/projects/formivect/ The catalog documents 31 current/experimental capabilities, 43 potential directions and all 24 original requirements. Selected PDFs/images/HTML are public; software source, installers, histories, credentials, training data and full transfer archives remain private.
 
-AI-assisted workflows supported the creation of this project.
+AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.

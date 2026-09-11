@@ -8,4 +8,4 @@ As of September 9, the recorded controls include named presets, automatic travel
 
 Public page: https://www.harrisonbgoldberg.com/projects/bitzy-v1/. Selected PDFs, images and silent videos are public; engineering/control/manufacturing sources remain private.
 
-AI-assisted workflows supported the creation of this project.
+AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.

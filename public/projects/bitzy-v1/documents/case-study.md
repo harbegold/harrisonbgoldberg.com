@@ -30,4 +30,4 @@ The 30-second silent demo shows manual module assembly and coordinated movement 
 
 Next: audit the as-built revision, qualify each tool and its TCP, measure repeated approaches and payload behavior, and investigate intermittent joint/serial faults. Bitzy V1 remains active. A separate proposed motor-driven arm is at the planning stage and contributes no achieved results to this page.
 
-AI-assisted workflows supported the creation of this project.
+AI-assisted workflows supported the creation of this project. My Python work is carried out entirely through AI-assisted workflows using Claude Code and Codex.
