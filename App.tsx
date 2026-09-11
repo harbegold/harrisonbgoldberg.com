@@ -94,6 +94,15 @@ const App: React.FC = () => {
                 See my work
               </a>
               <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Résumé (PDF, opens in a new tab)"
+                className="px-6 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:border-[#007aff]/40 hover:text-[#007aff] transition-all"
+              >
+                Résumé
+              </a>
+              <a
                 href="#contact"
                 className="px-6 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:border-[#007aff]/40 hover:text-[#007aff] transition-all"
               >

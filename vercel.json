@@ -43,7 +43,7 @@
       "destination": "/projects/formivect/index.html"
     },
     {
-      "source": "/((?!api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/).*)",
+      "source": "/((?!resume\\.pdf$|api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/).*)",
       "destination": "/index.html"
     }
   ],
@@ -53,6 +53,23 @@
     }
   },
   "headers": [
+    {
+      "source": "/resume.pdf",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Harrison_Goldberg_Resume.pdf\""
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
     {
       "source": "/projects/acuivect/simulator/(.*)",
       "headers": [
