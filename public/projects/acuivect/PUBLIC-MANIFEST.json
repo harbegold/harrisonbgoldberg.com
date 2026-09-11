@@ -1,0 +1,203 @@
+{
+  "project": "Acuivect",
+  "edition": "Public portfolio 2026-09-10",
+  "generated": "2026-09-10T16:46:34.275147-07:00",
+  "scope": "Selected documentation and web presentation only. No editable design or manufacturing assets.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 41,
+      "sha256": "44472c234dcdf70bbb8c118e9d322a9426a900f4c19e085db225b2edb976a618"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 323,
+      "sha256": "89dce1efe355b8fa1e085bbd758232c646794d9956e22611758fec4d389e7674"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "analysis/Acuivect-Head-Structural-Review.pdf",
+      "bytes": 349391,
+      "sha256": "69f9eeedd3defd1949f547ac6f0ee45b7e0d0b583359fc97a479e0a34a93506a"
+    },
+    {
+      "path": "assets/portfolio.css",
+      "bytes": 7828,
+      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+    },
+    {
+      "path": "documents/Acuivect-Portfolio.pdf",
+      "bytes": 603853,
+      "sha256": "8fb7a43c022a24844c62fe57fe005d629ef11de2e4e2a76ecdc50679337fa3fc"
+    },
+    {
+      "path": "documents/budget.html",
+      "bytes": 2280,
+      "sha256": "e4a8d33ebbe0e43ecb0c11da56db62772d6c82935c34c9df4bd89551f90903ea"
+    },
+    {
+      "path": "documents/budget.md",
+      "bytes": 1094,
+      "sha256": "1194bc38f094debf21cf6778fd994c71131637fcd98831fb6bbd4e19fcf4e532"
+    },
+    {
+      "path": "documents/case-study.html",
+      "bytes": 4167,
+      "sha256": "d817ef47469ba37e32df9b1a3ab3cbaf9ecdd06d8faf12265c33492ca624b387"
+    },
+    {
+      "path": "documents/case-study.md",
+      "bytes": 3223,
+      "sha256": "16eb4c6351d8a73ea9579518997431de3dd4264c5e3598a92aca48f410666954"
+    },
+    {
+      "path": "documents/document-register.html",
+      "bytes": 2719,
+      "sha256": "c939dd3db40bd61bda81ac77c3a6c25bfa7e636f723e0badc9001098f719d4a4"
+    },
+    {
+      "path": "documents/document-register.md",
+      "bytes": 1487,
+      "sha256": "4de3563f6d98028d57398ebde98da13a9b4d2040fedeb741ba9425625ea301cc"
+    },
+    {
+      "path": "documents/specifications.html",
+      "bytes": 2735,
+      "sha256": "8cdb286fc503c355d65fa850b2985cb40da0996235f2dd229ad88c19700add83"
+    },
+    {
+      "path": "documents/specifications.md",
+      "bytes": 1469,
+      "sha256": "1e116517f4204b6df9001f81f6284bdc208b42fda5e06e1e9f1bdbcf74bf29ca"
+    },
+    {
+      "path": "documents/validation.html",
+      "bytes": 3441,
+      "sha256": "dc33a2e89b7e2ba72364bf7a10c4930136e86394586366a8ef10d32edf60585b"
+    },
+    {
+      "path": "documents/validation.md",
+      "bytes": 2257,
+      "sha256": "083b452b5bd7e077c57e4b0c68709143890024b08a8c711dfbc620673462a40a"
+    },
+    {
+      "path": "drawings/Acuivect-Assembly-and-Motion.pdf",
+      "bytes": 314075,
+      "sha256": "a081c5e542870c3ee0112fa563432bacd79c2c15b47042765c5216d5a66ea313"
+    },
+    {
+      "path": "drawings/Acuivect-General-Assembly.pdf",
+      "bytes": 274672,
+      "sha256": "e67d620b34a0cbc740c7c916c64360fe55b5bc8ce1a92c9aa49dc5997ba22ea0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10089,
+      "sha256": "e169621c83d6203e00252746d529287f7e1d9a52e0dd15b875d8148daaf4cfb0"
+    },
+    {
+      "path": "media/acuivect-assembly.png",
+      "bytes": 595609,
+      "sha256": "c15b52dc27ad8dc6556a8f2d7b438cb51b6eedde6512c09a0f80afb606428fa4"
+    },
+    {
+      "path": "media/assembly-motion-1.png",
+      "bytes": 303030,
+      "sha256": "93af09c42910054459364a50778bd8bfcc4421c71e13ad667a66b637e72fc1ce"
+    },
+    {
+      "path": "media/assembly-motion-2.png",
+      "bytes": 304884,
+      "sha256": "fd5b9d8e8373a201c52e8a9e32b38517c9021d19a72618e1190a1ba823741950"
+    },
+    {
+      "path": "media/general-assembly-1.png",
+      "bytes": 235307,
+      "sha256": "81b9224d843571aadb015341e20ca3aca59c5dd5becec42e7f915ade8b49f43e"
+    },
+    {
+      "path": "media/general-assembly-2.png",
+      "bytes": 156414,
+      "sha256": "ba514549e798a193a3aec4f113c1bec28f39134c3cffbd5b9158c4d8ebb9091d"
+    },
+    {
+      "path": "media/head-analysis-1.png",
+      "bytes": 146836,
+      "sha256": "5e0f72e6211cdd3b6c661073e426b9403a5398f2adaa0682d0a2376be482ce3f"
+    },
+    {
+      "path": "media/head-analysis-2.png",
+      "bytes": 146462,
+      "sha256": "7d38b214e10cd15331c012a9fac9cfc6ed78fd576285c9dbb98ab9bf7b896dd1"
+    },
+    {
+      "path": "media/head-analysis-3.png",
+      "bytes": 106869,
+      "sha256": "b4310e815755dac4789554b85de66ffaf1b330d978b9427c8c59408f08ab738a"
+    },
+    {
+      "path": "media/portfolio-1.png",
+      "bytes": 172075,
+      "sha256": "3017bfea8f632dcfd2401252621b026a644dfd7c2fa03c1a65c9dff787ddd67e"
+    },
+    {
+      "path": "media/portfolio-2.png",
+      "bytes": 85718,
+      "sha256": "17ea4ac51b236bc5d51f12aeee3bc3ead806ba97fc8c2a3fa8298a540019a31d"
+    },
+    {
+      "path": "media/portfolio-3.png",
+      "bytes": 90143,
+      "sha256": "8edf38b738b3d702230e7e1f31fd94dfc2356167b8e306ffcc72683fd0c6a72b"
+    },
+    {
+      "path": "media/portfolio-4.png",
+      "bytes": 84950,
+      "sha256": "360e8fd5765330be29432801130dcff931664072d4ff0f8ef210e9bd467578df"
+    },
+    {
+      "path": "portfolio.json",
+      "bytes": 4834,
+      "sha256": "e1145531a97abd7e551e1db413a02b9bc352bcf7731595a832c5c3d8431da42b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3233,
+      "sha256": "eb656167f0d5d275eb0f97acd3a6360fb0dd226dc7c9f19a93767bb78cad3fed"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 1458,
+      "sha256": "23bc3daef39316f8e5c9eece4daf00752588f10cd1284370286e10b9bb3505b8"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 636,
+      "sha256": "0c8e088689d2fc6c9bb940d96e01c87614139cce46614de8043d84bdfb06d32a"
+    },
+    {
+      "path": "website/acuivect.ts",
+      "bytes": 3201,
+      "sha256": "fb0be240385cb716c5d941905c3177c44e0c6bea16d3752a0943dd67f51eb979"
+    },
+    {
+      "path": "website/chat-summary.md",
+      "bytes": 1188,
+      "sha256": "4e33fa868efd6882269e425c72b24b66ca4117119d4561255c3fcf0929f03155"
+    },
+    {
+      "path": "website/INTEGRATION.md",
+      "bytes": 2817,
+      "sha256": "6de40f65ab8f78372b5dd83bc8a2f47db8899024a672733ab8d6b593ef9c70bc"
+    },
+    {
+      "path": "website/project-entry.json",
+      "bytes": 3104,
+      "sha256": "0ea755c9f37c0d638abdb1539ee68d880997c6f4dafa47b6d54da7680e9753d4"
+    }
+  ]
+}

@@ -3,8 +3,12 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "redirects": [
+    { "source": "/projects/acuivect", "destination": "/projects/acuivect/", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/projects/acuivect/", "destination": "/projects/acuivect/index.html" },
+    { "source": "/((?!api/|projects/acuivect/).*)", "destination": "/index.html" }
   ],
   "functions": {
     "api/chat.ts": {

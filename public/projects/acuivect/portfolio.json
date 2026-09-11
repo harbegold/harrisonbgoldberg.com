@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "slug": "acuivect",
+  "title": "Acuivect",
+  "subtitle": "Precision Insertion Demonstrator",
+  "author": "Harrison B. Goldberg",
+  "updated": "2026-09-10",
+  "stage": "digital-design-complete",
+  "physicalBuild": "deferred-budget",
+  "status": "Digital design complete; physical build deferred due to budget.",
+  "aiDisclosure": "AI-assisted workflows supported the creation of this project.",
+  "summary": "A benchtop insertion demonstrator combining XYZ positioning, camera-to-tool alignment and a removable cartridge on a synthetic brain phantom.",
+  "budget": {
+    "currency": "USD",
+    "parts": 489.1,
+    "priceDate": "2026-09-09",
+    "taxShippingIncluded": false,
+    "optionalReserve": 50
+  },
+  "documents": [
+    {
+      "id": "portfolio",
+      "title": "Portfolio overview",
+      "path": "documents/Acuivect-Portfolio.pdf",
+      "preview": "media/portfolio-1.png",
+      "pages": 4,
+      "kind": "portfolio"
+    },
+    {
+      "id": "general-assembly",
+      "title": "General assembly",
+      "path": "drawings/Acuivect-General-Assembly.pdf",
+      "preview": "media/general-assembly-1.png",
+      "pages": 2,
+      "kind": "drawing"
+    },
+    {
+      "id": "assembly-motion",
+      "title": "Assembly and motion",
+      "path": "drawings/Acuivect-Assembly-and-Motion.pdf",
+      "preview": "media/assembly-motion-1.png",
+      "pages": 2,
+      "kind": "drawing"
+    },
+    {
+      "id": "head-analysis",
+      "title": "Head structural review",
+      "path": "analysis/Acuivect-Head-Structural-Review.pdf",
+      "preview": "media/head-analysis-2.png",
+      "pages": 3,
+      "kind": "analysis"
+    }
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "media/acuivect-assembly.png",
+      "alt": "Acuivect V2 complete assembly in its native CAD viewport",
+      "caption": "Actual CAD assembly. Physical construction is deferred due to budget."
+    },
+    {
+      "type": "image",
+      "src": "media/general-assembly-2.png",
+      "alt": "Acuivect first-angle orthographic assembly drawing",
+      "caption": "Native assembly drawing, public review copy. Nominal digital dimensions."
+    },
+    {
+      "type": "image",
+      "src": "media/assembly-motion-1.png",
+      "alt": "Exploded drawing of the Acuivect head and cartridge service components",
+      "caption": "Native head service view. Exploded paths illustrate assembly, not operating motion."
+    },
+    {
+      "type": "image",
+      "src": "media/head-analysis-2.png",
+      "alt": "Native head stress and displacement contours from the reference study",
+      "caption": "Head-only digital reference study. Ideal assumptions; physical strength remains untested."
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Project stage",
+      "value": "Digital design complete; physical build deferred due to budget."
+    },
+    {
+      "label": "Purpose",
+      "value": "Benchtop probe-insertion demonstrator using a synthetic brain phantom"
+    },
+    {
+      "label": "Motion platform",
+      "value": "Genmitsu 3018-PRO kit with custom cartridge, dock and mounting geometry"
+    },
+    {
+      "label": "Nominal modeled travel",
+      "value": "X: 250 mm total; Y: 140 mm total; Z: 45 mm downward"
+    },
+    {
+      "label": "Nominal phantom",
+      "value": "120 x 100 x 26 mm; synthetic test medium"
+    },
+    {
+      "label": "Insertion-depth targets",
+      "value": "2, 5 and 8 mm; intended test depths, not measured results"
+    },
+    {
+      "label": "Targeting architecture",
+      "value": "Two USB cameras; camera-to-tool calibration and physical targeting validation pending"
+    },
+    {
+      "label": "Tool handling",
+      "value": "Removable seated cartridge, servo latch and table-mounted dock"
+    },
+    {
+      "label": "Digital assembly",
+      "value": "723 occurrences; 395 unique component definitions"
+    },
+    {
+      "label": "Parametric definition",
+      "value": "21,616 editable parameters retained in the private native model"
+    },
+    {
+      "label": "Mechanism graph",
+      "value": "28 joints, 19 rigid groups and 8 motion links"
+    },
+    {
+      "label": "Print-oriented design",
+      "value": "69 unique printed shapes, 84 occurrences; physical prints pending"
+    },
+    {
+      "label": "Materials",
+      "value": "PETG custom printed parts; metal frame, guides and hardware; component materials recorded in CAD"
+    },
+    {
+      "label": "Documented parts estimate",
+      "value": "$489.10 USD before tax, tariffs and shipping; prices recorded September 9, 2026"
+    }
+  ],
+  "rights": "All rights reserved; portfolio viewing only.",
+  "assetPaths": "Relative to this folder; prefix with your hosting base path."
+}

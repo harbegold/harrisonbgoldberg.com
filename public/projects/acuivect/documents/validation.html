@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digital validation and remaining work | Acuivect</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/portfolio.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="topbar"><div class="wrap"><a class="brand" href="../index.html">HG / ACUIVECT</a><nav aria-label="Document navigation"><a href="../index.html#drawings">Drawings</a><a href="validation.md">Markdown version</a></nav></div></header><main id="main" class="wrap article-body"><h1>Digital validation and remaining work</h1>
+<p>Digital design complete; physical build deferred due to budget.</p>
+<table>
+<thead>
+<tr>
+<th>Review</th>
+<th>Recorded result</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Native geometry and materials</td>
+<td>Passed recorded digital checks</td>
+<td>Source-limited purchased geometry still needs incoming measurement.</td>
+</tr>
+<tr>
+<td>Motion and contact review</td>
+<td>30 sampled critical poses passed</td>
+<td>Sampling does not prove clearance at every possible pose or under deformation.</td>
+</tr>
+<tr>
+<td>Parameter edit and restore</td>
+<td>Passed a representative actual edit/restore</td>
+<td>Later interface changes require renewed checks of the affected assembly.</td>
+</tr>
+<tr>
+<td>Cartridge docking</td>
+<td>Dock, withdrawal and reseating checks passed in CAD</td>
+<td>Real latching, friction, retention and sensor behavior are untested.</td>
+</tr>
+<tr>
+<td>Print geometry</td>
+<td>69 current shapes passed digital geometry/slicing diagnostics</td>
+<td>No physical printing, fit or process qualification completed.</td>
+</tr>
+<tr>
+<td>Head linear-static study</td>
+<td>Reviewed native solve completed</td>
+<td>Single current mesh, ideal boundary conditions and isotropic PETG reference.</td>
+</tr>
+<tr>
+<td>Physical prototype</td>
+<td>Deferred due to budget</td>
+<td>No measured targeting accuracy, repeatability, insertion result or hardware stability claim.</td>
+</tr>
+</tbody>
+</table>
+<h2>Revised head study</h2>
+<p>The reference load case fixes the outer clamp cylinder and applies 5 N in Z, 1 N in X and a separate -35 N mm moment about Y. It uses an isotropic PETG reference with 2,000 MPa Young's modulus and 20 MPa yield reference. These are modeling assumptions, not measured print properties.</p>
+<p>The reviewed native results are 0.279 MPa peak von Mises stress, 0.0077216 mm maximum displacement and 71.662 minimum safety factor for that head-only idealization. The current revised geometry has one 0.75 mm parabolic mesh solve; no current peak-stress convergence claim is made. This is not a prediction of complete-machine positioning accuracy or actual printed strength.</p>
+<p>The thin probe has a separate bending limit. The 1 N transverse head load does not qualify the probe for that tip load. Counterbalance is not a brake. Printed anisotropy, clamp slip, friction, creep, wiring, control behavior and physical stability remain commissioning questions.</p>
+<p><a href="../analysis/Acuivect-Head-Structural-Review.pdf">Read the original-result public review copy</a>.</p></main><footer class="footer"><div class="wrap"><p>Harrison B. Goldberg · Acuivect · Public portfolio</p><p>Digital design complete; physical build deferred due to budget.</p></div></footer></body></html>

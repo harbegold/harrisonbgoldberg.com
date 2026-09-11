@@ -1,4 +1,5 @@
 import { Project, Experience, SkillCategory } from './types';
+import { ACUIVECT_PROJECT } from './data/acuivect';
 
 export const PERSONAL_INFO = {
   name: "Harrison B. Goldberg",
@@ -103,26 +104,7 @@ export const PROJECTS: Project[] = [
       next: "Fabricate a calibration coupon and one finger, establish the tendon transmission, and test friction, backlash, sensing, and actuation before building the complete hand."
     }
   },
-  {
-    id: "brain-phantom-inserter",
-    title: "Brain-Phantom Insertion Robot",
-    subtitle: "Camera-guided targeting & precision mechatronics",
-    description: "Developing a benchtop robot for controlled probe insertion into a synthetic brain phantom, with camera-guided targeting and a removable tool cartridge. Currently rebuilding the design around a lower-cost motion platform.",
-    longDescription: "An independent engineering demonstrator exploring XYZ positioning, camera-to-tool calibration, controlled insertion, and repeatable cartridge pickup on a hydrogel brain phantom. The design combines a motion stage, a seated probe cartridge, a latch, two cameras, and a dock. This is a synthetic-phantom project at the CAD and engineering-validation stage; insertion accuracy and physical performance have not yet been measured.",
-    tags: ["Fusion 360", "Parametric CAD", "Mechatronics", "Computer Vision", "Motion Control"],
-    date: "September 2026 — Present",
-    status: "CAD in progress",
-    update: {
-      date: "September 9, 2026",
-      summary: "The initial detailed CAD build reached 383 native components. That version is preserved while a new design is being developed as close to a $400 parts budget as feasible.",
-      milestones: [
-        "V1 established a detailed parametric assembly and component-level geometry checks; its full assembly analysis and manufacturing release were not completed.",
-        "V2 adopts a Genmitsu 3018-PRO motion platform, two USB cameras, a 26 mm-high phantom, and a dock that moves with the Y table. Custom cartridge and mounting geometry are being authored in native Fusion features.",
-        "The complete delivered-cost BOM, power-off Z retention, full motion/interference checks, and structural analysis are still in progress. The $400 figure is a design goal, not a verified build cost."
-      ],
-      next: "Complete and validate the revised CAD and BOM, then build and calibrate the hardware and measure targeting, insertion, and cartridge repeatability on the synthetic phantom."
-    }
-  },
+  ACUIVECT_PROJECT,
   {
     id: "autonomous-quadruped",
     title: "Autonomous Quadruped Robot",
