@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bitzy V1 validation and remaining work | Harrison B. Goldberg</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/portfolio.css"></head><body><header class="topbar"><div class="wrap"><a class="brand" href="../index.html">HG / BITZY V1</a><nav><a href="../index.html">Project</a><a href="Bitzy-V1-Portfolio.pdf">Portfolio PDF</a></nav></div></header><main class="wrap article-body"><h1>Bitzy V1 validation and remaining work</h1>
+<p>The arm has physical demonstration evidence. The latest tool releases and motion software also have recorded digital checks. These are different kinds of evidence.</p>
+<table>
+<thead>
+<tr>
+<th>Review</th>
+<th>Recorded result</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical arm</td>
+<td>Built hardware and movement shown in the demo</td>
+<td>Demonstration does not quantify payload, accuracy, repeatability or duty.</td>
+</tr>
+<tr>
+<td>Teach/replay</td>
+<td>Named presets, automatic travel, synchronized cubic joint interpolation and quintic start/stop easing recorded</td>
+<td>Commanded/model pose is not a measured physical pose; validate loaded replay on hardware.</td>
+</tr>
+<tr>
+<td>Shoulder limit</td>
+<td>User-reported back stop near -29.87 degrees informed a -28 degree command guard</td>
+<td>A local limit correction does not establish whole-arm collision freedom.</td>
+</tr>
+<tr>
+<td>Software regression</td>
+<td>28 Python checks plus JavaScript control/replay suites passed in the September 9 record</td>
+<td>Recorded software checks do not establish physical positioning or hardware reliability.</td>
+</tr>
+<tr>
+<td>Gripper Rev B</td>
+<td>Nine native travel positions and 181 exported gear-section positions checked; 31 meshes sliced</td>
+<td>Actual grip force, printed fits, friction, wear and arm loads remain unqualified.</td>
+</tr>
+<tr>
+<td>Screwdriver R2</td>
+<td>11 native poses, six rotation transforms and 1,441 gear-section checks; 23 meshes sliced</td>
+<td>Actual bit retention, runout, torque, current, duty and physical fits remain unqualified.</td>
+</tr>
+<tr>
+<td>Reliability</td>
+<td>Intermittent joint/serial behavior remains an open investigation</td>
+<td>Spontaneous recovery and replay changes do not establish the original electrical fault cause.</td>
+</tr>
+</tbody>
+</table>
+<h2>Next measurements</h2>
+<ol>
+<li>Record the exact installed servo, mechanical and software revisions.</li>
+<li>Inspect tool engagement, fastener access, printed fits and actual tool mass.</li>
+<li>Measure tool-centre position, repeated approaches from both directions and drift under load.</li>
+<li>Qualify gripper retention and screwdriver runout, bit retention, torque and duty off the arm before loaded robot trials.</li>
+<li>Correlate intermittent joint response with power, signal and serial state.</li>
+<li>Validate reachable paths and physical clearances across the intended pose/load envelope.</li>
+</ol>
+<p>Recorded command guards and software tests do not certify hardware safety, accuracy or complete collision freedom.</p>
+<p>AI-assisted workflows supported the creation of this project.</p></main></body></html>

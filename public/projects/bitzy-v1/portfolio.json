@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "slug": "bitzy-v1",
+  "title": "Bitzy V1",
+  "subtitle": "Modular Robotic Arm",
+  "author": "Harrison B. Goldberg",
+  "updated": "2026-09-10",
+  "stage": "prototype-built",
+  "physicalBuild": "built",
+  "status": "Built prototype; control refinement and physical qualification ongoing.",
+  "aiDisclosure": "AI-assisted workflows supported the creation of this project.",
+  "summary": "A built five-axis modular robot with custom embedded control, inverse kinematics, editable teach/replay and interchangeable tooling.",
+  "budget": {
+    "currency": "USD",
+    "parts": null,
+    "status": "Full build cost not reconciled",
+    "priceDate": "2026-09-01",
+    "taxShippingIncluded": false,
+    "selectedHistoricalReferences": [
+      {
+        "item": "ESP32-S3 board",
+        "amount": 18.99
+      },
+      {
+        "item": "Latching emergency-stop button",
+        "amount": 14.99
+      },
+      {
+        "item": "12 AWG wire pair, 25 ft",
+        "amount": 34.48
+      },
+      {
+        "item": "Dedicated 6 V supply (deferred)",
+        "amount": 199.99
+      }
+    ]
+  },
+  "documents": [
+    {
+      "title": "Portfolio",
+      "path": "documents/Bitzy-V1-Portfolio.pdf",
+      "pages": 4,
+      "kind": "Project story, specifications, evidence and budget"
+    },
+    {
+      "title": "Assembly review",
+      "path": "drawings/Bitzy-V1-Assembly-Review.pdf",
+      "pages": 2,
+      "kind": "Physical assembly and historical kinematic sketches"
+    },
+    {
+      "title": "Tooling and service",
+      "path": "drawings/Bitzy-V1-Tooling-Review.pdf",
+      "pages": 2,
+      "kind": "Gripper Rev B and screwdriver R2 CAD review"
+    },
+    {
+      "title": "Control and validation",
+      "path": "analysis/Bitzy-V1-Control-and-Validation.pdf",
+      "pages": 3,
+      "kind": "Control architecture, recorded checks and remaining tests"
+    }
+  ],
+  "media": [
+    {
+      "type": "video",
+      "src": "media/bitzy-demo.mp4",
+      "poster": "media/bitzy-v1-prototype.jpg",
+      "alt": "Bitzy V1 physical prototype demo",
+      "caption": "Physical prototype, September 2026. Manual module assembly and coordinated movement; some assembly segments sped up. Silent video."
+    },
+    {
+      "type": "image",
+      "src": "media/gripper-assembly.png",
+      "alt": "Gripper Rev B native CAD assembly",
+      "caption": "Gripper Rev B actual CAD. Physical fit and grip qualification pending."
+    },
+    {
+      "type": "image",
+      "src": "media/gripper-mechanism.png",
+      "alt": "Gripper Rev B guide rods and synchronized gearing",
+      "caption": "Actual gripper mechanism view, enclosure hidden."
+    },
+    {
+      "type": "image",
+      "src": "media/screwdriver-assembly.png",
+      "alt": "Screwdriver R2 native CAD assembly",
+      "caption": "Screwdriver R2 actual CAD. Physical torque and duty qualification pending."
+    },
+    {
+      "type": "image",
+      "src": "media/screwdriver-mechanism.png",
+      "alt": "Screwdriver R2 internal drivetrain and guided cartridge",
+      "caption": "Actual R2 mechanism with supported bit drive and guided compliance."
+    },
+    {
+      "type": "video",
+      "src": "media/early-cad-animation.mp4",
+      "poster": "media/early-cad-poster.jpg",
+      "alt": "Earlier six-axis KineArm CAD animation",
+      "caption": "Historical six-axis study, silent animation. Original dimensions and counts are not current five-axis hardware measurements."
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Project stage",
+      "value": "Built prototype; control refinement and physical qualification ongoing."
+    },
+    {
+      "label": "Project start",
+      "value": "June 2026; current public review September 10, 2026"
+    },
+    {
+      "label": "Arm architecture",
+      "value": "Five controlled arm axes; six arm servos because the shoulder uses a synchronized pair"
+    },
+    {
+      "label": "Current servo record",
+      "value": "DS5160SSG shoulder pair and elbow; MS24 replacements reported at base yaw and both wrist axes"
+    },
+    {
+      "label": "Motion/control",
+      "value": "ESP32-S3, PCA9685, Python desktop bridge and browser controller; MATLAB/Python kinematics"
+    },
+    {
+      "label": "Nominal reach reference",
+      "value": "Approximately 475 mm; design reference, not an independently measured workspace"
+    },
+    {
+      "label": "Payload objective",
+      "value": "500 g object plus tool mass; target only, no qualified load envelope"
+    },
+    {
+      "label": "Shared tool interface",
+      "value": "Original star and four-screw mounting interface retained"
+    },
+    {
+      "label": "Gripper Rev B",
+      "value": "108 named parameters, 84 CAD components; 2-26 mm nominal soft-jaw opening, 12 mm travel per jaw"
+    },
+    {
+      "label": "Gripper packaging",
+      "value": "74 x 73 mm nominal case; PETG-CF case, replaceable TPU sleeves; 25 product shapes and six fit coupons"
+    },
+    {
+      "label": "Screwdriver R2",
+      "value": "136 named parameters, 67 CAD components; 4:1 external reduction, 3 mm guided axial compliance"
+    },
+    {
+      "label": "Screwdriver packaging",
+      "value": "80 x 70 mm nominal case; 12 product prints and 11 fit ladders; 287.7 g estimated installed mass, 340 g planning allowance"
+    },
+    {
+      "label": "Tool attachment",
+      "value": "Manual exchange through the common mounting interface; automatic docking is future work"
+    },
+    {
+      "label": "Physical evidence",
+      "value": "30-second silent prototype video shows module assembly and coordinated motion"
+    },
+    {
+      "label": "Historical reference",
+      "value": "Earlier six-axis animation and 729 mm zero-pose sketches are design history, not current hardware measurements"
+    },
+    {
+      "label": "Budget record",
+      "value": "No verified total V1 build cost; dated power/wiring procurement entries are partial and include owned/deferred items"
+    }
+  ],
+  "rights": "All rights reserved; portfolio viewing only.",
+  "assetPaths": "Relative to this folder."
+}

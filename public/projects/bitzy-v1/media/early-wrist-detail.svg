@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 460" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="660" height="460" fill="#FCFCFB"/>
+  <text x="330" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">KineArm — Spherical Wrist Detail (the critical constraint)</text>
+  <text x="330" y="50" text-anchor="middle" font-size="13" fill="#666">J4, J5, J6 axes MUST intersect at one point. Offset = 0. Shown at zero pose (J4 &amp; J6 collinear).</text>
+
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+
+  <!-- forearm block (orange, L2) coming up from below -->
+  <rect x="286" y="250" width="28" height="150" rx="4" fill="#F97316" opacity="0.9"/>
+  <text x="330" y="360" font-size="13" fill="#B5540A" font-weight="bold">forearm (L2)</text>
+  <text x="330" y="378" font-size="11" fill="#9a6">elbow → wrist</text>
+
+  <!-- gripper stem (light blue) above center -->
+  <rect x="290" y="120" width="20" height="105" rx="3" fill="#38BDF8" opacity="0.85"/>
+  <polygon points="290,120 310,120 314,96 286,96" fill="#38BDF8" opacity="0.6"/>
+  <text x="322" y="150" font-size="12" fill="#0EA5E9" font-weight="bold">gripper</text>
+
+  <!-- J4 axis: along forearm, red, below center -->
+  <line x1="300" y1="410" x2="300" y2="235" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+  <text x="150" y="392" font-size="13" fill="#EF4444" font-weight="bold">J4 forearm-roll axis</text>
+  <line x1="258" y1="388" x2="296" y2="360" stroke="#EF4444" stroke-width="1"/>
+
+  <!-- J6 axis: along gripper, light blue, above center -->
+  <line x1="300" y1="225" x2="300" y2="80" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+  <text x="360" y="92" font-size="13" fill="#0EA5E9" font-weight="bold">J6 gripper-roll axis</text>
+  <line x1="356" y1="88" x2="304" y2="110" stroke="#0EA5E9" stroke-width="1"/>
+
+  <!-- J5 axis: horizontal (wrist pitch), yellow -->
+  <line x1="150" y1="230" x2="470" y2="230" stroke="#EAB308" stroke-width="2.5" stroke-dasharray="7 5" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <text x="478" y="234" font-size="13" fill="#B8860B" font-weight="bold">J5 wrist-pitch axis</text>
+
+  <!-- wrist center -->
+  <circle cx="300" cy="230" r="9" fill="#fff" stroke="#111" stroke-width="2.5"/>
+  <circle cx="300" cy="230" r="3.5" fill="#111"/>
+  <text x="300" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#111">WRIST CENTER</text>
+  <text x="300" y="287" text-anchor="middle" font-size="11" fill="#666">all 3 axes meet here · offset = 0 🔒</text>
+
+  <!-- d6 dimension: wrist center to tip -->
+  <g stroke="#888" stroke-width="1">
+    <line x1="250" y1="230" x2="250" y2="96"/>
+    <line x1="245" y1="230" x2="255" y2="230"/><line x1="245" y1="96" x2="255" y2="96"/>
+  </g>
+  <text x="242" y="166" text-anchor="end" font-size="13" font-weight="bold" fill="#111">d₆ = 75 mm</text>
+
+  <!-- note box -->
+  <rect x="20" y="405" width="620" height="44" rx="6" fill="#FEF3C7" stroke="#EAB308" stroke-width="1"/>
+  <text x="34" y="425" font-size="12.5" fill="#7a5b00" font-weight="bold">Why it's locked:</text>
+  <text x="34" y="442" font-size="12" fill="#7a5b00">A spherical wrist (three axes through one point) is what makes the closed-form IK exist. Any non-zero offset forces slow numerical IK.</text>
+</svg>

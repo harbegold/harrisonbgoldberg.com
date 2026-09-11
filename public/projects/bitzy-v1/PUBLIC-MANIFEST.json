@@ -1,0 +1,268 @@
+{
+  "project": "Bitzy V1",
+  "edition": "Public portfolio 2026-09-10",
+  "generated": "2026-09-10T18:20:09.080231-07:00",
+  "scope": "Selected documentation and web presentation only. No editable engineering, manufacturing or control assets.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 21,
+      "sha256": "a04c1ecee5f831666e805f64d7ab9b1f22cbb8550d7ca83bdad379e5f9a7439c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 292,
+      "sha256": "7ba4331e3bc32296b87048e4de80884b38dc5a1097937f1c58c4451e281919e0"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "analysis/Bitzy-V1-Control-and-Validation.pdf",
+      "bytes": 7419,
+      "sha256": "c46ce5ebadabde61b2dcb66fbf0ff740bbb7a56146c778c2c683040b9bb13ae8"
+    },
+    {
+      "path": "assets/bitzy.css",
+      "bytes": 514,
+      "sha256": "f97f9c496296438f7f22a2b99778f79b44f2c395b0aae4dc361c45c798160f7d"
+    },
+    {
+      "path": "assets/portfolio.css",
+      "bytes": 7828,
+      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+    },
+    {
+      "path": "documents/Bitzy-V1-Portfolio.pdf",
+      "bytes": 154933,
+      "sha256": "d2a3a39eedc9175cd00343de610e3d44ea80a5465722ab2c98a7744a68f3f318"
+    },
+    {
+      "path": "documents/budget.html",
+      "bytes": 2321,
+      "sha256": "3299eac2fd8f178057c4ce90673bd7459dad01c02447ad7c27c83087711cf120"
+    },
+    {
+      "path": "documents/budget.md",
+      "bytes": 1553,
+      "sha256": "5d1ffa1fbbc1bb2dc18971bcc11aa96147df82217c6b02f174a7939c2c369e6b"
+    },
+    {
+      "path": "documents/case-study.html",
+      "bytes": 3903,
+      "sha256": "f9a1466373b828c85317c995c1f902f4c6dbdc78126242b32f6cc98029e6e170"
+    },
+    {
+      "path": "documents/case-study.md",
+      "bytes": 3227,
+      "sha256": "89c11ba41052e442fe6e5e77ddb14abe27baf1e4ee2882ee226631e1f4fa43fb"
+    },
+    {
+      "path": "documents/document-register.html",
+      "bytes": 3443,
+      "sha256": "7d706a3820a1fb5bd91eca9ac946f057dda5951f85d9b49edb800666a9fe4edc"
+    },
+    {
+      "path": "documents/document-register.md",
+      "bytes": 2488,
+      "sha256": "967977d939a8dfbe96bcd5dbefd41dd23169dc367d067e5425c953c343239eeb"
+    },
+    {
+      "path": "documents/specifications.html",
+      "bytes": 3008,
+      "sha256": "c31b81a031cc42da984baa020073db1d9031eaa07f43502ad808bfe25e3747df"
+    },
+    {
+      "path": "documents/specifications.md",
+      "bytes": 2007,
+      "sha256": "9c82d856a3911a1bc2958590617de8da09f817f558ab529fd427cbed558ae7ef"
+    },
+    {
+      "path": "documents/validation.html",
+      "bytes": 3236,
+      "sha256": "8bd1f2c45925a5cf1ec43035c9f59da42210f00ed77da2f923a629259919b805"
+    },
+    {
+      "path": "documents/validation.md",
+      "bytes": 2325,
+      "sha256": "58670a41db07f8f30ea03dfb86677ffe2a89d41ea9f5fe1fa77d8e20ccd6b820"
+    },
+    {
+      "path": "drawings/Bitzy-V1-Assembly-Review.pdf",
+      "bytes": 153553,
+      "sha256": "8234c07e9f63beaa523ffdfb547036d6fc4365a66b6bcf0d5f21959bdc44a8aa"
+    },
+    {
+      "path": "drawings/Bitzy-V1-Tooling-Review.pdf",
+      "bytes": 1230293,
+      "sha256": "91e09dd44041cc900ca5f3e715e0729631363c1b5194ddb30ee76d1b4dfb30a4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11539,
+      "sha256": "cc9f20c29210728ec02fbb1f6ee861485745ace8ecb3fbb21eda58d7a955ebca"
+    },
+    {
+      "path": "media/assembly-review-1.png",
+      "bytes": 243123,
+      "sha256": "f5d3238f8509953f9523e69118d429c82ae46dae3568e3e3cc83408e5b2a3af3"
+    },
+    {
+      "path": "media/assembly-review-2.png",
+      "bytes": 104139,
+      "sha256": "7789d19f1af98820b854b5521de114285b08ea0d9027b32d460f2918f9f8784d"
+    },
+    {
+      "path": "media/bitzy-demo.mp4",
+      "bytes": 5094310,
+      "sha256": "9b00b6057c412c31e6189e8a1a1c4b87ea5f2fddfc64092b18e951917991648e"
+    },
+    {
+      "path": "media/bitzy-v1-prototype.jpg",
+      "bytes": 116826,
+      "sha256": "fc9595d6dcfa8edb6338333ce81b4086b55c4ce1cc8b0692075d7036540a25a4"
+    },
+    {
+      "path": "media/control-validation-1.png",
+      "bytes": 113918,
+      "sha256": "840ebf6da33482cbeb8dcedb698aae55b448929ecc32ae8f8751a9154bf585f0"
+    },
+    {
+      "path": "media/control-validation-2.png",
+      "bytes": 106226,
+      "sha256": "e789bb5e0378364a4212e91ef622d71f55e06a828e95d2a1aa9bbe3939f0433a"
+    },
+    {
+      "path": "media/control-validation-3.png",
+      "bytes": 104440,
+      "sha256": "3e85b9ac1b8a5638bb15305f8d3390f2f7760180a588bcc0e5aaf7e2cc98274f"
+    },
+    {
+      "path": "media/early-cad-animation.mp4",
+      "bytes": 2384448,
+      "sha256": "410c0accb0ed7879f30ae7665be89f264c22232089bae5ab9f67d24d9a525bc3"
+    },
+    {
+      "path": "media/early-cad-poster.jpg",
+      "bytes": 51783,
+      "sha256": "f30d03e409836be57e8364dbf2f3d6f9b7d25bdcfa6438946b2379bda3c4c03b"
+    },
+    {
+      "path": "media/early-side-elevation.svg",
+      "bytes": 4082,
+      "sha256": "52c73dd588cc476c53e2dfd059855b372ed78ee64eb233bf0deb91c5d369f662"
+    },
+    {
+      "path": "media/early-wrist-detail.svg",
+      "bytes": 3543,
+      "sha256": "8105c092e354a4eed40b75f6e67e4f7ed9e0f3450b822f5d5a482bff584fb188"
+    },
+    {
+      "path": "media/gripper-assembly.png",
+      "bytes": 263552,
+      "sha256": "81c503f83197bcd12b9de34f2a700abd50fb711bb5e4d608ec8a127e1a877314"
+    },
+    {
+      "path": "media/gripper-mechanism.png",
+      "bytes": 411514,
+      "sha256": "6794f73b9b14ef7f820f448baf806382ea16d44fcdae0e61eb81a0335c11582f"
+    },
+    {
+      "path": "media/module-fastening.jpg",
+      "bytes": 65041,
+      "sha256": "1adfd0d65fe942a00347f75900e48c399ea8319a24a3c7e80730fa530945c30d"
+    },
+    {
+      "path": "media/module-interface.jpg",
+      "bytes": 73941,
+      "sha256": "9a1c25f4bb97b9d0ddbd8bcceff80c193174e2e8b88cb4416878b1cfe3704878"
+    },
+    {
+      "path": "media/portfolio-1.png",
+      "bytes": 209923,
+      "sha256": "fe39d913082c67fdfb30a2a3c342390fbf13e8c5658e5bbcaf1e5e74c8366e7a"
+    },
+    {
+      "path": "media/portfolio-2.png",
+      "bytes": 113306,
+      "sha256": "fbaa2e7e5ca902eb00139c303da376b756932a5d0d87cc074becd33d07d6d0a6"
+    },
+    {
+      "path": "media/portfolio-3.png",
+      "bytes": 105567,
+      "sha256": "751ef2e557d2dd5eb812b6b129df8e601bd718bda7c9dc133171cd93d2d2246e"
+    },
+    {
+      "path": "media/portfolio-4.png",
+      "bytes": 117580,
+      "sha256": "97b1e62e15d5643b707bc86a5e6cce9baec5e185a0d187ff18895d9cc668a5c4"
+    },
+    {
+      "path": "media/screwdriver-assembly.png",
+      "bytes": 206234,
+      "sha256": "d8ee24716b2efbe9c4adea7c1651f965c1617a4f48850749c7997a9698759b31"
+    },
+    {
+      "path": "media/screwdriver-cartridge.png",
+      "bytes": 284629,
+      "sha256": "bd32cbbc15d96085b4837c453ce6d1be6df78b04dbd220e8e919e78063ea9f21"
+    },
+    {
+      "path": "media/screwdriver-mechanism.png",
+      "bytes": 266939,
+      "sha256": "a3b4907ce66a114c5a602b75cc6aff3779ee43dc32493dac553dd29c2705d5fa"
+    },
+    {
+      "path": "media/tooling-review-1.png",
+      "bytes": 138846,
+      "sha256": "535ea022d4ddfa5c4202aa723805a36aeef1be12f24208a8fa44249dad7e8b6a"
+    },
+    {
+      "path": "media/tooling-review-2.png",
+      "bytes": 128614,
+      "sha256": "a498555c6d6c6ecdb7b2f5baacf1a55e8007cc318517dd7ef1812c280e970853"
+    },
+    {
+      "path": "portfolio.json",
+      "bytes": 6041,
+      "sha256": "c09e351d029bec571dd72d7479294834b97e11361a956fe23f166a34445a2e9c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2066,
+      "sha256": "af793188d1d8db17c9deff31ec6bcfd612e5fbed69a908147d6f42576f5fed49"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 921,
+      "sha256": "1d1aa61be5c69eaf2698e241d5410d125ce81cf6dbbe67817b9082652650bb46"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 542,
+      "sha256": "dae14c71e41a89dc39a151b139b910fef4512aa39101b35c727c5b6f139ead0a"
+    },
+    {
+      "path": "website/bitzy-v1.ts",
+      "bytes": 4012,
+      "sha256": "4b19f71a4c901066fdb45479246fd2b3938452bf0b9a0d6b413198fa76c51e8a"
+    },
+    {
+      "path": "website/chat-summary.md",
+      "bytes": 1936,
+      "sha256": "858cca97b1354de22be5c2ed5fea97470973790be92f6b197313076aed7b8ee2"
+    },
+    {
+      "path": "website/INTEGRATION.md",
+      "bytes": 1235,
+      "sha256": "eef52e97117279b05e44ce51fa369569b6516a52e0608d3a2271ab53acdd8634"
+    },
+    {
+      "path": "website/project-entry.json",
+      "bytes": 3919,
+      "sha256": "d5ee17ca9f299ba629910d42b682baa1f798d9f4076479c69ffe798c2cf5d99b"
+    }
+  ]
+}

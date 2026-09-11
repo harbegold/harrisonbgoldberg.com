@@ -1,5 +1,6 @@
 import { Project, Experience, SkillCategory } from './types';
 import { ACUIVECT_PROJECT } from './data/acuivect';
+import { BITZY_V1_PROJECT } from './data/bitzy-v1';
 
 export const PERSONAL_INFO = {
   name: "Harrison B. Goldberg",
@@ -54,36 +55,7 @@ export const PROJECTS: Project[] = [
     date: "2026 — Present",
     status: "Launched"
   },
-  {
-    id: "kinearm",
-    title: "Bitzy / KineArm",
-    subtitle: "A modular robot, from CAD to working hardware",
-    description: "A built five-axis robotic arm with two interchangeable toolheads—a gripper and screwdriver—custom ESP32 control, inverse kinematics, and teach-and-replay motion. Now refining repeatability and qualifying the modular tooling.",
-    longDescription: "KineArm began in June 2026 as a six-axis manipulator study with closed-form forward and inverse kinematics in MATLAB and Python. It evolved into Bitzy: a five-axis, 3D-printed modular arm with custom electronics and a browser-based controller. The project spans parametric Fusion 360 design, fabrication, servo calibration, Cartesian control, and recorded motion sequences. The footage below shows the physical prototype; the earlier CAD animation and sketches document the design's evolution.",
-    tags: ["Fusion 360", "3D Printing", "ESP32", "Python", "MATLAB", "Inverse Kinematics"],
-    date: "June 2026 — Present",
-    status: "Prototype built",
-    cover: { src: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 assembled robotic arm on the workbench" },
-    update: {
-      date: "September 9, 2026",
-      summary: "The arm is built and moving. Current work focuses on smoother recorded motion, more reliable control, and testing the two completed modular toolheads: a gripper and screwdriver.",
-      milestones: [
-        "Teach/replay supports named presets, automatic travel planning, smooth joint interpolation, and entry from the current commanded pose. Replay now follows the main movement-speed control.",
-        "A measured shoulder backstop informed an updated joint guard. Intermittent servo/serial behavior, full self-collision checking, and measured positioning accuracy still need validation.",
-        "Two interchangeable toolheads have been made around the shared mechanical interface: the gripper and screwdriver. Gripper Rev B and screwdriver R2 also have completed parametric CAD and print packages. The screwdriver has 136 parameters and 67 components; digital geometry and slicing checks are complete, with physical tool testing still ahead."
-      ],
-      next: "Measure repeatability, validate tool fits and loads on the bench, and qualify reliable motion before progressing to an automatic tool-changing dock and vision-guided tasks."
-    },
-    media: [
-      { type: "video", src: "/media/kinearm/bitzy-demo.mp4", poster: "/media/kinearm/bitzy-demo-poster.jpg", alt: "Bitzy V1 physical prototype demo", caption: "Physical prototype · September 2026. Modular assembly and coordinated movement; assembly footage includes sped-up segments. Silent video." },
-      { type: "image", src: "/media/kinearm/screwdriver-r2.jpg", alt: "Fusion CAD view of the enclosed Bitzy screwdriver R2 module", caption: "Screwdriver R2 · actual Fusion CAD. Enclosed N20-driven tool with guided axial compliance; physical qualification pending." },
-      { type: "image", src: "/media/kinearm/screwdriver-mechanism.jpg", alt: "Internal gears and spindle of the Bitzy screwdriver module", caption: "Inside the screwdriver · actual CAD mechanism, showing the gear reduction and spindle assembly." },
-      { type: "image", src: "/media/kinearm/gripper-mechanism.jpg", alt: "Bitzy gripper Rev B CAD with exposed racks, gears, and parallel jaws", caption: "Gripper Rev B · actual Fusion CAD with the enclosure hidden to show the parallel-jaw mechanism." },
-      { type: "video", src: "/media/kinearm/early-cad-animation.mp4", poster: "/media/kinearm/early-cad-poster.jpg", alt: "Historical KineArm CAD assembly animation", caption: "Earlier six-axis design study · silent CAD animation. On-screen dimensions and part counts describe this historical revision, not the current prototype." },
-      { type: "image", src: "/media/kinearm/early-side-elevation.svg", alt: "Early KineArm side-elevation engineering sketch with joint axes and link dimensions", caption: "Early geometry study · dimensioned zero-pose side elevation. The 729 mm reference belongs to the earlier design." },
-      { type: "image", src: "/media/kinearm/early-wrist-detail.svg", alt: "Early KineArm spherical-wrist engineering sketch", caption: "Early six-axis wrist study · joint-axis relationships and wrist geometry, preserved as design history." }
-    ]
-  },
+  BITZY_V1_PROJECT,
   {
     id: "aurex-h20",
     title: "AUREX H20 — Robotic Hand",
