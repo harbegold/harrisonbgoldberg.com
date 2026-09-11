@@ -1,0 +1,59 @@
+{
+  "mass_groups_g": {
+    "fixed": 5317.507813240416,
+    "Y_screw": 133.89211121033514,
+    "Y": 2582.154067309296,
+    "X_screw": 161.51299382068538,
+    "X": 1490.375542357341,
+    "Z_screw": 66.8204432330637,
+    "Z": 390.1685429919243,
+    "cartridge": 13.40760576270836,
+    "latch": 2.980296823353979,
+    "storage": 383.10397075606517,
+    "counterweight": 464.3029780363796,
+    "pulley_-9_185": 3.8756941042870605,
+    "pulley_9_185": 3.8756941042870605,
+    "pulley_-9_320": 3.8756941042870605,
+    "pulley_9_320": 3.8756941042870605,
+    "enclosure_lid": 175.83771368205024,
+    "stop_button": 16.823605651092496,
+    "laser_pen": 23.863173287712147,
+    "switch_X_home_lever": 0.25236117035270966,
+    "switch_X_home_roller": 0.0766499598630545,
+    "switch_Y_home_lever": 0.25236117035270966,
+    "switch_Y_home_roller": 0.0766499598630545,
+    "switch_Z_home_lever": 0.25236117035270966,
+    "switch_Z_home_roller": 0.0766499598630545,
+    "switch_Tool_seat_lever": 0.25236117035270966,
+    "switch_Tool_seat_roller": 0.0766499598630545,
+    "guard": 105.88035163268641,
+    "enclosure_lid_button": 0.20297909705933173,
+    "laser_pen_button": 0.20297909705933173
+  },
+  "limits": {
+    "x": [
+      -125,
+      125
+    ],
+    "y": [
+      -70,
+      70
+    ],
+    "z": [
+      0,
+      45
+    ],
+    "latch": [
+      0,
+      60
+    ]
+  },
+  "estimated": {
+    "damping_Ns_m": 12,
+    "friction_N": 0.5,
+    "force_limit_N": 30,
+    "backlash_mm": 0.15,
+    "gel_stiffness_N_mm": 0.08
+  },
+  "qualification": "CAD masses; reference actuator/friction/gel coefficients are adjustable scenario assumptions, not measured hardware values."
+}
