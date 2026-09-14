@@ -22,14 +22,15 @@ export const BITZY_V1_PROJECT = {
     "alt": "Bitzy V1 physical arm moving on the workbench"
   },
   "update": {
-    "date": "September 10, 2026",
-    "summary": "Built prototype; control refinement and physical qualification ongoing.",
+    "date": "September 14, 2026",
+    "summary": "Built prototype; experimental local-AI decision software, control refinement and physical qualification ongoing.",
     "milestones": [
+      "Experimental local AI: a 27B vision-language model on one RTX 4090 proposes bounded, validated actions from camera views, with sampled neural activity shown live; a smaller student model is in training and not connected to the arm.",
       "Built five-axis prototype with manual interchangeable tooling; physical demo and historical design references are available in the public portfolio.",
       "Named presets, automatic travel, synchronized cubic joint interpolation and eased start/stop transitions are recorded. A reported shoulder back stop informed the command guard.",
       "Gripper Rev B: 108 parameters and 84 components. Screwdriver R2: 136 parameters and 67 components. Digital checks complete; physical tool fits, forces, loads and durability remain unqualified."
     ],
-    "next": "Audit the as-built revision, qualify both tools and actual TCPs, measure repeatability and payload behavior, and investigate intermittent joint/serial response. Bitzy V1 remains active; the separate motor-driven variant is planning work."
+    "next": "Recalibrate the camera-to-arm registration and compare the student model with the 27B in shadow mode. Audit the as-built revision, qualify both tools and actual TCPs, measure repeatability and payload behavior, and investigate intermittent joint/serial response. Bitzy V1 remains active; the separate motor-driven variant is planning work."
   },
   "media": [
     {

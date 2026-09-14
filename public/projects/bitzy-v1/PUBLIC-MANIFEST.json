@@ -1,6 +1,6 @@
 {
   "project": "Bitzy V1",
-  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11",
+  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11; local AI decision update 2026-09-14",
   "generated": "2026-09-10T18:20:09.080231-07:00",
   "scope": "Selected documentation and web presentation only. No editable engineering, manufacturing or control assets.",
   "files": [
@@ -101,8 +101,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 11735,
-      "sha256": "0a96930e2c4290d90274e078b64060b9a28ff96b1e0e9ab09d8ba45efd487129"
+      "bytes": 18192,
+      "sha256": "c84281b8845f310bb2456b8fe2b9a58dec0d33a09101ff54332d644b42a43a95"
     },
     {
       "path": "media/assembly-review-1.png",
@@ -115,9 +115,34 @@
       "sha256": "7789d19f1af98820b854b5521de114285b08ea0d9027b32d460f2918f9f8784d"
     },
     {
+      "path": "media/bitzy-27b-model-panel.png",
+      "bytes": 271773,
+      "sha256": "13b4f8f539321893796589cab201ecfaaa2146630e95487c1c02d1f2a9094ecf"
+    },
+    {
+      "path": "media/bitzy-27b-pipeline.svg",
+      "bytes": 4431,
+      "sha256": "893a838589ec10d8f3e98d141bf129c7b3357336033b3532fa462447750b7b5e"
+    },
+    {
+      "path": "media/bitzy-27b-view-pick.jpg",
+      "bytes": 63842,
+      "sha256": "00abaf93109cb02a2d80836586aad54a05bf6a9cc18b7103d0547370f944a2a6"
+    },
+    {
       "path": "media/bitzy-demo.mp4",
       "bytes": 5094310,
       "sha256": "9b00b6057c412c31e6189e8a1a1c4b87ea5f2fddfc64092b18e951917991648e"
+    },
+    {
+      "path": "media/bitzy-sim-training-pick.jpg",
+      "bytes": 63052,
+      "sha256": "344eb67bffa7573cabf58d7fd2b8577cf546f28cc98a427551dc02ef1dc1628a"
+    },
+    {
+      "path": "media/bitzy-student-loss.svg",
+      "bytes": 73710,
+      "sha256": "a34044efaf41bea2656b502c881f3812145444fe585ea82306177cc94f30f999"
     },
     {
       "path": "media/bitzy-v1-prototype.jpg",
@@ -246,13 +271,13 @@
     },
     {
       "path": "website/bitzy-v1.ts",
-      "bytes": 4139,
-      "sha256": "e50ff87525a7680e06051addbce82a98529b07631cba03bb50d867998a4f3ca6"
+      "bytes": 4523,
+      "sha256": "81f6c6f0be7d09fc43a2b36587cf521457c046464bd7e40e70968ea971a1bc1a"
     },
     {
       "path": "website/chat-summary.md",
-      "bytes": 2034,
-      "sha256": "3f5bfd01ac8ef8c9ba66af1492afdeb51dda0a4ff1cb3bc91eacedf7b13fee54"
+      "bytes": 2652,
+      "sha256": "ae0236a6dbf12d9ec6ef296c37dffff95b0e2b05ec96c03f23c4f58aec2d8ea6"
     },
     {
       "path": "website/INTEGRATION.md",
