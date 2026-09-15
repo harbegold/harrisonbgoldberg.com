@@ -1,6 +1,6 @@
 {
   "project": "Bitzy V1",
-  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11; local AI decision update 2026-09-14",
+  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11; local AI decision update 2026-09-14; gripper module update 2026-09-15",
   "generated": "2026-09-10T18:20:09.080231-07:00",
   "scope": "Selected documentation and web presentation only. No editable engineering, manufacturing or control assets.",
   "files": [
@@ -26,8 +26,8 @@
     },
     {
       "path": "assets/bitzy.css",
-      "bytes": 514,
-      "sha256": "f97f9c496296438f7f22a2b99778f79b44f2c395b0aae4dc361c45c798160f7d"
+      "bytes": 923,
+      "sha256": "b33a6c016576b5323792c0f64330c4669982d73e4f6c8ca7353e22c77f6ef883"
     },
     {
       "path": "assets/portfolio.css",
@@ -101,8 +101,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 18192,
-      "sha256": "c84281b8845f310bb2456b8fe2b9a58dec0d33a09101ff54332d644b42a43a95"
+      "bytes": 23894,
+      "sha256": "4a791fe273a8b42933d46be3e303baadb9b2c5e716bfb0f4a22a00c60678b5a4"
     },
     {
       "path": "media/assembly-review-1.png",
@@ -195,6 +195,36 @@
       "sha256": "6794f73b9b14ef7f820f448baf806382ea16d44fcdae0e61eb81a0335c11582f"
     },
     {
+      "path": "media/gripper-revf-face-markers.jpg",
+      "bytes": 104236,
+      "sha256": "aa954803b81020b210f3f2c636e3194a8b171b84d8468a0dfaa5af399d224793"
+    },
+    {
+      "path": "media/gripper-revf-jaw-marker-closed.jpg",
+      "bytes": 114987,
+      "sha256": "fed541b50aedd8218e9c2915a56142ca3c201d0ea9c90734924701d3a5e329c8"
+    },
+    {
+      "path": "media/gripper-revf-jaw-marker-open.jpg",
+      "bytes": 96190,
+      "sha256": "d782bc579c56be3c4320bd760315e294b4ade70bab9c53000447aee18754d54e"
+    },
+    {
+      "path": "media/gripper-revf-on-arm.jpg",
+      "bytes": 160234,
+      "sha256": "28f0b71e9c6fa35117c7eff1248970a3049118959eac0a395c3fcf282b5f8992"
+    },
+    {
+      "path": "media/gripper-revf-pinion.jpg",
+      "bytes": 90894,
+      "sha256": "efdbd3a5e1b0a7dac5490a7a6c77967495d76fc0cee366d9f3e8c28f7cb8de8f"
+    },
+    {
+      "path": "media/gripper-revf-wrist.jpg",
+      "bytes": 85800,
+      "sha256": "0558dfac255565f3e1a35c703df0fde20d5e440609006014a2a725bac79587b4"
+    },
+    {
       "path": "media/module-fastening.jpg",
       "bytes": 65041,
       "sha256": "1adfd0d65fe942a00347f75900e48c399ea8319a24a3c7e80730fa530945c30d"
@@ -271,13 +301,13 @@
     },
     {
       "path": "website/bitzy-v1.ts",
-      "bytes": 4523,
-      "sha256": "81f6c6f0be7d09fc43a2b36587cf521457c046464bd7e40e70968ea971a1bc1a"
+      "bytes": 5226,
+      "sha256": "621c2aad2509d24eaf8994ef6f29c6df5418a4081d430df876a36a55d159c33a"
     },
     {
       "path": "website/chat-summary.md",
-      "bytes": 2652,
-      "sha256": "ae0236a6dbf12d9ec6ef296c37dffff95b0e2b05ec96c03f23c4f58aec2d8ea6"
+      "bytes": 3465,
+      "sha256": "bb55683730f229bf23722dbc47d439e9ec45c1a56ae3162f00539e75ca4ff70b"
     },
     {
       "path": "website/INTEGRATION.md",
