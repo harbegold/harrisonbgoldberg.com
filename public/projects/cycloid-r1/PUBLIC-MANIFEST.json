@@ -1,0 +1,103 @@
+{
+  "project": "Cycloid R1",
+  "edition": "Public portfolio 2026-10-17",
+  "generated": "2026-10-17T16:42:20.611037-07:00",
+  "scope": "Selected documentation and web presentation only. No editable CAD, print files, firmware or bench software. All photo and video metadata stripped.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1220,
+      "sha256": "90f5d0f6aeac893cc824bd843dba00a2ba72bf68ee87748123648ff7bda4c0db"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 925,
+      "sha256": "cc27bd7c532c2726f463415d3523bcf760dbea08510b791bb040d6b69ac8a7d1"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 542,
+      "sha256": "dae14c71e41a89dc39a151b139b910fef4512aa39101b35c727c5b6f139ead0a"
+    },
+    {
+      "path": "assets/cycloid.css",
+      "bytes": 1458,
+      "sha256": "cf2226d93d373c8fe698130053cf3a399417ddad9af789309ca1d03dd4462a48"
+    },
+    {
+      "path": "assets/portfolio.css",
+      "bytes": 7828,
+      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 14793,
+      "sha256": "dfa220f94791db264b23778ab65ffa8e9484334e76a3106dc0b35fa2c724ccda"
+    },
+    {
+      "path": "media/cad-assembly.png",
+      "bytes": 20470,
+      "sha256": "47749345ba109a03ad4b32c7002c13ce7e0f6cd9712d9992a65d902d71b43ac8"
+    },
+    {
+      "path": "media/cad-core.png",
+      "bytes": 127751,
+      "sha256": "6802ba5ca3a9bca263d8874824a63036e8ff693d00baeb58407c40df413a5d5d"
+    },
+    {
+      "path": "media/cad-inside.png",
+      "bytes": 42991,
+      "sha256": "285dcf6b9e124088f0ac7125b5eecedc2f267782e79c2d2c107ee1ad0f0d3bb4"
+    },
+    {
+      "path": "media/cad-top.png",
+      "bytes": 31729,
+      "sha256": "1da28109c08e1b4f0718bf15b89dfb64c0fdbacd624139f8e91970ca149cba3e"
+    },
+    {
+      "path": "media/chart-accuracy-sweep.svg",
+      "bytes": 15696,
+      "sha256": "1c26aabe6c185c948c7ac5f03b0a6f9935baf7b6a48fe87a40b52dfff6f6637a"
+    },
+    {
+      "path": "media/chart-lost-motion.svg",
+      "bytes": 7855,
+      "sha256": "d5d1331b58133eb2c3cab8d664ab1b0eb5c208c27d680f3ae601240c9834bcee"
+    },
+    {
+      "path": "media/chart-stall.svg",
+      "bytes": 21741,
+      "sha256": "c18f9712a09b9bdc597e2cb6cde83666decdf0983deef89da734f9da2493d1c2"
+    },
+    {
+      "path": "media/cycloid-r1-poster.jpg",
+      "bytes": 172176,
+      "sha256": "8197c427d5856262970d33788710032b9c5014c038984537d1ecaa26dd842b71"
+    },
+    {
+      "path": "media/cycloid-r1-running.mp4",
+      "bytes": 5286294,
+      "sha256": "fdf1e9bd0ab2cd7ae25ee28dff005d8b374a0798407a2f8de86d3444428d9323"
+    },
+    {
+      "path": "media/g9-planetary-exploded.png",
+      "bytes": 279816,
+      "sha256": "3c576316c5f60d73bdb4742a7aa8c9f382d9c318c5823a719d66d15b6290ac21"
+    },
+    {
+      "path": "media/gearbox-v2-poster.jpg",
+      "bytes": 69633,
+      "sha256": "6c67aeee13931f15563f9ecaffbabacad25198ca7f22f2b9680b6fe60fe5f7a4"
+    },
+    {
+      "path": "media/gearbox-v2-running.mp4",
+      "bytes": 422954,
+      "sha256": "389bfd5a714fddb97ff1ea333b4cef2cd67bcab949af5fa17d6e72fbb76d5342"
+    },
+    {
+      "path": "media/gearbox-v2-section.png",
+      "bytes": 153999,
+      "sha256": "9d5e4dce6d532ec8eb54592731a90c878aa214a121a813bb57874317f0f9ed8f"
+    }
+  ]
+}

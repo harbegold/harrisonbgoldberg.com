@@ -23,6 +23,11 @@
       "source": "/projects/formivect",
       "destination": "/projects/formivect/",
       "permanent": true
+    },
+    {
+      "source": "/projects/cycloid-r1",
+      "destination": "/projects/cycloid-r1/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -43,7 +48,11 @@
       "destination": "/projects/formivect/index.html"
     },
     {
-      "source": "/((?!resume\\.pdf$|api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/).*)",
+      "source": "/projects/cycloid-r1/",
+      "destination": "/projects/cycloid-r1/index.html"
+    },
+    {
+      "source": "/((?!resume\\.pdf$|api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/|projects/cycloid-r1/).*)",
       "destination": "/index.html"
     }
   ],
