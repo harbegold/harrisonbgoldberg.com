@@ -36,7 +36,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="66.186802" y="215.667031" transform="rotate(-0 66.186802 215.667031)">0</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="66.186802" y="215.667031" transform="rotate(-0 66.186802 215.667031)">0</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -46,7 +46,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="133.929683" y="215.667031" transform="rotate(-0 133.929683 215.667031)">60</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="133.929683" y="215.667031" transform="rotate(-0 133.929683 215.667031)">60</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -56,7 +56,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="201.672565" y="215.667031" transform="rotate(-0 201.672565 215.667031)">120</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="201.672565" y="215.667031" transform="rotate(-0 201.672565 215.667031)">120</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -66,7 +66,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="269.415446" y="215.667031" transform="rotate(-0 269.415446 215.667031)">180</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="269.415446" y="215.667031" transform="rotate(-0 269.415446 215.667031)">180</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -76,7 +76,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="337.158328" y="215.667031" transform="rotate(-0 337.158328 215.667031)">240</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="337.158328" y="215.667031" transform="rotate(-0 337.158328 215.667031)">240</text>
      </g>
     </g>
     <g id="xtick_6">
@@ -86,7 +86,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="404.901209" y="215.667031" transform="rotate(-0 404.901209 215.667031)">300</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="404.901209" y="215.667031" transform="rotate(-0 404.901209 215.667031)">300</text>
      </g>
     </g>
     <g id="xtick_7">
@@ -96,11 +96,11 @@ L 0 3.5
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="472.644091" y="215.667031" transform="rotate(-0 472.644091 215.667031)">360</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="472.644091" y="215.667031" transform="rotate(-0 472.644091 215.667031)">360</text>
      </g>
     </g>
     <g id="text_8">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="277.885" y="230.312969" transform="rotate(-0 277.885 230.312969)">Output angle (°)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="277.885" y="230.312969" transform="rotate(-0 277.885 230.312969)">Output angle (°)</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -121,7 +121,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="190.467209" transform="rotate(-0 56.65 190.467209)">−100</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="190.467209" transform="rotate(-0 56.65 190.467209)">−100</text>
      </g>
     </g>
     <g id="ytick_2">
@@ -136,7 +136,7 @@ L 492.12 157.732325
       </g>
      </g>
      <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="161.911466" transform="rotate(-0 56.65 161.911466)">−75</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="161.911466" transform="rotate(-0 56.65 161.911466)">−75</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -151,7 +151,7 @@ L 492.12 129.176582
       </g>
      </g>
      <g id="text_11">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="133.355723" transform="rotate(-0 56.65 133.355723)">−50</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="133.355723" transform="rotate(-0 56.65 133.355723)">−50</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -166,7 +166,7 @@ L 492.12 100.620839
       </g>
      </g>
      <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="104.799979" transform="rotate(-0 56.65 104.799979)">−25</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="104.799979" transform="rotate(-0 56.65 104.799979)">−25</text>
      </g>
     </g>
     <g id="ytick_5">
@@ -181,7 +181,7 @@ L 492.12 72.065096
       </g>
      </g>
      <g id="text_13">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="76.244236" transform="rotate(-0 56.65 76.244236)">0</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="76.244236" transform="rotate(-0 56.65 76.244236)">0</text>
      </g>
     </g>
     <g id="ytick_6">
@@ -196,11 +196,11 @@ L 492.12 43.509353
       </g>
      </g>
      <g id="text_14">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="56.65" y="47.688493" transform="rotate(-0 56.65 47.688493)">25</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="56.65" y="47.688493" transform="rotate(-0 56.65 47.688493)">25</text>
      </g>
     </g>
     <g id="text_15">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="20.148438" y="113.414375" transform="rotate(-90 20.148438 113.414375)">Encoder − command (arcmin)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="20.148438" y="113.414375" transform="rotate(-90 20.148438 113.414375)">Encoder − command (arcmin)</text>
     </g>
    </g>
    <g id="line2d_20">
@@ -367,7 +367,7 @@ L 492.12 200.30875
 " style="fill: none; stroke: #dce5e9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_16">
-    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #122b36" x="63.65" y="20.52" transform="rotate(-0 63.65 20.52)">Uncalibrated sweep: error dominated by a twice-per-turn encoder term</text>
+    <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #122b36" x="63.65" y="20.52" transform="rotate(-0 63.65 20.52)">Uncalibrated sweep: error dominated by a twice-per-turn encoder term</text>
    </g>
    <g id="legend_1">
     <g id="line2d_22">
@@ -377,7 +377,7 @@ L 314.240625 173.976719
 " style="fill: none; stroke: #075f6c; stroke-width: 2; stroke-linecap: square"/>
     </g>
     <g id="text_17">
-     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="321.440625" y="177.126719" transform="rotate(-0 321.440625 177.126719)">1× + 2× per turn fit</text>
+     <text style="font-size: 9px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start" x="321.440625" y="177.126719" transform="rotate(-0 321.440625 177.126719)">1× + 2× per turn fit</text>
     </g>
     <g id="line2d_23">
      <g>
@@ -385,7 +385,7 @@ L 314.240625 173.976719
      </g>
     </g>
     <g id="text_18">
-     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="321.440625" y="190.337031" transform="rotate(-0 321.440625 190.337031)">measured (15° steps, one direction)</text>
+     <text style="font-size: 9px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start" x="321.440625" y="190.337031" transform="rotate(-0 321.440625 190.337031)">measured (15° steps, one direction)</text>
     </g>
    </g>
   </g>

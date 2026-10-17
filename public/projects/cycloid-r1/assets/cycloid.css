@@ -10,4 +10,5 @@
 .video-grid video{width:100%;height:auto;max-height:520px;object-fit:contain;background:var(--paper);border:1px solid var(--line);border-radius:12px}
 .video-grid figcaption{font-size:13px;color:var(--muted);margin-top:8px}
 @media(max-width:800px){.video-grid{grid-template-columns:1fr}.video-grid video{max-height:70vh}}
-@media(max-width:800px){.topbar .wrap{min-width:0}nav{min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 85%,transparent)}nav::-webkit-scrollbar{display:none}nav a{flex:none}}
+@media(max-width:800px){.topbar .wrap{min-width:0}nav{min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav::-webkit-scrollbar{display:none}nav a{flex:none}}
+@media(max-width:430px){nav a:first-child{display:inline}}

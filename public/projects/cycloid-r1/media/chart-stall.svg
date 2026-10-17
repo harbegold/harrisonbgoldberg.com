@@ -41,7 +41,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="72.51267" y="215.678281" transform="rotate(-0 72.51267 215.678281)">0</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="72.51267" y="215.678281" transform="rotate(-0 72.51267 215.678281)">0</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -56,7 +56,7 @@ L 132.394826 26.52
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="132.394826" y="215.678281" transform="rotate(-0 132.394826 215.678281)">1</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="132.394826" y="215.678281" transform="rotate(-0 132.394826 215.678281)">1</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -71,7 +71,7 @@ L 192.276982 26.52
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="192.276982" y="215.678281" transform="rotate(-0 192.276982 215.678281)">2</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="192.276982" y="215.678281" transform="rotate(-0 192.276982 215.678281)">2</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -86,7 +86,7 @@ L 252.159138 26.52
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="252.159138" y="215.678281" transform="rotate(-0 252.159138 215.678281)">3</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="252.159138" y="215.678281" transform="rotate(-0 252.159138 215.678281)">3</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -101,7 +101,7 @@ L 312.041294 26.52
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="312.041294" y="215.678281" transform="rotate(-0 312.041294 215.678281)">4</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="312.041294" y="215.678281" transform="rotate(-0 312.041294 215.678281)">4</text>
      </g>
     </g>
     <g id="xtick_6">
@@ -116,7 +116,7 @@ L 371.923449 26.52
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="371.923449" y="215.678281" transform="rotate(-0 371.923449 215.678281)">5</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="371.923449" y="215.678281" transform="rotate(-0 371.923449 215.678281)">5</text>
      </g>
     </g>
     <g id="xtick_7">
@@ -131,11 +131,11 @@ L 431.805605 26.52
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536775" x="431.805605" y="215.678281" transform="rotate(-0 431.805605 215.678281)">6</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #536775" x="431.805605" y="215.678281" transform="rotate(-0 431.805605 215.678281)">6</text>
      </g>
     </g>
     <g id="text_8">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="252.039375" y="230.324219" transform="rotate(-0 252.039375 230.324219)">Time (s)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="252.039375" y="230.324219" transform="rotate(-0 252.039375 230.324219)">Time (s)</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -156,7 +156,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_9">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="47.56" y="196.599141" transform="rotate(-0 47.56 196.599141)">0</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="47.56" y="196.599141" transform="rotate(-0 47.56 196.599141)">0</text>
      </g>
     </g>
     <g id="ytick_2">
@@ -171,7 +171,7 @@ L 449.51875 159.156842
       </g>
      </g>
      <g id="text_10">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="47.56" y="163.335983" transform="rotate(-0 47.56 163.335983)">200</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="47.56" y="163.335983" transform="rotate(-0 47.56 163.335983)">200</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -186,7 +186,7 @@ L 449.51875 125.893684
       </g>
      </g>
      <g id="text_11">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="47.56" y="130.072825" transform="rotate(-0 47.56 130.072825)">400</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="47.56" y="130.072825" transform="rotate(-0 47.56 130.072825)">400</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -201,7 +201,7 @@ L 449.51875 92.630526
       </g>
      </g>
      <g id="text_12">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="47.56" y="96.809667" transform="rotate(-0 47.56 96.809667)">600</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="47.56" y="96.809667" transform="rotate(-0 47.56 96.809667)">600</text>
      </g>
     </g>
     <g id="ytick_5">
@@ -216,11 +216,11 @@ L 449.51875 59.367368
       </g>
      </g>
      <g id="text_13">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="47.56" y="63.546509" transform="rotate(-0 47.56 63.546509)">800</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="47.56" y="63.546509" transform="rotate(-0 47.56 63.546509)">800</text>
      </g>
     </g>
     <g id="text_14">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b5532a" x="20.276094" y="113.42" transform="rotate(-90 20.276094 113.42)">Motor speed (rpm)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #b5532a" x="20.276094" y="113.42" transform="rotate(-90 20.276094 113.42)">Motor speed (rpm)</text>
     </g>
    </g>
    <g id="patch_3">
@@ -404,10 +404,10 @@ L 449.51875 200.32
 " style="fill: none; stroke: #dce5e9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_15">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b5532a" x="78.500886" y="59.367368" transform="rotate(-0 78.500886 59.367368)">output stops: stall</text>
+    <text style="font-size: 9px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #b5532a" x="78.500886" y="59.367368" transform="rotate(-0 78.500886 59.367368)">output stops: stall</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #122b36" x="54.56" y="20.52" transform="rotate(-0 54.56 20.52)">Stall found on the bench: output freezes above ~760 rpm</text>
+    <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #122b36" x="54.56" y="20.52" transform="rotate(-0 54.56 20.52)">Stall found on the bench: output freezes above ~760 rpm</text>
    </g>
   </g>
   <g id="axes_2">
@@ -424,7 +424,7 @@ L 3.5 0
       </g>
      </g>
      <g id="text_17">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536775" x="456.51875" y="199.511122" transform="rotate(-0 456.51875 199.511122)">60</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #536775" x="456.51875" y="199.511122" transform="rotate(-0 456.51875 199.511122)">60</text>
      </g>
     </g>
     <g id="ytick_7">
@@ -434,7 +434,7 @@ L 3.5 0
       </g>
      </g>
      <g id="text_18">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536775" x="456.51875" y="163.186277" transform="rotate(-0 456.51875 163.186277)">80</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #536775" x="456.51875" y="163.186277" transform="rotate(-0 456.51875 163.186277)">80</text>
      </g>
     </g>
     <g id="ytick_8">
@@ -444,7 +444,7 @@ L 3.5 0
       </g>
      </g>
      <g id="text_19">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536775" x="456.51875" y="126.861431" transform="rotate(-0 456.51875 126.861431)">100</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #536775" x="456.51875" y="126.861431" transform="rotate(-0 456.51875 126.861431)">100</text>
      </g>
     </g>
     <g id="ytick_9">
@@ -454,7 +454,7 @@ L 3.5 0
       </g>
      </g>
      <g id="text_20">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536775" x="456.51875" y="90.536586" transform="rotate(-0 456.51875 90.536586)">120</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #536775" x="456.51875" y="90.536586" transform="rotate(-0 456.51875 90.536586)">120</text>
      </g>
     </g>
     <g id="ytick_10">
@@ -464,11 +464,11 @@ L 3.5 0
       </g>
      </g>
      <g id="text_21">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536775" x="456.51875" y="54.211741" transform="rotate(-0 456.51875 54.211741)">140</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #536775" x="456.51875" y="54.211741" transform="rotate(-0 456.51875 54.211741)">140</text>
      </g>
     </g>
     <g id="text_22">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #075f6c" x="489.873281" y="113.42" transform="rotate(-90 489.873281 113.42)">Output angle (°)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #075f6c" x="489.873281" y="113.42" transform="rotate(-90 489.873281 113.42)">Output angle (°)</text>
     </g>
    </g>
    <g id="line2d_31">

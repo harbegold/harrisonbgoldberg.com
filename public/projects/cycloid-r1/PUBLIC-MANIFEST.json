@@ -1,7 +1,7 @@
 {
   "project": "Cycloid R1",
   "edition": "Public portfolio 2026-10-17",
-  "generated": "2026-10-17T16:42:20.611037-07:00",
+  "generated": "2026-10-17T16:44:51.199479-07:00",
   "scope": "Selected documentation and web presentation only. No editable CAD, print files, firmware or bench software. All photo and video metadata stripped.",
   "files": [
     {
@@ -21,8 +21,8 @@
     },
     {
       "path": "assets/cycloid.css",
-      "bytes": 1458,
-      "sha256": "cf2226d93d373c8fe698130053cf3a399417ddad9af789309ca1d03dd4462a48"
+      "bytes": 1462,
+      "sha256": "d437826f6054b30e4ff8de054d0e37222fe038bd1b21f622eafe8b61593be425"
     },
     {
       "path": "assets/portfolio.css",
@@ -56,18 +56,18 @@
     },
     {
       "path": "media/chart-accuracy-sweep.svg",
-      "bytes": 15696,
-      "sha256": "1c26aabe6c185c948c7ac5f03b0a6f9935baf7b6a48fe87a40b52dfff6f6637a"
+      "bytes": 16380,
+      "sha256": "877e8403862e247429ea6398b571202bd691eaf87bb38e9995fe833b7c58ae28"
     },
     {
       "path": "media/chart-lost-motion.svg",
-      "bytes": 7855,
-      "sha256": "d5d1331b58133eb2c3cab8d664ab1b0eb5c208c27d680f3ae601240c9834bcee"
+      "bytes": 8463,
+      "sha256": "8a2ca448d9c6c49890983737aed34a6a74cf623110115ce0bea9b951195a1b92"
     },
     {
       "path": "media/chart-stall.svg",
-      "bytes": 21741,
-      "sha256": "c18f9712a09b9bdc597e2cb6cde83666decdf0983deef89da734f9da2493d1c2"
+      "bytes": 22577,
+      "sha256": "67797a72417cee3af8bffd60e0a07695c0695e6c3e0409dc362785c219d4063e"
     },
     {
       "path": "media/cycloid-r1-poster.jpg",

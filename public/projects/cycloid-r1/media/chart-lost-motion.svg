@@ -36,8 +36,8 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(88.568495 232.350281)">R1 discs</text>
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(84.186542 244.667875)">open loop</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(88.568495 232.350281)">R1 discs</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(84.186542 244.667875)">open loop</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -47,8 +47,8 @@ L 0 3.5
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(247.031953 232.350281)">R2 discs</text>
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(242.65 244.667875)">open loop</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(247.031953 232.350281)">R2 discs</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(242.65 244.667875)">open loop</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -58,8 +58,8 @@ L 0 3.5
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(405.495411 232.350281)">R2 discs</text>
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #536775" transform="translate(397.181817 244.667875)">closed loop</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(405.495411 232.350281)">R2 discs</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; fill: #536775" transform="translate(397.181817 244.667875)">closed loop</text>
      </g>
     </g>
    </g>
@@ -81,7 +81,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="40.63" y="221.171141" transform="rotate(-0 40.63 221.171141)">0</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="40.63" y="221.171141" transform="rotate(-0 40.63 221.171141)">0</text>
      </g>
     </g>
     <g id="ytick_2">
@@ -96,7 +96,7 @@ L 492.12 172.175059
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="40.63" y="176.354199" transform="rotate(-0 40.63 176.354199)">20</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="40.63" y="176.354199" transform="rotate(-0 40.63 176.354199)">20</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -111,7 +111,7 @@ L 492.12 127.358118
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="40.63" y="131.537258" transform="rotate(-0 40.63 131.537258)">40</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="40.63" y="131.537258" transform="rotate(-0 40.63 131.537258)">40</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -126,7 +126,7 @@ L 492.12 82.541176
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="40.63" y="86.720317" transform="rotate(-0 40.63 86.720317)">60</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="40.63" y="86.720317" transform="rotate(-0 40.63 86.720317)">60</text>
      </g>
     </g>
     <g id="ytick_5">
@@ -141,11 +141,11 @@ L 492.12 37.724235
       </g>
      </g>
      <g id="text_8">
-      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #536775" x="40.63" y="41.903376" transform="rotate(-0 40.63 41.903376)">80</text>
+      <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: end; fill: #536775" x="40.63" y="41.903376" transform="rotate(-0 40.63 41.903376)">80</text>
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="20.344844" y="121.756" transform="rotate(-90 20.344844 121.756)">Mean lost motion (arcmin)</text>
+     <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="20.344844" y="121.756" transform="rotate(-90 20.344844 121.756)">Mean lost motion (arcmin)</text>
     </g>
    </g>
    <g id="patch_3">
@@ -183,16 +183,16 @@ L 492.12 216.992
 " style="fill: none; stroke: #dce5e9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="111.411542" y="54.104827" transform="rotate(-0 111.411542 54.104827)">71′</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="111.411542" y="54.104827" transform="rotate(-0 111.411542 54.104827)">71′</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="269.875" y="85.790405" transform="rotate(-0 269.875 85.790405)">57′</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="269.875" y="85.790405" transform="rotate(-0 269.875 85.790405)">57′</text>
    </g>
    <g id="text_12">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #122b36" x="428.338458" y="209.193852" transform="rotate(-0 428.338458 209.193852)">2.0′</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #122b36" x="428.338458" y="209.193852" transform="rotate(-0 428.338458 209.193852)">2.0′</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #122b36" x="47.63" y="20.52" transform="rotate(-0 47.63 20.52)">Lost motion at the output, 4 angles, approached from both sides</text>
+    <text style="font-size: 11px; font-family: Inter, -apple-system, 'Segoe UI', Arial, sans-serif; text-anchor: start; fill: #122b36" x="47.63" y="20.52" transform="rotate(-0 47.63 20.52)">Lost motion at the output, 4 angles, approached from both sides</text>
    </g>
   </g>
  </g>
