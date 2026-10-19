@@ -96,26 +96,26 @@ const AIChat: React.FC = () => {
   const isRateLimited = rateLimited && Date.now() < rateLimited.until;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="chat-widget fixed z-50">
       {isOpen ? (
-        <div className="bg-white w-80 sm:w-96 h-[450px] rounded-2xl flex flex-col shadow-2xl border border-black/[0.08] overflow-hidden">
-          <div className="p-4 border-b border-black/[0.06] flex justify-between items-center bg-[#fbfbfd]">
+        <section aria-label="Portfolio assistant" className="chat-panel bg-white rounded-2xl flex flex-col shadow-2xl border border-black/[0.08] overflow-hidden">
+          <div className="shrink-0 p-3 pl-4 border-b border-black/[0.06] flex justify-between items-center bg-[#fbfbfd]">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-[#007aff] rounded-full animate-pulse" />
               <span className="font-semibold text-sm text-[#1d1d1f]">Harrison AI</span>
             </div>
-            <button onClick={() => setIsOpen(false)} className="text-[#6e6e73] hover:text-[#1d1d1f]" aria-label="Close chat">
+            <button onClick={() => setIsOpen(false)} className="w-11 h-11 flex items-center justify-center text-[#6e6e73] hover:text-[#1d1d1f]" aria-label="Close chat">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
 
-          <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 space-y-3 bg-white">
+          <div ref={scrollRef} role="log" aria-live="polite" aria-label="Chat messages" className="flex-1 min-h-0 overflow-y-auto overscroll-contain p-4 space-y-3 bg-white">
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed whitespace-pre-wrap ${
+                  className={`max-w-[85%] break-words rounded-2xl px-4 py-2 text-sm leading-relaxed whitespace-pre-wrap ${
                     msg.role === 'user'
                       ? 'bg-[#007aff] text-white rounded-br-md'
                       : msg.isError
@@ -138,7 +138,7 @@ const AIChat: React.FC = () => {
             )}
           </div>
 
-          <form onSubmit={handleSubmit} className="p-3 border-t border-black/[0.06] bg-[#fbfbfd]">
+          <form onSubmit={handleSubmit} className="shrink-0 p-3 border-t border-black/[0.06] bg-[#fbfbfd]">
             <div className="relative">
               <input
                 type="text"
@@ -148,12 +148,12 @@ const AIChat: React.FC = () => {
                 placeholder={isRateLimited ? 'Chat limit reached — try later' : 'Ask about my work…'}
                 maxLength={1000}
                 disabled={Boolean(isRateLimited)}
-                className="w-full bg-white border border-black/[0.08] rounded-full px-4 py-2.5 pr-10 text-sm text-[#1d1d1f] focus:outline-none focus:ring-2 focus:ring-[#007aff]/30 focus:border-[#007aff]/50 placeholder-[#6e6e73] disabled:bg-[#f5f5f7] disabled:cursor-not-allowed"
+                className="w-full bg-white border border-black/[0.08] rounded-full px-4 py-2.5 pr-12 text-base sm:text-sm text-[#1d1d1f] focus:outline-none focus:ring-2 focus:ring-[#007aff]/30 focus:border-[#007aff]/50 placeholder-[#6e6e73] disabled:bg-[#f5f5f7] disabled:cursor-not-allowed"
               />
               <button
                 type="submit"
                 disabled={isLoading || Boolean(isRateLimited) || !input.trim()}
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-[#007aff] hover:text-[#0051d5] disabled:opacity-30 disabled:cursor-not-allowed"
+                className="absolute right-1 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center text-[#007aff] hover:text-[#0051d5] disabled:opacity-30 disabled:cursor-not-allowed"
                 aria-label="Send"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,7 +162,7 @@ const AIChat: React.FC = () => {
               </button>
             </div>
           </form>
-        </div>
+        </section>
       ) : (
         <button
           onClick={() => setIsOpen(true)}

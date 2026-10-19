@@ -160,7 +160,7 @@ export const EXPERIENCES: Experience[] = [
 export const SKILLS: SkillCategory[] = [
   {
     name: "CAD & Design",
-    skills: ["Fusion 360", "SolidWorks", "Tinkercad"]
+    skills: ["Fusion 360", "SolidWorks"]
   },
   {
     name: "Robotics & Embedded",

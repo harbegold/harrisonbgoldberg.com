@@ -94,7 +94,7 @@ Experience:
 - Founder & Co-Lead of the Engineering Design Club at The Heschel School, NYC (2022–2024), teaching Tinkercad, Fusion 360, 3D printing, and additive-manufacturing workflows.
 
 Skills:
-- CAD & design: Fusion 360, SolidWorks, Tinkercad
+- CAD & design: Fusion 360, SolidWorks
 - Robotics & embedded: ESP32/ESP32-S3, Arduino, I²C, servo control
 - Analysis & programming: MATLAB; Python (AI-assisted workflows only). Harrison works with Python entirely through Claude Code and Codex, not independent Python programming proficiency. Whenever mentioning his Python skills or Python contributions, explicitly include this qualification. Technical descriptions of Python APIs or software requirements are not personal proficiency claims.
 - Fabrication: FDM additive manufacturing, laser cutting, soldering

@@ -7,7 +7,7 @@ const EMAILJS_TEMPLATE_ID = 'template_my3wtnp';
 const EMAILJS_PUBLIC_KEY = 'tbwNPE234I8IJvDNK';
 
 const ContactForm: React.FC = () => {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,16 +20,13 @@ const ContactForm: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const openMailClientFallback = () => {
-    const subject = `Portfolio Inquiry: ${formData.type.toUpperCase()} — ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nInquiry Type: ${formData.type}\n\nMessage:\n${formData.message}\n`;
-    const mailtoLink = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
-    setStatus('success');
-  };
+  const subject = `Portfolio Inquiry: ${formData.type.toUpperCase()} — ${formData.name}`;
+  const body = `Name: ${formData.name}\nEmail: ${formData.email}\nInquiry Type: ${formData.type}\n\nMessage:\n${formData.message}\n`;
+  const mailtoLink = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (status === 'sending') return;
     setStatus('sending');
 
     try {
@@ -46,9 +43,8 @@ const ContactForm: React.FC = () => {
         EMAILJS_PUBLIC_KEY
       );
       setStatus('success');
-    } catch (error) {
-      console.warn('Direct email sending failed. Falling back to mail client.', error);
-      setTimeout(() => openMailClientFallback(), 800);
+    } catch {
+      setStatus('error');
     }
   };
 
@@ -75,7 +71,7 @@ const ContactForm: React.FC = () => {
   const inputBase = "w-full bg-white border border-black/[0.1] rounded-xl px-4 py-3 text-[#1d1d1f] focus:outline-none focus:ring-2 focus:ring-[#007aff]/30 focus:border-[#007aff]/60 transition-all placeholder:text-[#6e6e73]/60";
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white border border-black/[0.08] p-8 sm:p-10 rounded-3xl space-y-6">
+    <form onSubmit={handleSubmit} className="bg-white border border-black/[0.08] p-6 sm:p-10 rounded-3xl space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="space-y-2">
           <label htmlFor="contact-name" className="mono text-[10px] text-[#6e6e73] uppercase tracking-widest ml-1">Full Name</label>
@@ -84,6 +80,7 @@ const ContactForm: React.FC = () => {
             required
             type="text"
             name="name"
+            autoComplete="name"
             value={formData.name}
             onChange={handleChange}
             placeholder="Jane Doe"
@@ -97,6 +94,7 @@ const ContactForm: React.FC = () => {
             required
             type="email"
             name="email"
+            autoComplete="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="jane@company.com"
@@ -135,6 +133,13 @@ const ContactForm: React.FC = () => {
           className={`${inputBase} resize-none`}
         />
       </div>
+
+      {status === 'error' && (
+        <p role="alert" className="text-sm text-[#c53030] leading-relaxed">
+          Your message couldn’t be sent. Please try again or{' '}
+          <a href={mailtoLink} className="underline font-medium">open an email draft</a> and send it from your email app.
+        </p>
+      )}
 
       <button
         type="submit"

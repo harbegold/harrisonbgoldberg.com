@@ -17,6 +17,16 @@ const NAV_LINKS = [
 
 const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [menuOpen]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -28,9 +38,9 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#fbfbfd] text-[#1d1d1f]">
       {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-300 ${scrolled ? 'glass shadow-sm' : 'bg-transparent'}`}>
+      <nav aria-label="Main navigation" className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-300 ${scrolled || menuOpen ? 'glass shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <a href="#about" className="flex items-center gap-2.5">
+          <a href="#about" onClick={() => setMenuOpen(false)} className="flex items-center gap-2.5">
             <div className="w-7 h-7 bg-[#1d1d1f] rounded-lg flex items-center justify-center font-semibold text-white text-xs">
               H
             </div>
@@ -46,6 +56,18 @@ const App: React.FC = () => {
             ))}
           </div>
           <div className="flex items-center gap-2">
+            <button
+              type="button"
+              aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => setMenuOpen(open => !open)}
+              className="md:hidden w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeWidth={2} d={menuOpen ? 'M6 6l12 12M6 18L18 6' : 'M4 6h16M4 12h16M4 18h16'} />
+              </svg>
+            </button>
             <a
               href={PERSONAL_INFO.linkedin}
               target="_blank"
@@ -64,6 +86,13 @@ const App: React.FC = () => {
               Get in touch
             </a>
           </div>
+        </div>
+        <div id="mobile-navigation" hidden={!menuOpen} className="md:hidden border-t border-black/[0.08] bg-[#fbfbfd] px-6 py-3">
+          {NAV_LINKS.map(link => (
+            <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block py-3 text-sm font-medium hover:text-[#007aff]">
+              {link.label}
+            </a>
+          ))}
         </div>
       </nav>
 
@@ -338,9 +367,9 @@ const App: React.FC = () => {
                     <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.78-1.75-1.73s.78-1.74 1.75-1.74 1.75.78 1.75 1.74c0 .95-.78 1.73-1.75 1.73zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.78 7 2.47v6.77z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="mono text-[10px] text-[#6e6e73] uppercase block tracking-widest">LinkedIn</span>
-                  <span className="text-[15px] font-medium text-[#1d1d1f] group-hover:text-[#007aff] transition-colors">
+                  <span className="text-[15px] break-all font-medium text-[#1d1d1f] group-hover:text-[#007aff] transition-colors">
                     /in/harrisonbgoldberg
                   </span>
                 </div>

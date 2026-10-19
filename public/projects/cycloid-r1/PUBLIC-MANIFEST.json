@@ -1,6 +1,6 @@
 {
   "project": "Cycloid R1",
-  "edition": "Public portfolio 2026-10-17",
+  "edition": "Public portfolio 2026-10-17; responsive layout fixes 2026-10-19",
   "generated": "2026-10-17T16:44:51.199479-07:00",
   "scope": "Selected documentation and web presentation only. No editable CAD, print files, firmware or bench software. All photo and video metadata stripped.",
   "files": [
@@ -21,18 +21,18 @@
     },
     {
       "path": "assets/cycloid.css",
-      "bytes": 1462,
-      "sha256": "d437826f6054b30e4ff8de054d0e37222fe038bd1b21f622eafe8b61593be425"
+      "bytes": 1550,
+      "sha256": "32a60c6f81b509a62cc88d4ec80da7770a48362d659568d69b50e6d03b9c9811"
     },
     {
       "path": "assets/portfolio.css",
-      "bytes": 7828,
-      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+      "bytes": 7825,
+      "sha256": "5688e859003a82df5d6bb39271f8f2ceb1b4a8ec6851aca3ec676dc45e90d4d4"
     },
     {
       "path": "index.html",
-      "bytes": 14793,
-      "sha256": "dfa220f94791db264b23778ab65ffa8e9484334e76a3106dc0b35fa2c724ccda"
+      "bytes": 14763,
+      "sha256": "7a3add90590892bc41fc242080cc0aadb4a45fa88e260665a0057b03586eeee4"
     },
     {
       "path": "media/cad-assembly.png",

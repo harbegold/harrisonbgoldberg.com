@@ -1,6 +1,6 @@
 {
   "project": "Acuivect",
-  "edition": "Portfolio and interactive virtual lab 2026-09-10",
+  "edition": "Portfolio and interactive virtual lab 2026-09-10; responsive layout fixes 2026-10-19",
   "generated": "2026-09-11T02:33:21.683Z",
   "scope": "Selected documents and explicitly authorized interactive display meshes. Editable Fusion, manufacturing sources and private logs excluded.",
   "files": [
@@ -41,8 +41,8 @@
     },
     {
       "path": "assets/portfolio.css",
-      "bytes": 7828,
-      "sha256": "502fdca334cb505ad8e616a50e0e07fd59b8714ca6e686078236918c900b8e1a"
+      "bytes": 8123,
+      "sha256": "16b8a9b33aedeb5942554ad46e95d565b45d7092ded471d3b297be80928c69ba"
     },
     {
       "path": "documents/Acuivect-Portfolio.pdf",

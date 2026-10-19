@@ -19,6 +19,9 @@
         --accent: #007aff;
         --border: rgba(0, 0, 0, 0.08);
       }
+      html {
+        scroll-padding-top: 5rem;
+      }
       body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         background-color: var(--bg-primary);
@@ -48,6 +51,30 @@
         -webkit-overflow-scrolling: touch;
         overflow-wrap: anywhere;
         scroll-padding-top: 4rem;
+      }
+      .chat-widget {
+        right: max(1rem, env(safe-area-inset-right));
+        bottom: max(1rem, env(safe-area-inset-bottom));
+      }
+      .chat-panel {
+        width: min(24rem, calc(100vw - 2rem));
+        height: min(28.125rem, calc(100vh - 6rem));
+        height: min(28.125rem, calc(100dvh - 6rem));
+      }
+      #mobile-navigation {
+        max-height: calc(100vh - 3.5rem);
+        max-height: calc(100dvh - 3.5rem);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .fade-in-up { animation: none; }
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
       }
       .glass {
         background: rgba(255, 255, 255, 0.6);

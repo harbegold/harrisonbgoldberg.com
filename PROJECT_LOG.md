@@ -1,5 +1,13 @@
 # Portfolio Change Log
 
+## 2026-10-19 05:21 -0700 · win · codex · codex/mobile-layout-fix-2026-10-19
+- Files: App.tsx, components/{ProjectCard,AIChat,ContactForm}.tsx, index.html, constants.tsx, api/chat.ts, public/resume.pdf; Acuivect/Bitzy/Cycloid styles and public manifests.
+- Change: mobile navigation with Escape/selection dismissal and anchor offsets; viewport-bounded chat and 44 px controls; wrapped card labels; accurate failed-email state retaining the form and offering an explicit draft link; reduced-motion support. Bitzy/Acuivect headers now scroll within their own width on narrow phones; constrained Bitzy/Cycloid media grid minimums during initial layout.
+- User follow-ups: publish current resume from existing Drive file, remove Tinkercad from skills, restore Education before Projects. Reordered only the complete education XML block in the October 18 current source; all 34 paragraphs and other DOCX parts preserved. Existing Drive ID/title/parent retained, text order verified; one-page Word/PDF/PNG QA passed. Historical variants untouched. Published PDF SHA256 a184678c7eee7765637917db157ae720f43b4457bae7abe667d57ab8ce8b8a67.
+- Validation: TypeScript/build; 50 dialog/chat checks at five sizes; final Cycloid at five sizes; 12 case-study viewport checks; 26 HTML files/100 local references and 104 live URLs; isolated EmailJS-failure fixture proves no false success/no lost fields, no email sent. No dependencies installed. Actual iPhone Safari retest remains unverified; Chromium confirmed.
+- Manifest repair: hash Git index bytes (deployment source) rather than CRLF worktree bytes. Cycloid's pre-existing index.html/portfolio.css entries were stale after October 17 changes and are reconciled; other payload bytes untouched. Private evidence: parent Portfolio/tmp/mobile-audit and docs/mobile-site-audit-2026-10-19.md.
+- Initial modal sizing fix c80d1eb already deployed via origin/main. This follow-up uses the same Git-to-Vercel pipeline; final production evidence will be recorded in the parent report and vault.
+
 ## 2026-10-19 05:12 -0700 · win · codex · codex/mobile-layout-fix-2026-10-19
 - Files: components/ProjectCard.tsx, index.html.
 - Change: explicit viewport-relative native-dialog height with dynamic viewport support and vh fallback; full-height scrolling content replaces the auto-height flex layout implicated by Harry's iPhone screenshot. Enlarged and pinned close control stays outside the scroll area.

@@ -1,6 +1,6 @@
 {
   "project": "Bitzy V1",
-  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11; local AI decision update 2026-09-14; gripper module update 2026-09-15",
+  "edition": "Public portfolio 2026-09-10; Python workflow clarification 2026-09-11; local AI decision update 2026-09-14; gripper module update 2026-09-15; responsive layout fixes 2026-10-19",
   "generated": "2026-09-10T18:20:09.080231-07:00",
   "scope": "Selected documentation and web presentation only. No editable engineering, manufacturing or control assets.",
   "files": [
@@ -26,8 +26,8 @@
     },
     {
       "path": "assets/bitzy.css",
-      "bytes": 923,
-      "sha256": "b33a6c016576b5323792c0f64330c4669982d73e4f6c8ca7353e22c77f6ef883"
+      "bytes": 1311,
+      "sha256": "fdedefd90ac470335850d5a668fb08b433b38058300754c4367b118c3a2ad62a"
     },
     {
       "path": "assets/portfolio.css",

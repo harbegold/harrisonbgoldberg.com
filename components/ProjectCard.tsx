@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <img src={project.cover.src} alt={project.cover.alt} loading="lazy" width={720} height={1280}
             className="w-full h-56 object-cover object-[center_36%] rounded-xl mb-6 bg-[#f5f5f7]" />
         )}
-        <div className="flex items-start justify-between mb-6">
+        <div className="flex flex-wrap items-start justify-between gap-3 mb-6">
           <span className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73]">
             {project.date}
           </span>
@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.slice(0, 4).map(tag => (
             <span
               key={tag}
-              className="mono text-[10px] px-2.5 py-1 rounded-md bg-[#f5f5f7] text-[#6e6e73] border border-black/[0.06]"
+              className="mono text-[10px] max-w-full break-words px-2.5 py-1 rounded-md bg-[#f5f5f7] text-[#6e6e73] border border-black/[0.06]"
             >
               {tag}
             </span>

@@ -1,4 +1,5 @@
 .hero .hero-image{aspect-ratio:16/9;object-fit:cover;background:var(--paper);border:1px solid var(--line);border-radius:12px;width:100%;height:auto}
+.hero>*,.video-grid>*,.validation>*,.photo-pair>*{min-width:0}img,video{max-width:100%}
 .evolution .card-image img{aspect-ratio:4/3;object-fit:contain;background:#fff;height:auto}
 .photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}.photo-pair figure{margin:0}
 .photo-pair img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
