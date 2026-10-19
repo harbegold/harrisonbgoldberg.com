@@ -1,5 +1,11 @@
 # Portfolio Change Log
 
+## 2026-10-19 05:12 -0700 · win · codex · codex/mobile-layout-fix-2026-10-19
+- Files: components/ProjectCard.tsx, index.html.
+- Change: explicit viewport-relative native-dialog height with dynamic viewport support and vh fallback; full-height scrolling content replaces the auto-height flex layout implicated by Harry's iPhone screenshot. Enlarged and pinned close control stays outside the scroll area.
+- Evidence/limits: baseline Chromium at 393×720 fits (648 px high); Harry's Safari screenshot shows a collapsed strip. Safari root cause inferred from layout/source; physical iPhone retest still required. Chromium and production checks to follow.
+- Commands: isolated worktree from latest origin/main 4850b16, preserving Cycloid/Bitzy/privacy changes; no dependency changes.
+
 ## 2026-10-19 · win · claude · main · Harbe Cut privacy policy
 - Files: public/privacy/index.html (added: Harbe Cut privacy policy + data-deletion instructions, contact harry@harbegold.com), vercel.json (redirect /privacy → /privacy/, rewrite to index.html, excluded from the SPA catch-all).
 - Reason: Meta requires a privacy policy URL (and data-deletion instructions) to switch Harry's Harbe Cut Instagram app to Live mode, so the comments API returns real commenters. Harry approved ("go ahead, do it").

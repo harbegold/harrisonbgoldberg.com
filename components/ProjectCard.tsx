@@ -80,11 +80,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             onClick={event => { if (event.target === event.currentTarget) setShowModal(false); }}
             aria-modal="true"
             aria-labelledby={`project-${project.id}-title`}
-            className="fixed m-auto bg-white w-[calc(100%-2rem)] max-w-4xl max-h-[90vh] rounded-3xl p-0 overflow-hidden flex flex-col shadow-2xl border border-black/[0.08] backdrop:bg-black/40 backdrop:backdrop-blur-sm"
+            className="project-dialog fixed m-auto bg-white rounded-3xl p-0 overflow-hidden shadow-2xl border border-black/[0.08] backdrop:bg-black/40 backdrop:backdrop-blur-sm"
           >
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-5 right-5 z-20 w-9 h-9 rounded-full bg-black/5 flex items-center justify-center text-[#1d1d1f] hover:bg-black/10 transition-colors"
+              className="absolute top-3 right-3 z-20 w-11 h-11 rounded-full bg-white shadow-sm border border-black/[0.08] flex items-center justify-center text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
               aria-label="Close"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </svg>
             </button>
 
-            <div className="flex-1 overflow-y-auto p-6 pt-16 sm:p-14 space-y-8">
+            <div className="project-dialog-content p-6 pt-16 sm:p-14 sm:pt-16 space-y-8">
               <div className="space-y-3">
                 <span className="mono text-[10px] uppercase tracking-[0.2em] text-[#6e6e73]">
                   {project.date}
