@@ -1,5 +1,10 @@
 # Portfolio Change Log
 
+## 2026-10-19 · win · claude · main · Harbe Cut privacy policy
+- Files: public/privacy/index.html (added: Harbe Cut privacy policy + data-deletion instructions, contact harry@harbegold.com), vercel.json (redirect /privacy → /privacy/, rewrite to index.html, excluded from the SPA catch-all).
+- Reason: Meta requires a privacy policy URL (and data-deletion instructions) to switch Harry's Harbe Cut Instagram app to Live mode, so the comments API returns real commenters. Harry approved ("go ahead, do it").
+- Built in sibling worktree harrisonbgoldberg-privacy from origin/main; Harry's checkout (codex/formivect-portfolio) untouched. No other site content changed.
+
 ## 2026-09-11 · mac · codex · main · Python attribution
 - Clarified Python skill/tag labels as “Python (AI-assisted workflows only)” in constants and project adapters, including published adapter copies. Added explicit entirely-AI-assisted Python disclosure to Bitzy/Formivect descriptions, pages and summaries; chat must qualify every personal Python skill/contribution claim.
 - Reason: Harry confirms Python is known/used through AI-assisted workflows only. This supersedes bare Python proficiency labels; factual API/runtime/test references remain technical descriptions.
