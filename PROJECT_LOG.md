@@ -1,5 +1,11 @@
 # Portfolio Change Log
 
+## 2026-10-26 18:05 -0700 · win · claude · claude/bitzy-lite-2026-10-26 → main
+- Files: public/projects/bitzy-lite/ (added: index.html, assets/{portfolio,bitzy-lite}.css, media/ 2 silent H.264 videos + 5 JPEGs, README, RIGHTS, PUBLIC-MANIFEST.json); data/bitzy-lite.ts (added); constants.tsx (card after Bitzy V1); api/chat.ts (Bitzy Lite knowledge passage); vercel.json (redirect, rewrite, SPA-exclusion).
+- Change: new Bitzy Lite project page and card (Harry: "post Bitzy Lite to my portfolio site"). Teach-and-repeat video from the posted reel's plain cut (no overlays, muted), B-roll and stills from the graded 2026-10-26 DJI clips. Facts only from ITEMS.md, floor-tidy-robot PROJECT_LOG/ARM_SPECIFICATION (CAD values marked as CAD) and the teach-copy post; no accuracy/payload/speed numbers; planned items marked Next; software described as closely guided AI-generated code.
+- Media privacy: sources vaulted via `brain meta scrub` (metavault records), re-encoded 720x1280 H.264, audio/data removed, -map_metadata -1, SEI removed (filter_units=remove_types=6), bitexact; JPEGs re-saved by PIL with no EXIF/info. Verified: ffprobe tags only ftyp/handler, 0 x264/Lavc strings, exiftool zero dates, decode OK, PIL info/getexif empty.
+- Validation: tsc --noEmit, vite build; static page at 320/375/768/1280 no overflow, all 12 local refs 200, both videos play; card + dialog at 320/375/768/1280, Escape/close button, mobile menu open/close. Live checks after deploy in the parent log and vault.
+
 ## 2026-10-19 05:21 -0700 · win · codex · codex/mobile-layout-fix-2026-10-19
 - Files: App.tsx, components/{ProjectCard,AIChat,ContactForm}.tsx, index.html, constants.tsx, api/chat.ts, public/resume.pdf; Acuivect/Bitzy/Cycloid styles and public manifests.
 - Change: mobile navigation with Escape/selection dismissal and anchor offsets; viewport-bounded chat and 44 px controls; wrapped card labels; accurate failed-email state retaining the form and offering an explicit draft link; reduced-motion support. Bitzy/Acuivect headers now scroll within their own width on narrow phones; constrained Bitzy/Cycloid media grid minimums during initial layout.

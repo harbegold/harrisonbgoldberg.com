@@ -30,6 +30,11 @@
       "permanent": true
     },
     {
+      "source": "/projects/bitzy-lite",
+      "destination": "/projects/bitzy-lite/",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy/",
       "permanent": true
@@ -57,11 +62,15 @@
       "destination": "/projects/cycloid-r1/index.html"
     },
     {
+      "source": "/projects/bitzy-lite/",
+      "destination": "/projects/bitzy-lite/index.html"
+    },
+    {
       "source": "/privacy/",
       "destination": "/privacy/index.html"
     },
     {
-      "source": "/((?!resume\\.pdf$|api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/|projects/cycloid-r1/|privacy/).*)",
+      "source": "/((?!resume\\.pdf$|api/|projects/acuivect/|projects/bitzy-v1/|projects/formivect/|projects/cycloid-r1/|projects/bitzy-lite/|privacy/).*)",
       "destination": "/index.html"
     }
   ],

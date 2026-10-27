@@ -1,0 +1,73 @@
+{
+  "project": "Bitzy Lite",
+  "edition": "Public portfolio 2026-10-26",
+  "generated": "2026-10-26T17:47:30-07:00",
+  "scope": "Selected documentation and web presentation only. No editable CAD, print files or control software. All photo and video metadata stripped.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1175,
+      "sha256": "54bdf7d09434ba01553f989fcb3335395a3679b1eb59a3af47b1f7a825c684a1"
+    },
+    {
+      "path": "RIGHTS.html",
+      "bytes": 925,
+      "sha256": "270265c8fe5d6897e1d3f46959fc8f370270f8d7aba595722402566903b2dc72"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 542,
+      "sha256": "dae14c71e41a89dc39a151b139b910fef4512aa39101b35c727c5b6f139ead0a"
+    },
+    {
+      "path": "assets/bitzy-lite.css",
+      "bytes": 1473,
+      "sha256": "5b95e2dce8946d88c96fc860d602ffee147edbab24580ac27902177f5df41963"
+    },
+    {
+      "path": "assets/portfolio.css",
+      "bytes": 7825,
+      "sha256": "5688e859003a82df5d6bb39271f8f2ceb1b4a8ec6851aca3ec676dc45e90d4d4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11117,
+      "sha256": "17d2213bcfe683ed83c4f79615cdf8752ca01b2fe09cbfc1bd990f1e0fea3762"
+    },
+    {
+      "path": "media/bitzy-lite-arm.jpg",
+      "bytes": 198847,
+      "sha256": "5450d52ac0ff20fcf85dec06b4287de4814bc4b38ceaf3b03bbd75b3a03628e0"
+    },
+    {
+      "path": "media/bitzy-lite-guiding.jpg",
+      "bytes": 107209,
+      "sha256": "6272767ded392f3219ad658135e9302d09c52e810e09ba169f4b2e30dab041bd"
+    },
+    {
+      "path": "media/bitzy-lite-joint.jpg",
+      "bytes": 153329,
+      "sha256": "7e2a880f4847947151bdd51b253e7ad4e7ae129c1419b617a10c64574bf36854"
+    },
+    {
+      "path": "media/bitzy-lite-moving-poster.jpg",
+      "bytes": 80132,
+      "sha256": "8f246f706912c05db3d06bd1bda58029fd71d26cbe41e5e59031144229f54780"
+    },
+    {
+      "path": "media/bitzy-lite-moving.mp4",
+      "bytes": 1286279,
+      "sha256": "6ffbcb0d7caa88a96921450315f7a68fb6b84ca1f0ea0a6f5640514ed615e80f"
+    },
+    {
+      "path": "media/bitzy-lite-teach-copy.mp4",
+      "bytes": 4650588,
+      "sha256": "84626f540041babb673eb92e32c88f90a7213e9c88548818612cfeabb8135d17"
+    },
+    {
+      "path": "media/bitzy-lite-teach-poster.jpg",
+      "bytes": 65635,
+      "sha256": "c67fc035db5ac7381c02a530a7bb99ec0c7a5e1a20fd7f9b8b697db42b61976a"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { Project, Experience, SkillCategory } from './types';
 import { ACUIVECT_PROJECT } from './data/acuivect';
 import { BITZY_V1_PROJECT } from './data/bitzy-v1';
+import { BITZY_LITE_PROJECT } from './data/bitzy-lite';
 import { CYCLOID_R1_PROJECT } from './data/cycloid-r1';
 import { FORMIVECT_PROJECT } from './data/formivect';
 
@@ -59,6 +60,7 @@ export const PROJECTS: Project[] = [
     status: "Launched"
   },
   BITZY_V1_PROJECT,
+  BITZY_LITE_PROJECT,
   CYCLOID_R1_PROJECT,
   {
     id: "aurex-h20",
