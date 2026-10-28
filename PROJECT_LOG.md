@@ -1,5 +1,11 @@
 # Portfolio Change Log
 
+## 2026-10-27 17:22 -0700 · win · codex · codex/mobile-layout-fix-2026-10-19
+- Files: App.tsx.
+- Change: Harry requests exact RESUME and FULL PORTFOLIO buttons immediately on the first page. Promoted them to two filled buttons directly below the name, before the biography; RESUME opens the existing PDF, FULL PORTFOLIO scrolls to the complete Projects section. Also made RESUME the fixed-header action and kept tablet navigation collapsed below 1024 px so the action has room.
+- Preservation: fast-forwarded the clean existing worktree to origin/main bb23e21 before editing; includes Claude's October 26 Bitzy Lite page/card/chat/routes. Resume PDF and all project payloads unchanged.
+- Validation: TypeScript no-emit, production build and Git whitespace checks pass. Both buttons are visible without scrolling at 320×568, 393×720, 768×1024 and 1440×900; no horizontal overflow. FULL PORTFOLIO lands at #projects with an 80 px header offset; resume.pdf returns 200 application/pdf. Production confirmation is recorded in the parent Portfolio log/vault. No dependencies installed.
+
 ## 2026-10-26 18:05 -0700 · win · claude · claude/bitzy-lite-2026-10-26 → main
 - Files: public/projects/bitzy-lite/ (added: index.html, assets/{portfolio,bitzy-lite}.css, media/ 2 silent H.264 videos + 5 JPEGs, README, RIGHTS, PUBLIC-MANIFEST.json); data/bitzy-lite.ts (added); constants.tsx (card after Bitzy V1); api/chat.ts (Bitzy Lite knowledge passage); vercel.json (redirect, rewrite, SPA-exclusion).
 - Change: new Bitzy Lite project page and card (Harry: "post Bitzy Lite to my portfolio site"). Teach-and-repeat video from the posted reel's plain cut (no overlays, muted), B-roll and stills from the graded 2026-10-26 DJI clips. Facts only from ITEMS.md, floor-tidy-robot PROJECT_LOG/ARM_SPECIFICATION (CAD values marked as CAD) and the teach-copy post; no accuracy/payload/speed numbers; planned items marked Next; software described as closely guided AI-generated code.

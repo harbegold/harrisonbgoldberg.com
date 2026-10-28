@@ -48,7 +48,7 @@ const App: React.FC = () => {
               Harrison B. Goldberg
             </span>
           </a>
-          <div className="hidden md:flex gap-8 text-[13px] font-medium text-[#1d1d1f]/80">
+          <div className="hidden lg:flex gap-8 text-[13px] font-medium text-[#1d1d1f]/80">
             {NAV_LINKS.map(link => (
               <a key={link.href} href={link.href} className="hover:text-[#007aff] transition-colors">
                 {link.label}
@@ -62,7 +62,7 @@ const App: React.FC = () => {
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
               onClick={() => setMenuOpen(open => !open)}
-              className="md:hidden w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5"
+              className="lg:hidden w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeWidth={2} d={menuOpen ? 'M6 6l12 12M6 18L18 6' : 'M4 6h16M4 12h16M4 18h16'} />
@@ -80,14 +80,17 @@ const App: React.FC = () => {
               </svg>
             </a>
             <a
-              href={`mailto:${PERSONAL_INFO.email}`}
-              className="text-[13px] font-medium px-4 py-2 rounded-full bg-[#1d1d1f] text-white hover:bg-[#007aff] transition-colors"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="RESUME (PDF, opens in a new tab)"
+              className="text-[13px] font-semibold px-4 py-2.5 rounded-full bg-[#1d1d1f] text-white hover:bg-[#007aff] transition-colors"
             >
-              Get in touch
+              RESUME
             </a>
           </div>
         </div>
-        <div id="mobile-navigation" hidden={!menuOpen} className="md:hidden border-t border-black/[0.08] bg-[#fbfbfd] px-6 py-3">
+        <div id="mobile-navigation" hidden={!menuOpen} className="lg:hidden border-t border-black/[0.08] bg-[#fbfbfd] px-6 py-3">
           {NAV_LINKS.map(link => (
             <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block py-3 text-sm font-medium hover:text-[#007aff]">
               {link.label}
@@ -111,45 +114,30 @@ const App: React.FC = () => {
               <span className="apple-gradient">Hi, I'm Harrison.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-[#6e6e73] leading-relaxed max-w-xl">
-              {PERSONAL_INFO.bio}
-            </p>
-
-            <div className="flex flex-wrap gap-3 pt-2">
-              <a
-                href="#projects"
-                className="px-6 py-3 bg-[#1d1d1f] text-white rounded-full font-medium text-sm hover:bg-[#007aff] transition-colors"
-              >
-                See my work
-              </a>
+            <div className="grid grid-cols-2 sm:flex gap-3 max-w-md" aria-label="Explore my work">
               <a
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Résumé (PDF, opens in a new tab)"
-                className="px-6 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:border-[#007aff]/40 hover:text-[#007aff] transition-all"
+                aria-label="RESUME (PDF, opens in a new tab)"
+                className="inline-flex items-center justify-center gap-2 px-3 sm:px-6 py-4 bg-[#007aff] text-white rounded-full font-semibold text-xs sm:text-sm tracking-wide hover:bg-[#0051d5] transition-colors"
               >
-                Résumé
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:border-[#007aff]/40 hover:text-[#007aff] transition-all"
-              >
-                Get in touch
-              </a>
-              <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn profile"
-                className="px-5 py-3 bg-white border border-black/[0.1] text-[#1d1d1f] rounded-full font-medium text-sm hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:text-white transition-all flex items-center gap-2"
-              >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.78-1.75-1.73s.78-1.74 1.75-1.74 1.75.78 1.75 1.74c0 .95-.78 1.73-1.75 1.73zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.58 7-2.78 7 2.47v6.77z" />
+                <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm0 0v6h6M8 13h8M8 17h6" />
                 </svg>
-                LinkedIn
+                RESUME
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center px-3 sm:px-6 py-4 bg-[#1d1d1f] text-white rounded-full font-semibold text-xs sm:text-sm tracking-wide hover:bg-[#007aff] transition-colors"
+              >
+                FULL PORTFOLIO
               </a>
             </div>
+
+            <p className="text-lg sm:text-xl text-[#6e6e73] leading-relaxed max-w-xl">
+              {PERSONAL_INFO.bio}
+            </p>
 
             <div className="flex flex-wrap items-center gap-x-10 gap-y-4 pt-6 border-t border-black/[0.06]">
               <div className="flex flex-col gap-1">
